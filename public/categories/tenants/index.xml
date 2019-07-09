@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tenants on Lightelligence®</title>
+    <link>https://mangogul.bitbucket.io/categories/tenants/</link>
+    <description>Recent content in tenants on Lightelligence®</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mangogul.bitbucket.io/categories/tenants/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating Tenants</title>
+      <link>https://mangogul.bitbucket.io/users/creating-tenants/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/creating-tenants/</guid>
+      <description>What&amp;rsquo;s a Tenant? A tenant is the owner of a system landscape.
+As a tenant, assign users and roles to manage the system landscape composed of IoT devices.
+Use Cases Create multiple tenants in one of the following cases, for example:
+ Your organization manages system landscapes for various customers. Separate tenants help you facilitate the billing process. You manage system landscapes at different sites. Separate tenants can help you to keep the overview of complex system landscapes and monitor devices more efficiently.</description>
+    </item>
+    
+  </channel>
+</rss>

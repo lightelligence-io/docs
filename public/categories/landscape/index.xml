@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>landscape on Lightelligence®</title>
+    <link>https://mangogul.bitbucket.io/categories/landscape/</link>
+    <description>Recent content in landscape on Lightelligence®</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mangogul.bitbucket.io/categories/landscape/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://mangogul.bitbucket.io/users/roadmap/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/roadmap/</guid>
+      <description> TBD </description>
+    </item>
+    
+  </channel>
+</rss>

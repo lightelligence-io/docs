@@ -1,0 +1,33 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lightelligence® – LIGHTELLIGENCE® User Journey</title>
+    <link>https://mangogul.bitbucket.io/</link>
+    <description>Recent Hugo news from gohugo.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mangogul.bitbucket.io/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://mangogul.bitbucket.io/</link>
+    </image>
+    
+	<atom:link href="https://mangogul.bitbucket.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>News: Lightelligence 0.1</title>
+      <link>https://mangogul.bitbucket.io/news/0.1-relnotes/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/news/0.1-relnotes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This is our initial version.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

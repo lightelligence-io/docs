@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>applications on Lightelligence®</title>
+    <link>https://mangogul.bitbucket.io/categories/applications/</link>
+    <description>Recent content in applications on Lightelligence®</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mangogul.bitbucket.io/categories/applications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Developing Custom Applications</title>
+      <link>https://mangogul.bitbucket.io/applications/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/</guid>
+      <description>Design your OLT travel experience with custom applications.
+Explore your IoT system landscape(s) and exploit its data resources. As the tour guide of your end users, develop custom applications to shape the lookout points and views on the data that your IoT system landscapes deliver.
+With custom applications you access the OLT API endpoints (https://api.lightelligence.io/v1/api-collection) and manage them.</description>
+    </item>
+    
+    <item>
+      <title>Developing Applications with the SDK</title>
+      <link>https://mangogul.bitbucket.io/applications/using-application-sdk/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/using-application-sdk/</guid>
+      <description>@tbd, this chapter is a placeholder
+ Installing the Lightelligence Demo App Use: Get an idea what &amp;ldquo;applications&amp;rdquo; using the OLT API are.
+Procedure
+ Install node.js (if I don&amp;rsquo;t have it already).
+ Install the @lightelligence/browser-sdk dependency. How exactly: npm install git@bitbucket.org:lightelligence/lightelligence-demo-app.git ? Result: As of now, I get &amp;ldquo;Could not install from &amp;ldquo;bitbucket.org:lightelligence\lightelligence-demo-app.git&amp;rdquo; as it does not contain a package.json file.&amp;rdquo; Reason: I probably need the local private read access token to our npm, since the demo app is not public.</description>
+    </item>
+    
+    <item>
+      <title>Authenticating with OAuth2</title>
+      <link>https://mangogul.bitbucket.io/applications/authenticating-with-oauth2/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/authenticating-with-oauth2/</guid>
+      <description>To be able to actually use applications, perform two basic steps:
+ Register your applications to the OLT platform.
+By registering your application to the OLT platform, you turn your application into an OAuth2 client authenticating via OpenID Connect.
+ Implement OAuth2 in your application.
+  Restrictions For security reasons, custom applications are not allowed to use API endpoints related to tenant management and user management.
+For more information, see Troubleshooting Application Management.</description>
+    </item>
+    
+    <item>
+      <title>Identifying Your Use Case</title>
+      <link>https://mangogul.bitbucket.io/applications/use-cases/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/use-cases/</guid>
+      <description>Choose an applications type depending on your use case, and off you go.
+Applications with User Interaction To retrieve an OAuth2 access token, you can implement an OAuth2 client with or without OAuth2 client secret, depending on the application type:
+ Web application running on a web server (in which the application source code is protected): Implement a confidential OAuth2 client with OAuth2 client secret. User agent application running in a browser (in which the application source code may be viewed), a JavaScript application, for example: Implement a public OAuth2 client without OAuth2 client secret.</description>
+    </item>
+    
+    <item>
+      <title>Registering and Implementing User Applications</title>
+      <link>https://mangogul.bitbucket.io/applications/registering-user-applications/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/registering-user-applications/</guid>
+      <description>To turn a user application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
+Note
+Simulating Applications
+In the following, we use OAuth 2.0 &amp;lt;debugger/&amp;gt; (https://oauthdebugger.com) to simulate an application.
+Prerequisites
+To register applications to the OLT platform, you have owner or writer authorization.
+Note
+Checking permissions
+ If you use default roles, to verify you have owner or writer authorization, in the OLT portal, under Users, check your roles.</description>
+    </item>
+    
+    <item>
+      <title>Registering and Implementing Background Applications</title>
+      <link>https://mangogul.bitbucket.io/applications/registering-background-applications/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/registering-background-applications/</guid>
+      <description>To turn a background application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
+Prerequisites
+To register applications to the OLT platform, you have owner or writer authorization.
+Note
+Checking permissions
+ If you use default roles, to verify you have owner or writer authorization, in the OLT portal, under Users, check your roles.
+ If you use custom roles, verify the user permissions for the specific endpoints.</description>
+    </item>
+    
+    <item>
+      <title>Managing Custom Applications</title>
+      <link>https://mangogul.bitbucket.io/applications/managing-applications/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/managing-applications/</guid>
+      <description>As the developer, deactivate custom applications temporarily or whitelist additional tenants, for example.
+As a tenant owner, install or uninstall custom applications, for example.
+Verifying Permissions To manage custom applications, verify you have the permissions required for the specific endpoints.
+Procedure
+ To identify your user ID, make a GET request to the tenants/{tenantID}/users endpoint.
+You get user data such as the user ID (in our example 72fa ...).</description>
+    </item>
+    
+    <item>
+      <title>Defining Custom Permissions and Roles</title>
+      <link>https://mangogul.bitbucket.io/applications/defining-custom-permissions/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/defining-custom-permissions/</guid>
+      <description>Custom permissions allow you to use the OLT role management to control how users can use your custom applications.
+How you design and implement custom permissions in a custom application depends on your user role concept.
+How it Works How does the custom roles mechanism work?
+ As an application developer, implement, in your custom application, permissions that a user must have to perform a specific activity.
+ As an application developer, create custom permissions corresponding to the permissions implemented in your custom application, in the OLT portal.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting Application Management</title>
+      <link>https://mangogul.bitbucket.io/applications/troubleshooting-application-management/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/applications/troubleshooting-application-management/</guid>
+      <description>Access Denied Your custom application can&amp;rsquo;t access a certain endpoint?
+Verify that an endpoint has the permission required to access the tenant&amp;rsquo;s data.
+Background
+For security reasons, custom applications are not allowed to use API endpoints related to tenant management and user management.
+You can access these endpoints only in the OLT portal.
+So even if your user has the owner role, with a custom application the access is restricted to permissions assigned to the writer role.</description>
+    </item>
+    
+  </channel>
+</rss>

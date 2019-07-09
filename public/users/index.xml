@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mapping the OLT Landscape on Lightelligence®</title>
+    <link>https://mangogul.bitbucket.io/users/</link>
+    <description>Recent content in Mapping the OLT Landscape on Lightelligence®</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mangogul.bitbucket.io/users/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://mangogul.bitbucket.io/users/roadmap/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/roadmap/</guid>
+      <description> TBD </description>
+    </item>
+    
+    <item>
+      <title>Creating Tenants</title>
+      <link>https://mangogul.bitbucket.io/users/creating-tenants/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/creating-tenants/</guid>
+      <description>What&amp;rsquo;s a Tenant? A tenant is the owner of a system landscape.
+As a tenant, assign users and roles to manage the system landscape composed of IoT devices.
+Use Cases Create multiple tenants in one of the following cases, for example:
+ Your organization manages system landscapes for various customers. Separate tenants help you facilitate the billing process. You manage system landscapes at different sites. Separate tenants can help you to keep the overview of complex system landscapes and monitor devices more efficiently.</description>
+    </item>
+    
+    <item>
+      <title>Managing Users</title>
+      <link>https://mangogul.bitbucket.io/users/managing-users/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/managing-users/</guid>
+      <description>Understanding the Role Concept When creating a tenant, a default user is created whose role is owner.
+The owner owns the tenant and has no restrictions in the OLT portal.
+Owners can assign the following roles to users:
+ A writer is not authorized to manage the tenant data.
+Writers can, for example
+ develop applications manage the solution by defining device types or creating devices   A reader is not authorized to manage the solution.</description>
+    </item>
+    
+    <item>
+      <title>Defining Custom Roles</title>
+      <link>https://mangogul.bitbucket.io/users/creating-custom-roles/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/creating-custom-roles/</guid>
+      <description>Custom Roles and Permissions for Applications By default, the OLT platform checks whether a user has the read or write OLT permission to access a specific endpoint.
+With custom applications, you access the OLT API endpoints. With custom roles, you can assign custom permissions to control on a more granular level what a user is allowed to do with a custom application.
+So, a part of designing custom applications is to determine whether you wish to define custom roles.</description>
+    </item>
+    
+  </channel>
+</rss>

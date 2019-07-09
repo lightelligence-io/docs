@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Managing the OLT Lifecycle on Lightelligence®</title>
+    <link>https://lightelligence.io/devices/</link>
+    <description>Recent content in Managing the OLT Lifecycle on Lightelligence®</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://lightelligence.io/devices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Storing and Retrieving Sensor Data</title>
+      <link>https://lightelligence.io/devices/reporting-getting-started/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/devices/reporting-getting-started/</guid>
+      <description>You got started with setting up a Raspberry Pi and transmitting configuration data such as the IP address to the OLT platform. See Connecting a Device in 3 Steps.
+By walking through the process manually, you got an idea of how the elements of the OLT platform interact. see Walking Through the OLT Portal, Step by Step.
+Now we add a new device type, to cover a typical IoT scenario: Storing time series sensor data in the OLT platform, and retrieving the data.</description>
+    </item>
+    
+    <item>
+      <title>Executing Commands on Devices</title>
+      <link>https://lightelligence.io/devices/actions-getting-started/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/devices/actions-getting-started/</guid>
+      <description>Besides reading sensor data, executing commands on devices is another basic IoT use case.
+So, let&amp;rsquo;s write values to devices, to trigger actions.
+In the JSON schema of a device type, we have another dedicated property for this, actions.
+While the attributes property is read-only, the actions property is write-only.
+Actions are commands that a device can execute.
+In the following example light up an RGB LED by sending a certain color code in 2 steps:</description>
+    </item>
+    
+    <item>
+      <title>Synchronizing Device Configurations</title>
+      <link>https://lightelligence.io/devices/synchronizing-device-configurations/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/devices/synchronizing-device-configurations/</guid>
+      <description>The config sync process is still under discussion: This chapter is a placeholder.
+ ____ Begin Notes 20190611:
+@José: config subject is changing fast; is going to be discussed with Michael &amp;ndash; 2nd way of updating will not be implemented: 4.20
+config changes come from OLT to the adapter; same logic as with actions: gateway knows which adapter this device for this change belongs to gateway roots the config to the corresponding adapter, adapter roots config to field device</description>
+    </item>
+    
+    <item>
+      <title>Monitoring Devices and Alerting</title>
+      <link>https://lightelligence.io/devices/monitoring-devices/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/devices/monitoring-devices/</guid>
+      <description>&amp;lt; The event-ingest process is still under discussion: This chapter is a placeholder. &amp;gt;
+Begin Notes 20190611:
+Note: it&amp;rsquo;s being discussed whether the event type is fixed modeled like attributes, allowing to pass values.
+@José: Eventdef: does not have type events: { ‘greatEvent’: {} }
+raw docu as of 20190611:
+https://lightelligence.atlassian.net/wiki/spaces/OCP/pages/97419311/MQTT+Messages :
+Payload example:
+{ &amp;ldquo;deviceId&amp;rdquo;: &amp;ldquo;123e4567-e89b-12d3-a456-426655440000&amp;rdquo;, &amp;ldquo;type&amp;rdquo;: &amp;ldquo;overheated&amp;rdquo;, &amp;ldquo;createdAt&amp;rdquo;: &amp;ldquo;2015-08-04T19:05:14.318570484Z&amp;rdquo; }
+new time attribute createdAt type hardcoded: under discussion whether it should be fixed or whether payloud should be possible.</description>
+    </item>
+    
+    <item>
+      <title>Connecting Gateway Devices</title>
+      <link>https://lightelligence.io/devices/connecting-gateways/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/devices/connecting-gateways/</guid>
+      <description>The gateway process is still under discussion: This chapter is a placeholder.
+ In a typical setup, devices don&amp;rsquo;t communicate with the OLT platform directly but via a gateway.
+A gateway allows you to integrate device that are not IoT enabled.
+  Gateway Setup
+  In this setup, you proceed as follows:
+ Create the device type for each device. Create a device type for the gateway device.</description>
+    </item>
+    
+    <item>
+      <title>Deploying Binaries to Devices</title>
+      <link>https://lightelligence.io/devices/deploying-binaries-to-devices/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/devices/deploying-binaries-to-devices/</guid>
+      <description>SDK refactoring not yet finished. The firmware process is still under discussion. This chapter is a placeholder.
+ ____ Begin Notes 20190611:
+@José: not in scope of V.1.0 Adapter SDK roadmap &amp;ndash; has changed a lot; is going to be discussed &amp;ndash; discuss test case
+____ End Notes 20190611
+hatem, t understand the flow-- Host firmware in the OLT platform centrally and deploy it to your devices.
+To deploy firmwares, bootloaders, or configuration files to your devices, schedule downloads to your devices.</description>
+    </item>
+    
+    <item>
+      <title>Managing Devices</title>
+      <link>https://lightelligence.io/devices/managing-devices/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/devices/managing-devices/</guid>
+      <description>When you create digital twins representing your physical devices in the OLT platform, add metadata to be able to manage them effeciently.
+Managing devices means, for example,
+ Make queries to list existing devices. Use filters to stream data provided by specific device groups https://lightelligence.slack.com/messages/DHUFMMW9W/), slide 6)  We provide two levels of metadata:
+ semantic description: On the device type level,
+ categorize your devices by describing the capabilities and use.</description>
+    </item>
+    
+  </channel>
+</rss>

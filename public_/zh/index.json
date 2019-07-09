@@ -1,0 +1,81 @@
+
+[
+    
+    
+    {
+        "url": "/zh/documentation/",
+        "title": "Hugo 说明文档",
+        "content": "Hugo 号称世界上最快的静态网站引擎。它是以 Go (即 Golang) 编程语言所写成，并由 bep、spf13 和朋友们 共同开发。\n下面是我们说明文档中最常用和实用的章节：\n"
+    }
+    
+    , 
+    {
+        "url": "/zh/templates/",
+        "title": "模板 Templates",
+        "content": ""
+    }
+    
+    , 
+    {
+        "url": "/zh/content-management/",
+        "title": "内容管理",
+        "content": "一个实用的静态网站生成器，需要超越“文件头” (front matter) 和模板的等基本功能，才能兼备可伸缩性和可管理性，满足用户所需。Hugo 不仅是给开发者设计的，也同样适用于内容管理员和写作人员。\n"
+    }
+    
+    , 
+    {
+        "url": "/zh/about/",
+        "title": "关于 Hugo",
+        "content": "Hugo 不是一般的静态网站生成器。\n"
+    }
+    
+    , 
+    {
+        "url": "/zh/templates/base/",
+        "title": "Base 模板 and Blocks",
+        "content": " The block keyword allows you to define the outer shell of your pages\u0026rsquo; one or more master template(s) and then fill in or override portions as necessary.\n  Base Template Lookup Order The lookup order for base templates is as follows:\n /layouts/section/\u0026lt;TYPE\u0026gt;-baseof.html /themes/\u0026lt;THEME\u0026gt;/layouts/section/\u0026lt;TYPE\u0026gt;-baseof.html /layouts/\u0026lt;TYPE\u0026gt;/baseof.html /themes/\u0026lt;THEME\u0026gt;/layouts/\u0026lt;TYPE\u0026gt;/baseof.html /layouts/section/baseof.html /themes/\u0026lt;THEME\u0026gt;/layouts/section/baseof.html /layouts/_default/\u0026lt;TYPE\u0026gt;-baseof.html /themes/\u0026lt;THEME\u0026gt;/layouts/_default/\u0026lt;TYPE\u0026gt;-baseof.html /layouts/_default/baseof.html /themes/\u0026lt;THEME\u0026gt;/layouts/_default/baseof.html  Variables are denoted by capitalized text set within \u0026lt;\u0026gt;. Note that Hugo\u0026rsquo;s default behavior is for type to inherit from section unless otherwise specified.\nExample Base Template Lookup Order As an example, let\u0026rsquo;s assume your site is using a theme called \u0026ldquo;mytheme\u0026rdquo; when rendering the section list for a posts section. Hugo picks layout/section/posts.html as the template for rendering the section. The {{define}} block in this template tells Hugo that the template is an extension of a base template.\nHere is the lookup order for the posts base template:\n /layouts/section/posts-baseof.html /themes/mytheme/layouts/section/posts-baseof.html /layouts/posts/baseof.html /themes/mytheme/layouts/posts/baseof.html /layouts/section/baseof.html /themes/mytheme/layouts/section/baseof.html /layouts/_default/posts-baseof.html /themes/mytheme/layouts/_default/posts-baseof.html /layouts/_default/baseof.html /themes/mytheme/layouts/_default/baseof.html  Define the Base Template The following defines a simple base template at _default/baseof.html. As a default template, it is the shell from which all your pages will be rendered unless you specify another *baseof.html closer to the beginning of the lookup order.\nlayouts/_default/baseof.html  \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;utf-8\u0026#34;\u0026gt; \u0026lt;title\u0026gt;{{block\u0026#34;title\u0026#34;.}} \u0026lt;!-- Blocks may include default content. --\u0026gt; {{.Site.Title}} {{end}}\u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;!-- Code that all your templates share, like a header --\u0026gt; {{block\u0026#34;main\u0026#34;.}} \u0026lt;!-- The part of the page that begins to differ between templates --\u0026gt; {{end}} {{block\u0026#34;footer\u0026#34;.}} \u0026lt;!-- More shared code, perhaps a footer but that can be overridden if need be in --\u0026gt; {{end}} \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;    Override the Base Template From the above base template, you can define a default list template. The default list template will inherit all of the code defined above and can then implement its own \u0026quot;main\u0026quot; block from:\nlayouts/_default/list.html  {{define\u0026#34;main\u0026#34;}} \u0026lt;h1\u0026gt;Posts\u0026lt;/h1\u0026gt; {{range.Pages}} \u0026lt;article\u0026gt; \u0026lt;h2\u0026gt;{{.Title}}\u0026lt;/h2\u0026gt; {{.Content}} \u0026lt;/article\u0026gt; {{end}} {{end}}    This replaces the contents of our (basically empty) \u0026ldquo;main\u0026rdquo; block with something useful for the list template. In this case, we didn\u0026rsquo;t define a \u0026quot;title\u0026quot; block, so the contents from our base template remain unchanged in lists.\n Code that you put outside the block definitions can break your layout. This even includes HTML comments. For example:\n\u0026lt;!-- Seemingly harmless HTML comment..that will break your layout at build --\u0026gt; {{ define \u0026quot;main\u0026quot; }} ...your code here {{ end }}  See this thread from the Hugo discussion forums.\n  The following shows how you can override both the \u0026quot;main\u0026quot; and \u0026quot;title\u0026quot; block areas from the base template with code unique to your default single page template:\nlayouts/_default/single.html  {{define\u0026#34;title\u0026#34;}} \u0026lt;!-- This will override the default value set in baseof.html; i.e., \u0026#34;{{.Site.Title}}\u0026#34; in the original example--\u0026gt; {{.Title}} \u0026amp;ndash; {{.Site.Title}} {{end}} {{define\u0026#34;main\u0026#34;}} \u0026lt;h1\u0026gt;{{.Title}}\u0026lt;/h1\u0026gt; {{.Content}} {{end}}    "
+    }
+    
+    , 
+    {
+        "url": "/zh/categories/",
+        "title": "Categories",
+        "content": ""
+    }
+    
+    , 
+    {
+        "url": "/zh/categories/content-management/",
+        "title": "content management",
+        "content": ""
+    }
+    
+    , 
+    {
+        "url": "/zh/",
+        "title": "世界上最快的网站构建框架 The world’s fastest framework for building websites",
+        "content": "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.\n"
+    }
+    
+    , 
+    {
+        "url": "/zh/categories/fundamentals/",
+        "title": "fundamentals",
+        "content": ""
+    }
+    
+    , 
+    {
+        "url": "/zh/categories/templates/",
+        "title": "templates",
+        "content": ""
+    }
+    
+    , 
+    {
+        "url": "/zh/news/",
+        "title": "Hugo 新闻",
+        "content": ""
+    }
+    
+]

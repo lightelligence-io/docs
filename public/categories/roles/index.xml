@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>roles on Lightelligence®</title>
+    <link>https://mangogul.bitbucket.io/categories/roles/</link>
+    <description>Recent content in roles on Lightelligence®</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mangogul.bitbucket.io/categories/roles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Managing Users</title>
+      <link>https://mangogul.bitbucket.io/users/managing-users/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/managing-users/</guid>
+      <description>Understanding the Role Concept When creating a tenant, a default user is created whose role is owner.
+The owner owns the tenant and has no restrictions in the OLT portal.
+Owners can assign the following roles to users:
+ A writer is not authorized to manage the tenant data.
+Writers can, for example
+ develop applications manage the solution by defining device types or creating devices   A reader is not authorized to manage the solution.</description>
+    </item>
+    
+    <item>
+      <title>Defining Custom Roles</title>
+      <link>https://mangogul.bitbucket.io/users/creating-custom-roles/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mangogul.bitbucket.io/users/creating-custom-roles/</guid>
+      <description>Custom Roles and Permissions for Applications By default, the OLT platform checks whether a user has the read or write OLT permission to access a specific endpoint.
+With custom applications, you access the OLT API endpoints. With custom roles, you can assign custom permissions to control on a more granular level what a user is allowed to do with a custom application.
+So, a part of designing custom applications is to determine whether you wish to define custom roles.</description>
+    </item>
+    
+  </channel>
+</rss>
