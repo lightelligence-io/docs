@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 title = "Lightelligence®"
 theme = ["hugo-search-fuse-js","gohugoioTheme_custom" ,  ]
 
-googleAnalytics = "#"
+googleAnalytics = ""
 
 pluralizeListTitles = false
 
