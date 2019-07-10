@@ -65,6 +65,11 @@ Create multiple tenants in one of the following cases, for example:
 
 6. Choose **Login with new tenant**.
 
+**Result**
+
+Your tenant is displayed. You can select it.
+
+{{< figure src="/images/users-select-tenant.png" caption="Selecting a Tenant" alt="Selecting a Tenant" >}}	
 
 Via the [OLT portal](https://portal.lightelligence.io), you have access to the OLT platform.
 
