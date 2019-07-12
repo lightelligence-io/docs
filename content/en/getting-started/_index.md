@@ -24,11 +24,4 @@ To get started with these OLT vehicles, perform the following scenarios:
 * Get an overview of the OLT portal function you will typicall use when adding devices to your IoT system landscape: [Walking Through the OLT Portal, Step by Step](/getting-started/connectivity-getting-started/)
 
 
-<!--
 
-If this is your first time using Hugo and you've [already installed Hugo on your machine][installed], we recommend the [quick start][].
-
-[installed]: /getting-started/installing/
-[quick start]: /getting-started/quick-start/
-
--->

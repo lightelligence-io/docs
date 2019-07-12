@@ -1,5 +1,5 @@
 ---
-date: 2019-06-18
+date: 2019-07-12
 title: "Lightelligence 0.1"
 description: "Initial version."
 categories: ["Releases"]

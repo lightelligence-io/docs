@@ -9,9 +9,9 @@ keywords: [customapplication,user application,background application]
 menu:
   docs:
     parent: "applications"
-    weight: 05
-weight: 05
-sections_weight: 05
+    weight: 220
+weight: 220
+sections_weight: 220
 draft: false
 aliases: [/applications/,/overview/quickstart/]
 toc: true

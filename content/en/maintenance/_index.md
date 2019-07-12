@@ -1,6 +1,6 @@
 ---
 title: Changes
-description: Check our latest changes.
+description: Check the latest changes to our documentation.
 date: 2018-02-09
 categories: [maintenance]
 keywords: [maintenance]

@@ -10,8 +10,8 @@ keywords: [applications,api,custom aplications]
 menu:
   docs:
     parent: "applications"
-    weight: 1
-weight: 0001	#rem
+    weight: 10
+weight: 10	#rem
 draft: false
 aliases: [/overview/introduction/]
 toc: false

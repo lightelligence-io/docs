@@ -1,7 +1,7 @@
 ---
 title: Searching the Docs
-description: Search the docs and display results.
-date: 2018-02-09
+description: Search the docs and find solutions.
+date: 2019-07-12
 categories: [search]
 keywords: [search]
 menu:

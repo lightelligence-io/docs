@@ -10,9 +10,9 @@ tags: [deactivating applications]
 menu:
   docs:
     parent: "applications"
-    weight: 40
-weight: 40
-sections_weight: 40
+    weight: 300
+weight: 300
+sections_weight: 300
 draft: false
 aliases: [/applications/,/overview/quickstart/]
 toc: true

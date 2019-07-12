@@ -11,8 +11,8 @@ keywords: [tenants,users,roles]
 menu:
   docs:
     parent: "users"
-    weight: 1
-weight: 0001	#rem
+    weight: 2
+weight: 0002	#rem
 draft: false
 aliases: [/overview/introduction/]
 toc: false

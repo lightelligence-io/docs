@@ -1,19 +1,19 @@
 ---
 title: Troubleshooting 
 linktitle: Troubleshooting
-description: Frequently asked questions and known issues pulled from the Lightelligence Forum.
+description: Find answers to frequently asked questions and known issues.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
 menu:
   docs:
     parent: "troubleshooting"
-    weight: 1
-weight: 1	
+    weight: 6
+weight: 6	
 draft: false
 hidesectioncontents: false
 slug:
-aliases: [/troubleshooting/faqs/,/faqs/]
+aliases: [/troubleshooting/]
 toc: false
 notesforauthors:
 ---

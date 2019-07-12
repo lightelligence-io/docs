@@ -27,17 +27,23 @@ Dynamicylly generating the web site on a local server allows you to review layou
 
 Execute `hugo`.
 
-A `\lightelligence-io\docs\public` directory is built, containing the HTML stuff, including, for example the `index.json` search index file.
+A `\lightelligence-io\docs\public` directory is built, containing the HTML stuff including, for example the `index.json` search index file.
 
 #Customizing the Layout
 
-Our layout as of 20190710 is based on the original Hugo theme, but customized, as specified in the config.toml file: theme = ["hugo-search-fuse-js","gohugoioTheme_custom" ,  ]
+Our layout as of 20190710 is based on the original Hugo theme, but customized, as specified in the config.toml file: theme = ["hugo-search-fuse-js","gohugoioTheme_custom" ,  ] (git@github.com:gohugoio/gohugoioTheme.git)
 
 The search engine we employ is `https://fusejs.io/`.
 
 In general, the layout is based on http://tachyons.io/ classes.
 
 To customize the layout, check the following items:
+
+## Basic Configuration
+
+Basic Configuration is done in `\config.toml` and `\config\_default\params.toml`.
+
+Markdown rendering options can be configured in `\content\en\readfiles\bfconfig.md`. We use them as is.
 
 ## Stylesheet
 
@@ -57,13 +63,12 @@ In `\themes\gohugoioTheme_custom\layouts\_default\baseof.html`, the basic page t
 
 ### Customizations
 
-#### Sidebar menu
 
-
+We use the settings as is.
 
 #### Accent color
 
-We have changed, for example accent-color orange-red #ff4500
+We have changed, for example accent-color orange-red #ff4500, affecting the sidebar menu.
 
 
 #### Nested block quotes
@@ -102,7 +107,84 @@ hr {
 
 ```
 
-## Fuse Search
+
+
+## Customize hugoioTheme
+
+### Twitter 
+
+Switch on/off Twitter/github: in sit-nav.html integrate partial `social-follow.html`.
+
+```
+<span class="absolute mt1 mt2-l pr3 right-0 top-0">
+	{{- partialCached "social-follow.html" . -}}
+</span>
+```
+
+### "Improve Page" Button
+
+We have switched off „Improve this page“ button for user feedback: {{ partial "page-edit.html" . }}. Might be useful later.
+
+To switch off, outcomment {{ partial "page-edit.html" . }} in \gohugoioTheme_custom\layouts\_default\single.html 
+
+### Inviting contributors
+
+If wished, we can adjust and use the following partial as a template to invite contributors to Lightelligence:
+
+`\themes\gohugoioTheme_custom\layouts\partials\home-page-sections\open-source-involvement.html`
+
+
+### Customize the Landing Page
+
+
+* Layout of the introduction text with the get started button: `\themes\gohugoioTheme_custom\layouts\partials\hero.html`
+* Layout of the overview flex boxes: partial `\themes\gohugoioTheme_custom\layouts\partials\pagelayout_landingpage.html`
+* Main template, containing also the text below the hero: `\themes\gohugoioTheme_custom\layouts\index.html`
+* Text content: `\content\en\_index.md`
+
+To adjust the order how the flex boxes are arranged, in the `_index.md` corresponding to the section, adust the `weight` parameter.
+
+### Controling the vertical navigation
+
+
+
+menu:
+  docs:
+    parent: "applications"
+    weight: 04   <!-- Control the relative position in vertical navigation -->
+weight: 04
+sections_weight: 04
+
+
+
+
+### Customize the Release Notes Page
+
+In `\themes\gohugoioTheme_custom\layouts\news\single.html`template, switch on/off the date, link to a download page, for example. See comments in the file.
+
+
+
+### Horizontal Navigation
+
+Partial `navtop.html`
+
+### Adjust Product  name LIGHTELLIGENCE® 
+
+Partial `sitenav.html`
+
+
+### Copyright, Imprint
+
+partial `site-footer.html`
+
+To be done, if required: 
+
+* Include EU GDPR banner? 
+* Clarified if, in `\themes\gohugoioTheme_custom\layouts\_default\baseof.html`, robots are to be switched off. See <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+
+## Implementing and customizing Fuse Search
 
 How we implemeted it in Hugo:
 
@@ -149,51 +231,6 @@ See `\themes\hugo-search-fuse-js\static\js\search.js`.
 •	`Search.js`: const summaryInclude=100; (default = 60) // How many characters to include on either side of match keyword
 
 
-## Customize hugoioTheme
-
-### Twitter 
-
-Twitter/github aus-/einblenden: in sit-nav.html partial social-follow.html
-
-### Improve Page 
-
-Switch off „Improve this page“ : Edit text in {{ partial "page-edit.html" . }}. 
-
-To switch off, comment {{ partial "page-edit.html" . }} in \gohugoioTheme_custom\layouts\_default\single.html
-
-### Link to Github: 
-
-```
-<span class="absolute mt1 mt2-l pr3 right-0 top-0">
-	{{- partialCached "social-follow.html" . -}}
-</span>
-```
-
-### Customiz the Landing Page
-
-* `\themes\gohugoioTheme_custom\layouts\index.html`
-* partial "pagelayout_landingpage.html"
-
-### Horizontal Navigation
-
-Partial `navtop.html`
-
-### Adjust Product  name LIGHTELLIGENCE® 
-
-Partial `sitenav.html`
-
-
-### Get started button
-
-partial `hero.html`
-
-### Copyright, Imprint
-
-partial `site-footer.html`
-
-
-
-
 
 
 # Editing Content
@@ -237,7 +274,7 @@ but extends beyond it on the left, the column is right-aligned. Requires Extensi
 
 We don't want the keyblock heading to be numbered. So, the `{-}` (equalling `{.unnumbered}`) is to ensure the keyblock is not numbered if we decide to use numbered headings in the future.
 
-The keyblock heading level depends on the context. If the topic heading i `#`, we use `##`, etc.
+The keyblock heading level depends on the context. If the topic heading is `#`, we use `##`, etc.
 
 ---
 
@@ -289,4 +326,23 @@ var token = '{TOKEN}';
 var tenantId = '{tenantId}';
 var userId = '{userId}';
 ```
+
+# Using Hugo-specific code
+
+we experiment 
+
+
+## Reusing References
+
+This can be useful to maintain links appearing multiple times on a page.
+
+Example:
+
+If this is your first time using Hugo and you've [already installed Hugo on your machine][installed], we recommend the [quick start][].
+
+At the bottom of the file insert the link definitions:
+
+[installed]: /getting-started/installing/
+[quick start]: /getting-started/quick-start/
+
 

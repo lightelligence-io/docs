@@ -15,6 +15,7 @@
      {{ hugo.Generator }}
 
       {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+		{{/* Until EU GDPR banner question is clarified, clarify whether to switch off robots: */}}
         <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
       {{ else }}
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">

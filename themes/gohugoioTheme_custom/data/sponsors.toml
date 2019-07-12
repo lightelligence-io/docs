@@ -1,3 +1,5 @@
+<!-- use this as a template for banners on the landing page, for example to promote Osram companies:
+
 [[banners]]
 name = "Forestry.io"
 link = "https://forestry.io/"
@@ -15,3 +17,5 @@ name = "eSolia"
 link = "https://esolia.com/post/why-did-esolia-choose-hugo/"
 logo = "/images/sponsors/esolia-logo.svg"
 copy = ""
+
+-->

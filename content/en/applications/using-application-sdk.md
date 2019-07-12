@@ -9,9 +9,9 @@ keywords: [customapplication,sdk]
 menu:
   docs:
     parent: "applications"
-    weight: 03
-weight: 03
-sections_weight: 03
+    weight: 100
+weight: 100
+sections_weight: 100
 draft: false
 aliases: [/applications/,/overview/quickstart/]
 toc: true

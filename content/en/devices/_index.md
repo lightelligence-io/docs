@@ -1,7 +1,7 @@
 ---
 title: Managing the OLT Lifecycle
 linktitle: Managing the OLT Lifecycle
-description: Connect your actual IoT system landscape to the OLT platform.
+description: Connect your actual IoT system landscape to the OLT platform. Add new devices.
 date: 2019-05-01
 publishdate: 2019-05-01
 lastmod: 2019-05-01
@@ -10,8 +10,8 @@ keywords: [devices,device types]
 menu:
   docs:
     parent: "devices"
-    weight: 1
-weight: 0001	#rem
+    weight: 3
+weight: 0003	#rem
 draft: false
 aliases: [/overview/introduction/]
 toc: false

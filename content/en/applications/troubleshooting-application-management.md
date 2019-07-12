@@ -9,9 +9,9 @@ keywords: [application,troubleshooting,issues]
 menu:
   docs:
     parent: "applications"
-    weight: 60
-weight: 60
-sections_weight: 60
+    weight: 500
+weight: 500
+sections_weight: 500
 draft: false
 aliases: [/applications/,/overview/quickstart/]
 toc: true

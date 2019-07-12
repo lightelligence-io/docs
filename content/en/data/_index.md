@@ -1,7 +1,7 @@
 ---
 title: Processing Data
 linktitle: Processing Data
-description: Retrieving different types of data from the OLT platform.
+description: Retrieve different types of data from the OLT platform.
 date: 2019-05-01
 publishdate: 2019-05-01
 lastmod: 2019-05-01
@@ -10,8 +10,8 @@ keywords: [data,]
 menu:
   docs:
     parent: "data"
-    weight: 1
-weight: 0001	#rem
+    weight: 5
+weight: 0005	#rem
 draft: false
 aliases: [/overview/introduction/]
 toc: false

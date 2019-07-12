@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 linktitle: FAQ
 description: Solutions to some common OLT issues.
-date: 2018-02-10
+date: 2019-07-12
 categories: [troubleshooting]
 menu:
   docs:

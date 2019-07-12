@@ -9,9 +9,9 @@ keywords: [application,permission,custom role]
 menu:
   docs:
     parent: "applications"
-    weight: 50
-weight: 50
-sections_weight: 50
+    weight: 400
+weight: 400
+sections_weight: 400
 draft: false
 aliases: [/applications/,/overview/quickstart/]
 toc: true

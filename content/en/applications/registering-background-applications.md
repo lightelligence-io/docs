@@ -9,9 +9,9 @@ keywords: [application,background application,OAuth2]
 menu:
   docs:
     parent: "applications"
-    weight: 30
-weight: 30
-sections_weight: 30
+    weight: 240
+weight: 240
+sections_weight: 240
 draft: false
 aliases: [/applications/,/overview/quickstart/]
 toc: true
