@@ -7,6 +7,7 @@ keywords: [search]
 menu:
   docs:
     weight: -1
+weight: 7	#rem
 slug:
 aliases: []
 toc: true

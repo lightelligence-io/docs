@@ -16,9 +16,9 @@ Dynamicylly generating the web site on a local server allows you to review layou
 	
 	Hugo builds the site running on a local server. 
 	
-	```
-	Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-	```
+	
+	The web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+	
 	
 4. To display the web site, enter `http://localhost:1313/` in the address field of your browser.
 
@@ -64,8 +64,6 @@ In `\themes\gohugoioTheme_custom\layouts\_default\baseof.html`, the basic page t
 ### Customizations
 
 
-We use the settings as is.
-
 #### Accent color
 
 We have changed, for example accent-color orange-red #ff4500, affecting the sidebar menu.
@@ -74,12 +72,14 @@ We have changed, for example accent-color orange-red #ff4500, affecting the side
 #### Nested block quotes
 
 In C:\Users\chalb\Desktop\Osram\hugo-master_ia_fuse-search\themes\gohugoioTheme_custom\assets\output\css\app.css, change margin to 0:
+
+```
 .nested-blockquote blockquote {
   border-left: 4px solid #0594CB;
   padding-left: 1em;
   margin: 0;
   /*margin: 0;*/
-
+```
 
 ## Notes
 
@@ -88,10 +88,12 @@ To be done:
 * Find a way to indent notes properly. At the moment it isn't possible: see https://discourse.gohugo.io/t/put-a-blockquote-into-a-numbered-list/19339/9
 * Create shortcodes for notes using font-awsome exclamation circles, for example
 
-See our test topic with some attempts to find a appropriate layout for notes:  http://localhost:1313/getting-started/testing-shortcodes/#notes
+See our test topic with some attempts to find a appropriate layout for notes:  http://localhost:1313/getting-started/testing-shortcodes/#notes (https://mangogul.bitbucket.io/getting-started/testing-shortcodes/#notes-normal)
 
 
-Our workaround for nested notes is to use an adapted <hr> element. 
+Our workaround for nested notes is to use an adapted `<hr>` element. 
+
+
 
 In `app.css`, we have adapted the horizontal ruler as follows:
 
@@ -107,6 +109,11 @@ hr {
 
 ```
 
+So the horizonatl ruler
+
+<hr>
+
+appears as an orange line.
 
 
 ## Customize hugoioTheme
@@ -121,7 +128,7 @@ Switch on/off Twitter/github: in sit-nav.html integrate partial `social-follow.h
 </span>
 ```
 
-### "Improve Page" Button
+### Switching on/off the "Improve Page" Button
 
 We have switched off „Improve this page“ button for user feedback: {{ partial "page-edit.html" . }}. Might be useful later.
 
@@ -129,12 +136,12 @@ To switch off, outcomment {{ partial "page-edit.html" . }} in \gohugoioTheme_cus
 
 ### Inviting contributors
 
-If wished, we can adjust and use the following partial as a template to invite contributors to Lightelligence:
+If desired, we can adjust and use the following partial as a template to invite contributors to Lightelligence:
 
 `\themes\gohugoioTheme_custom\layouts\partials\home-page-sections\open-source-involvement.html`
 
 
-### Customize the Landing Page
+### Customizing the Landing Page
 
 
 * Layout of the introduction text with the get started button: `\themes\gohugoioTheme_custom\layouts\partials\hero.html`
@@ -144,7 +151,7 @@ If wished, we can adjust and use the following partial as a template to invite c
 
 To adjust the order how the flex boxes are arranged, in the `_index.md` corresponding to the section, adust the `weight` parameter.
 
-### Controling the vertical navigation
+### Controlling the vertical navigation
 
 
 
@@ -152,30 +159,31 @@ menu:
   docs:
     parent: "applications"
     weight: 04   <!-- Control the relative position in vertical navigation -->
-weight: 04
+weight: 04 <!-- Control the relative position flex boxes in overview pages -->
 sections_weight: 04
 
 
 
 
-### Customize the Release Notes Page
+### Customizing the Release Notes Page
 
 In `\themes\gohugoioTheme_custom\layouts\news\single.html`template, switch on/off the date, link to a download page, for example. See comments in the file.
 
 
 
-### Horizontal Navigation
+### Adjusting the Horizontal Navigation
 
-Partial `navtop.html`
+Partial `\themes\gohugoioTheme_custom\layouts\partials\navtop.html`
 
-### Adjust Product  name LIGHTELLIGENCE® 
+### Adjusting Product  name LIGHTELLIGENCE® 
 
-Partial `sitenav.html`
+* Partial `sitenav.html`
+* `\config.toml` and `\config\_default\config.toml`
 
 
-### Copyright, Imprint
+### Adjusting Copyright, Imprint
 
-partial `site-footer.html`
+partial `\themes\gohugoioTheme_custom\layouts\partials\site-footer.html`
 
 To be done, if required: 
 
@@ -186,21 +194,21 @@ To be done, if required:
 
 ## Implementing and customizing Fuse Search
 
-How we implemeted it in Hugo:
+How we implemented it in Hugo:
 
 ### 1. Adjust Config
 
 1.	In themes, add hugo-search-fuse-js
-2.	In config tomls add 
-	a.	theme =[ "hugo-search-fuse-js", "gohugoioTheme_custom"]
-	b.	home = [ "HTML", "RSS", "REDIR", "HEADERS", "JSON" ]
-3.	In search.md, add outputs = ["html", "json"], layout = "search"
-4.	[[menu.docs]] identifier = "search"
+2.	In config.tomls add 
+	a.	`theme =[ "hugo-search-fuse-js", "gohugoioTheme_custom"]`
+	b.	`home = [ "HTML", "RSS", "REDIR", "HEADERS", "JSON" ]`
+3.	In search.md, add `outputs = ["html", "json"], layout = "search"`
+4.	`[[menu.docs]] identifier = "search"`
 
 
 ### 2. Config JSON
 
-\themes\hugo-search-fuse-js\layouts\_default\search.json
+`\themes\hugo-search-fuse-js\layouts\_default\search.json`
 
 ### 3. Create Partial 
 
@@ -227,8 +235,8 @@ See `\themes\hugo-search-fuse-js\static\js\search.js`.
 
 ### 7. Adjust Search Result Layout
 
-•	In `\themes\gohugoioTheme_custom\layouts\partials\page-layout-search`, define width of search result content: <article class="w-50"
-•	`Search.js`: const summaryInclude=100; (default = 60) // How many characters to include on either side of match keyword
+•	In `\themes\gohugoioTheme_custom\layouts\partials\page-layout-search`, define width of search result content: `<article class="w-50"`
+•	`Search.js`: `const summaryInclude=100; (default = 60)` // How many characters to include on either side of match keyword
 
 
 
@@ -237,7 +245,7 @@ See `\themes\hugo-search-fuse-js\static\js\search.js`.
 
 ## Using this style guide
 
-This styleguide describes the Markdown syntax used in our documentation and how the syntax is associated to specific functional units.
+This styleguide describes the Markdown syntax used in our documentation and how the syntax is associated with specific functional units.
 
 ## Functional Units
 
@@ -253,6 +261,8 @@ The document type defines the sequence of fiunctional units, in what logocal ord
 
 
 We compose a task of the the following functional units. 
+
+To be done: adjust the following tabular overview.
 
 <!-- To left-align tables, make sure the dashed line is flush with the header text on the right side 
 but extends beyond it on the left, the column is right-aligned. Requires Extension: simple_tables -->
@@ -329,14 +339,27 @@ var userId = '{userId}';
 
 # Using Hugo-specific code
 
-we experiment 
+We are experimenting with so-called shortcodes in: /getting-started/testing-shortcodes/ (see https://mangogul.bitbucket.io/getting-started/testing-shortcodes/)
 
 
 ## Reusing References
 
 This can be useful to maintain links appearing multiple times on a page.
 
-Example:
+**Example**
+
+The following 
+
+```
+If this is your first time using Hugo and you've [already installed Hugo on your machine][installed], we recommend the [quick start][].
+
+At the bottom of the file insert the link definitions:
+
+[installed]: /getting-started/installing/
+[quick start]: /getting-started/quick-start/
+```
+
+renders: 
 
 If this is your first time using Hugo and you've [already installed Hugo on your machine][installed], we recommend the [quick start][].
 
