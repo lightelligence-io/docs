@@ -1,0 +1,13 @@
+/* <!-- just a test: this doen't override the standard css --> */
+.hr {
+  border: 3px solid red;
+  /*margin: 0;*/
+}
+
+.figure figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

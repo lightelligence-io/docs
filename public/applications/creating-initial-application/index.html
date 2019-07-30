@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="preload" href="https://lightelligence.io/files/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://lightelligence.io/files/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://lightelligence.io/files/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+    <title>Creating an Initial Application | Lightelligence®</title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <meta name="generator" content="Hugo 0.55.0" />
+
+      
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      
+
+    
+    
+      <link rel="stylesheet" href="/output/css/app.min.679b7a769d85e9d4a16ec73359949a24541d51f86887824263bc396bf87102f5.css" integrity="sha256-Z5t6dp2F6dShbsczWZSaJFQdUfhoh4JCY7w5a/hxAvU=" crossorigin="anonymous"> 
+          
+    
+
+
+	
+    
+      <link rel="stylesheetcustom" href="/css/lightelligence.css"> 
+          
+    
+
+     
+
+    
+  <script type="text/javascript" src="/output/js/app.09ca7921ca2b6e15c2dc516eccf642c08861fe5c249cc9073fb370c0a8a9022c.js" integrity="sha256-Ccp5IcorbhXC3FFuzPZCwIhh/lwknMkHP7NwwKipAiw=" crossorigin="anonymous" defer></script>
+      
+ 
+
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+	
+      
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Creating an Initial Application" />
+<meta property="og:description" content="Tbd" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lightelligence.io/applications/creating-initial-application/" />
+
+<meta property="og:image" content="https://lightelligence.io/images/lightelligence-card.jpg" />
+<meta property="article:published_time" content="2019-07-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-07-12T12:29:16&#43;02:00"/>
+
+<meta itemprop="name" content="Creating an Initial Application">
+<meta itemprop="description" content="Tbd">
+
+
+<meta itemprop="datePublished" content="2019-07-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-12T12:29:16&#43;02:00" />
+<meta itemprop="wordCount" content="96">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://lightelligence.io/images/lightelligence-card.jpg"/>
+
+<meta name="twitter:title" content="Creating an Initial Application"/>
+<meta name="twitter:description" content="Tbd"/>
+
+
+
+          
+
+  </head>
+  <body class="ma0 sans-serif bg-primary-color-light">
+    
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://lightelligence.io/" class="link orange">
+         Lightelligence®
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/getting-started/setting-up-getting-started/" class="dim link light-silver">
+            Start OLT Journey
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://lightelligence.io" class="dim link light-silver">
+            Access OLT Portal
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://mangogul.bitbucket.io/downloads/downloading-scripts/" class="dim link light-silver">
+            Download Scripts
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://api.lightelligence.io/v1/api-collection/" class="dim link light-silver">
+            Consult API Documentation
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://api.lightelligence.io/v1/api-collection/" class="dim link light-silver">
+            Get Support
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+    </ul>
+
+
+	
+  </div>
+</nav>
+
+    
+    <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+      
+  <article class="w-100 ph4 pb5 pb6-ns pt1 pt5-ns">
+    <div class="flex-l">
+
+      <div class="order-2 w-100 w-20-l ph5-m ph0-l mb4 sticky">
+<aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-list-reset nested-links nested-copy-line-height">
+	
+		<p class="b">What's on this Page</p>
+  	
+	
+
+	<div date-pref>
+		
+			<a href="https://lightelligence.io/applications/authenticating-with-oauth2/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Authenticating with OAuth2 ">
+				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+
+		
+			<a href="https://lightelligence.io/applications/use-cases/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Identifying Your Use Case">
+			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+	</div>
+
+</aside>
+</div>
+
+      <div class="order-1 w-60-l mw7 ph0 ph5-ns mid-gray nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
+        <div class="documentation-copy center measure-wide-l">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+  
+    
+      <a href="/categories/applications" class="f6 fw8 mb0 link mid-gray dim mr3">
+        APPLICATIONS
+      </a>
+    
+  
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Creating an Initial Application</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy">
+      Tbd
+    </div>
+  
+
+  
+</aside>
+
+
+
+<div class="prose" id="prose">
+
+<p>@tbd: Explain use case</p>
+
+<p><strong>Procedure</strong></p>
+
+<ol>
+<li><p>In the <strong>Developer Area</strong>, choose <strong>Create application</strong>. @Sebastian: Apply Title Case in UI elements (&ldquo;Application&rdquo; with capital &ldquo;A&rdquo;)</p>
+
+<figure>
+    <img src="/images/applications-creating-initial-application.png"
+         alt="Creating an Initial Application"/> <figcaption>
+            <p>Creating an Initial Application</p>
+        </figcaption>
+</figure>
+</li>
+
+<li><p>Specify the application data as required:</p>
+
+<ul>
+<li><strong>Name</strong>: @Sebastian: what makes a meaningful name?; are there restrictions, e.g. blank spaces and special characters</li>
+<li><strong>Description</strong>: Describe the application&rsquo;s use.</li>
+<li><strong>Link</strong>: @Sebastian, what URL am I supposed to submit in what format? What are the requirements? e.g.</li>
+</ul></li>
+
+<li><p>To confirm, choose <strong>Create Application</strong>.</p>
+
+<figure>
+    <img src="/images/applications-creating-initial-application-data.png"
+         alt="Specifying the Initial Application Data"/> <figcaption>
+            <p>Specifying the Initial Application Data</p>
+        </figcaption>
+</figure>
+</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The application is created.</p>
+
+<figure>
+    <img src="/images/applications-creating-initial-application-displayed.png"
+         alt="Specifying the Initial Application"/> <figcaption>
+            <p>Displaying the Initial Application</p>
+        </figcaption>
+</figure>
+
+
+<p>@Sebastian: what is it good for?</p>
+
+</div>
+
+          
+
+<h2>See Also</h2>
+<ul>
+	
+	<li><a href="/applications/defining-custom-permissions/">Defining Custom Permissions and Roles</a></li>
+	
+	<li><a href="/applications/managing-applications/">Managing Custom Applications</a></li>
+	
+	<li><a href="/applications/registering-background-applications/">Registering and Implementing Background Applications</a></li>
+	
+	<li><a href="/applications/registering-user-applications/">Registering and Implementing User Applications</a></li>
+	
+	<li><a href="/applications/troubleshooting-application-management/">Troubleshooting Application Management</a></li>
+	
+</ul>
+
+        </div>
+      </div>
+      <div class="order-0 w-20 dn db-l">
+        
+<nav role="navigation">
+  <ul class="list pa0 nl2">
+    
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/search/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Searching the Docs</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".getting-started">Getting Started</a>
+        <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Getting Started
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/testing-shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Testing Shortcodes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/setting-up-getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Connecting a Device in 3 Steps
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/connectivity-getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Walking Through the OLT Portal, Step by Step
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/basic-concepts/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Recapulating Basic Concepts
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".users">Mapping the OLT Landscape</a>
+        <ul class="users desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/users/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Mapping the OLT Landscape
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/users/roadmap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Roadmap
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/users/creating-tenants/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Creating Tenants
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/users/managing-users/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Managing Users
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/users/creating-custom-roles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Defining Custom Roles
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".devices">Managing the OLT Lifecycle</a>
+        <ul class="devices desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/devices/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Managing the OLT Lifecycle
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/devices/reporting-getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Storing and Retrieving Sensor Data
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/devices/actions-getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Executing Commands on Devices
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/devices/synchronizing-device-configurations/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Synchronizing Device Configurations
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/devices/monitoring-devices/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Monitoring Devices and Alerting
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/devices/connecting-gateways/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Connecting Gateway Devices
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/devices/deploying-binaries-to-devices/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deploying Binaries to Devices
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/devices/managing-devices/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Managing Devices
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".applications">Developing Custom Applications</a>
+        <ul class="applications desktopmenu animated fadeIn list pl0 bg-light-gray db">
+          <li class="f6 fw4">
+            <a href="/security/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Developing Custom Applications
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/using-application-sdk/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Developing Applications with the SDK
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/authenticating-with-oauth2/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Authenticating with OAuth2
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/creating-initial-application/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+              Creating a First Application
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/use-cases/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Identifying Your Use Case
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/registering-user-applications/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Registering and Implementing User Applications
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/registering-background-applications/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Registering and Implementing Background Applications
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/managing-applications/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Managing Custom Applications
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/defining-custom-permissions/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Defining Custom Permissions and Roles
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/applications/troubleshooting-application-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Troubleshooting Application Management
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".data">Processing Data</a>
+        <ul class="data desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Processing Data
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/data/get-aggregated-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Using Aggregated Data
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/data/generating-timeseries-dumps/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Generating Time Series Data Dumps
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/data/querying-times-series-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Querying Times Series Data
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/data/streaming-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Streaming Data
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/data/visualizing-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Visualizing Data
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".troubleshooting">Troubleshooting</a>
+        <ul class="troubleshooting desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              FAQ
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/known-issues/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Known Issues
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Troubleshooting
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Tracking Changes</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">security</a>
+        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/security/2fa/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Enabling Two-Factor Authentication
+            </a>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+      </div>
+
+    </div>
+  </article>
+
+  <div class="w-100 bg-light-gray">
+    <div class="mw7 pa4 center nested-lh-copy lh-copy">
+      <h6 class="f5 dark-gray mb2">
+  <a href="https://lightelligence.io/applications/creating-initial-application/" class="hide-child link primary-color">
+  <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+</span>
+    “Creating an Initial Application”
+  </a> was last updated: July 12, 2019: <a class="hide-child link primary-color" href="https://github.com/commit/8ef8aa7104776610f002746310014c878b54a1f3">Handover to UI team for css/layout adjustments (8ef8aa7)</a>
+</h6>
+
+      
+      
+
+
+    </div>
+  </div>
+
+
+<div class="dn">
+<footer>
+<form id="" action="" role="">
+	<fieldset>
+	<input type="" id="search-input">
+	</fieldset>
+	</form>
+	  </div>
+</footer>
+</main>
+
+    <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    
+	
+
+    <div class="f7 gray mb5 mb0-ns ph3 w-100">
+		<p class="dib mr4"><a href="https://www.osram.de/cb/services/impressum/index.jsp" target="_blank" class="olt-footer__item dim link light-gray">Contact</a></p>
+		<p class="dib mr4"><a href="https://lightelligence.io/terms-of-use" target="_blank" class="olt-footer__item dim link light-gray">Terms of Use</a></p>
+		<p class="dib mr4"><a href="https://lightelligence.io/privacy-policy" target="_blank" class="olt-footer__item dim link light-gray">Privacy Policy</a></p>
+		<p class="dib mr4 light-gray">© 2019 Osram GmbH</p>
+		
+    
+    </div>
+
+		
+		
+    
+	
+	
+
+    
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/setting-up-getting-started/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Start OLT Journey
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://lightelligence.io" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Access OLT Portal
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://mangogul.bitbucket.io/downloads/downloading-scripts/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Download Scripts
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://api.lightelligence.io/v1/api-collection/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Consult API Documentation
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://api.lightelligence.io/v1/api-collection/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Get Support
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/search/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Searching the Docs
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Getting Started
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/users/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Mapping the OLT Landscape
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/devices/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Managing the OLT Lifecycle
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/applications/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Developing Custom Applications
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/data/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Processing Data
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Troubleshooting
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Tracking Changes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          security
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Docs Menu</button>
+</div>
+</div>
+
+</footer>
+
+    
+
+  </body>
+</html>

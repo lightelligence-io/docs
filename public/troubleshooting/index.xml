@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting on Lightelligence®</title>
+    <link>https://lightelligence.io/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Lightelligence®</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://lightelligence.io/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>https://lightelligence.io/troubleshooting/faq/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/troubleshooting/faq/</guid>
+      <description>  Note: The answers/solutions presented below are short, and may not be note be enough to solve your problem. Visit the Lightelligence Forum and use the search. It that does not help, start a new topic and ask your questions.
+  Issue 1 </description>
+    </item>
+    
+    <item>
+      <title>Known Issues</title>
+      <link>https://lightelligence.io/troubleshooting/known-issues/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/troubleshooting/known-issues/</guid>
+      <description>Issue 1 &amp;hellip;
+Issue 2 &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

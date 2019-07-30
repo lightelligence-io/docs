@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://lightelligence.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2019-07-30T00:00:00+00:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://lightelligence.io/zh/sitemap.xml</loc>
+		
+	   	<lastmod>2019-07-09T12:10:45+02:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>

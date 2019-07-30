@@ -1,0 +1,20 @@
+---
+title: Lightelligence® Documentation
+linktitle: Lightelligence®
+description: Lightelligence® is the world's smartest IoT platform.
+date: 2019-06-27
+publishdate: 2019-06-27
+menu:
+  main:
+    parent: "section name"
+    weight: 01
+weight: 01	#rem
+draft: false
+slug:
+aliases: []
+toc: false
+layout: documentation-home
+---
+Lightelligence® is the world's smartest IoT platform.
+
+Below you will find some of the most common and helpful pages from our documentation.
