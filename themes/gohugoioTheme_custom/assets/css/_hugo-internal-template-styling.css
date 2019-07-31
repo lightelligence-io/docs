@@ -46,7 +46,6 @@
 
 }
 #TableOfContents ul li a:hover {
-  background-color: #999;
-  color: white;
-
+  opacity: 1;
+  font-weight: bold;
 }

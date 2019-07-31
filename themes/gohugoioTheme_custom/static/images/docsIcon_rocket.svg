@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #f60;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .b {
+        fill: #f60;
+      }
+    </style>
+  </defs>
+  <title>Osram_Glyphs_v1</title>
+  <path class="a" d="M6,13l5,5,8-8c3-3,3-8,3-8s-5,0-8,3Z"/>
+  <polygon class="a" points="11 18 16.01 12.99 16.01 19 14.01 21.01 11 18"/>
+  <polygon class="a" points="11 8 6 13 3 10 5 8 11 8"/>
+  <path class="a" d="M10,17a28,28,0,0,1-8,5,23,23,0,0,1,5-8"/>
+  <circle class="b" cx="18" cy="6" r="1"/>
+</svg>

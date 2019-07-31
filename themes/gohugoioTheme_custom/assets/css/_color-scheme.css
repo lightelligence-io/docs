@@ -7,8 +7,8 @@
 .hover-bg-primary-color-dark:hover   {background-color: var(--primary-color-dark)}
 
 .primary-color-light                  {color: var(--primary-color-light)}
-.bg-primary-color-light               {background-color: var(--primary-color-light)}
-.hover-bg-primary-color-light:hover   {background-color: var(--primary-color-light)}
+.bg-color-dark                        {background-color: var(--color-dark)}
+.hover-bg-color-dark:hover            {background-color: var(--color-dark)}
 
 .accent-color                         {color: var(--accent-color)}
 .bg-accent-color                      {background-color: var(--accent-color)}

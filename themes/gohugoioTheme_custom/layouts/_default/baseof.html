@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     {{/* https://www.zachleat.com/web/preload/ */}}
+<!--
     <link rel="preload" href="{{ "files/muli-latin-200.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ "files/muli-latin-400.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ "files/muli-latin-800.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+-->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
      {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
@@ -57,12 +59,12 @@
           
 
   </head>
-  <body class="ma0 sans-serif bg-primary-color-light{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+  <body class="ma0 sans-serif bg-color-dark{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
     {{ block "nav" . }}{{ partial "site-nav.html" . }}{{ end }}
     {{ block "header" . }}{{ end }}
     <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
       {{ block "main" . }}{{ end }}
-	  {{- partial "site-search-fuse-footer.html" . -}}
+	<!--  {{- partial "site-search-fuse-footer.html" . -}} -->
 
 	  
 	  

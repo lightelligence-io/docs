@@ -62,8 +62,8 @@
 
   <!-- Below works *only if* this theme component is named "hugo-search-fuse-js"
        AND *if* the themesDir is left at the default value of "themes".  -->
-  {{ $search_js_md5 := (readFile "themes/hugo-search-fuse-js/static/js/search.js" | md5) }}
-  <script src={{ printf "%s?%s" ("js/search.js" | absURL) $search_js_md5 }}></script>
+ <!-- { { $search_js_md5 := (readFile "themes/hugo-search-fuse-js/static/js/search.js" | md5) } }
+  <script src={ { printf "%s?%s" ("js/search.js" | absURL) $search_js_md5 } }></script>  -->
 
 
 <!-- first working version:

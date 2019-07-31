@@ -138,6 +138,25 @@ curl -X POST \
 {{< / highlight >}}
 <!-- "action": "ambientLight",  : todo 65 -->
 
+
+
+    curl -X POST \
+      "https://api.lightelligence.io/v1/devices/383b8c61-a9c7-487f-b4e1-66fad753e546/actions" \
+      -H 'Authorization: Bearer {authenticationToken}' \
+      -H 'Cache-Control: no-cache' \
+      -H 'Content-Type: application/json' \
+      -d '{ 
+      "action": "ambientLight",
+        "payload": {
+        "r": 0,
+        "g": 0,
+        "b": 1
+        },
+        "description": "Switch on blue light"			
+    }'
+
+
+
 **Result**
 
 An action ID is generated (`{"data":{"actionId":"5895f5f0-93e9-428c-a4b6-580eb814f11e"}}`, for example).

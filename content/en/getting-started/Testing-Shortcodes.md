@@ -1,5 +1,5 @@
 ---
-title: Testing Shortcodes
+title: Testing Shortcodes 2
 description: Test page for Hugo functions
 date: 2019-06-14
 categories: [getting-started]
@@ -43,6 +43,23 @@ grunt.initConfig({
   }
 };
 ```
+
+```php
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$color = "red";
+echo "My car is " . $color . "<br>";
+echo "My house is " . $COLOR . "<br>";
+echo "My boat is " . $coLOR . "<br>";
+?>
+
+</body>
+</html>
+```
+
 
 ### Code Toggle
 

@@ -7,7 +7,7 @@
     <div class="tc">
 
       {{ if $user_json.avatar_url }}
-        <a href="{{ $user_json.html_url }}" class="link  hover-bg-light-gray pa1 br-100">
+        <a href="{{ $user_json.html_url }}" class="link   pa1 br-100">
           <img src="{{ $user_json.avatar_url }}&size={{ .size }}" alt="" class="br-100 ba b--light-gray">
         </a>
       {{ end }}

@@ -1,35 +1,29 @@
-<div class="relative {{ .classes }} weight-{{ .context.Weight }}">
-
-  <div class="bg-white mb2 pa3 pa4-l gray">
-    {{ if eq .context.Section "news" }}
-      <date class="f6 db" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-        {{ .context.Date.Format "January 2, 2006" }}
-      </date>
-    {{ end }}
-
-    <h1 class="near-black f3">
-      <a href="{{ .context.RelPermalink }}" class="link primary-color dim">
-      {{- if eq .context.Section "functions" -}}
-        {{ .context.LinkTitle }}
-      {{- else -}}
-        {{ .context.Title }}
-      {{- end -}}
-      </a>
-    </h1>
-
-    <div class="lh-copy links">
-      {{ if .context.Params.description  }}
-          {{ .context.Params.description | markdownify }}
-        {{ else }}
-          {{ .context.Summary  }}
-      {{ end }}
-
-        <a href="{{ .context.RelPermalink }}" class="f6 mt2 db link primary-color dim">
-          Read More &raquo;
-        </a>
-
+<div class="boxes w-100 w-50-ns ph2-l pv1-l nested-copy-line-height">
+    <a href="{{ .context.RelPermalink }}">
+  <div class="box bg-white mb2 pa3 pa4-l mb2 pa3 pa4-l flex-l flex-wrap justify-between">
+    <div class="flex-auto w-100 w-20-ns pt1">
+<!--     <img src="/images/docsIcon_rocket.svg" alt="Hugo Logo" class="h3 o-80 v-mid center w-100">-->
+    <div class="bg-icon h4 o-80 v-mid center w-100"></div>
     </div>
+    <div class="flex-auto tc tl-ns w-100 w-80-ns">
+      <h3 class="o-80 f4  mb2 fw8 bmt1 mt0-l">
 
+        {{- if eq .context.Section "functions" -}}
+        {{ .context.LinkTitle }}
+        {{- else -}}
+        {{ .context.Title }}
+        {{- end -}}
 
+      </h3>
+      <div class="db v-mid w-100 measure-wide mb5 mb0-l">
+          {{ if .context.Params.description  }}
+          {{ .context.Params.description | markdownify }}
+          {{ else }}
+          {{ .context.Summary  }}
+          {{ end }}
+       </div>
+    </div>
   </div>
+
+    </a>
 </div>

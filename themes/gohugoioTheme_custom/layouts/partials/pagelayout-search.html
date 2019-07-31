@@ -13,7 +13,7 @@
         </h1>
         <div class="{{ .Site.Params.copyClass }} mid-gray f5 f4-l">
           
-		    {{ partial "site-search-fuse.html" }}
+<!--		   {{ partial "site-search-fuse.html" }}-->
 		
         </div>
       </article>
@@ -22,9 +22,15 @@
 	<!--
 	Define width of search result content: <article class="w-50"
 	-->
-	
-	
-
+    {{ $section_to_display := .section_to_display  }}
+          <div class="flex flex-wrap">
+            {{ $interior_classes := .context.Site.Params.flex_box_interior_classes }}
+            <section class="flex-ns flex-wrap justify-between w-100">
+              {{ range $section_to_display }}
+              {{ partial "boxes-section-summaries" (dict "context" . "classes" $interior_classes "fullcontent" true) }}
+              {{ end }}
+            </section>
+          </div>
   </div>
 
 </div>

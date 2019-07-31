@@ -7,7 +7,7 @@ footnotereturnlinkcontents = "↩"
 languageCode = "en-us"
 metaDataFormat = "yaml"
 title = "Lightelligence®"
-theme = ["hugo-search-fuse-js","gohugoioTheme_custom" ,  ]
+theme = ["gohugoioTheme_custom"]
 
 googleAnalytics = ""
 
@@ -21,15 +21,15 @@ disableAliases = true
 
 # Highlighting config (Pygments)
 # It is (currently) not in use, but you can do ```go in a content file if you want to.
-pygmentsCodeFences = true
-
-pygmentsOptions = ""
-# Use the Chroma stylesheet
+#pygmentsCodeFences = false
+#
+#pygmentsOptions = ""
+## Use the Chroma stylesheet
 pygmentsUseClasses = true
 pygmentsUseClassic = false
-
-# See https://help.farbox.com/pygments.html
-pygmentsStyle = "trac"
+#
+## See https://help.farbox.com/pygments.html
+#pygmentsStyle = "rrt"
 
 [outputs]
 home = [ "HTML", "RSS", "REDIR", "HEADERS", "JSON" ]
@@ -69,9 +69,9 @@ pattern = "2006"
 #CUSTOM PARAMS
 [params]
 
-  ## Getting-started button:    
+  ## Getting-started button:
   getting_started = "Get started here: Connect your Linux PC in 3 steps"
-  description = "Start Your LIGHTELLIGENCE® User Journey" 
+  description = "Start Your LIGHTELLIGENCE® User Journey"
   ## Used for views in rendered HTML (i.e., rather than using the .Hugo variable)
   release = "0.1"
   ## Setting this to true will add a "noindex" to *EVERY* page on the site
@@ -149,7 +149,7 @@ anchor = "smart"
   weight = 10
   identifier = "users"
   url = "/users/"
-  
+
 [[menu.docs]]
   name = "Managing the OLT Lifecycle"
   weight = 30
@@ -161,7 +161,7 @@ anchor = "smart"
   weight = 40
   identifier = "applications"
   url = "/applications/"
-  
+
 [[menu.docs]]
   name = "Processing Data"
   weight = 50
@@ -215,26 +215,26 @@ anchor = "smart"
 
 # post = "external" gets an external icon
 
-  [[global]]
-    name = "Access OLT Portal"
-	identifier = "portal"
-    url = "https://lightelligence.io"
-    weight = 2
-	post = "external"
-
-  [[global]]
-    name = "Download Scripts"
-	identifier = "scripts"
-    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
-    weight = 3
-	post = "external"
-
-  [[global]]
-    name = "Consult API Documentation"
-	identifier = "api"
-    url = "https://api.lightelligence.io/v1/api-collection/"
-    weight = 4
-	post = "external"
+#  [[global]]
+#    name = "Access OLT Portal"
+#	identifier = "portal"
+#    url = "https://lightelligence.io"
+#    weight = 2
+#	post = "external"
+#
+#  [[global]]
+#    name = "Download Scripts"
+#	identifier = "scripts"
+#    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
+#    weight = 3
+#	post = "external"
+#
+#  [[global]]
+#    name = "Consult API Documentation"
+#	identifier = "api"
+#    url = "https://api.lightelligence.io/v1/api-collection/"
+#    weight = 4
+#	post = "external"
 
   [[global]]
     name = "Get Support"

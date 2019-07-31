@@ -101,26 +101,26 @@
 
 # post = "external" gets an external icon
 
-  [[global]]
-    name = "Access OLT Portal"
-	identifier = "portal"
-    url = "https://lightelligence.io"
-    weight = 2
-	post = "external"
-
-  [[global]]
-    name = "Download Scripts"
-	identifier = "scripts"
-    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
-    weight = 3
-	post = "external"
-
-  [[global]]
-    name = "Consult API Documentation"
-	identifier = "api"
-    url = "https://api.lightelligence.io/v1/api-collection/"
-    weight = 4
-	post = "external"
+#  [[global]]
+#    name = "Access OLT Portal"
+#	identifier = "portal"
+#    url = "https://lightelligence.io"
+#    weight = 2
+#	post = "external"
+#
+#  [[global]]
+#    name = "Download Scripts"
+#	identifier = "scripts"
+#    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
+#    weight = 3
+#	post = "external"
+#
+#  [[global]]
+#    name = "Consult API Documentation"
+#	identifier = "api"
+#    url = "https://api.lightelligence.io/v1/api-collection/"
+#    weight = 4
+#	post = "external"
 
   [[global]]
     name = "Get Support"

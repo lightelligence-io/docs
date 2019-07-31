@@ -1,7 +1,8 @@
 :root {
-  --primary-color:        #0594CB;
+  --primary-color:        #ff6600;
   --primary-color-dark:   #0A1922;
   --primary-color-light:  #f9f9f9;
+  --color-dark:           #E9ECEF;
   --accent-color:         #EBB951;
   --accent-color-light:   #FF4088;
   --accent-color-dark:    #33ba91;
@@ -12,6 +13,6 @@
   --divider-color:        #f6f6f6;
   --warn-color: red;
 
-  --blue: var(--primary-color);
+  --orange: var(--primary-color);
 }
 

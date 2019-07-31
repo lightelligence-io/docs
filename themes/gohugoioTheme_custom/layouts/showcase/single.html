@@ -89,7 +89,7 @@ Showcase: {{ .Title }}
       More Sites
   </li>
     {{range first 20 $section}}
-      <li class="bl b--light-gray pl2 f6 hover-bg-light-gray hover-accent-color-light {{if eq $ .}} bg-light-gray{{end}}">
+      <li class="bl b--light-gray pl2 f6  hover-orange {{if eq $ .}} bg-light-gray{{end}}">
         <a href="{{.RelPermalink}}" class="db link w-100 pv1 ph1 {{ if eq $ . }} b  primary-color{{else}} mid-gray {{end}}">
           {{- .Title -}}
         </a>
