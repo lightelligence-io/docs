@@ -7,8 +7,8 @@
   "author": "budparr",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production webpack",
-    "build-dev": "NODE_ENV=development webpack --progress --watch",
+    "build": "NODE_ENV=production grunt && gulp && webpack",
+    "build-dev": "NODE_ENV=development grunt && gulp && webpack --progress --watch",
     "start": "npm run build-dev"
   },
   "devDependencies": {
