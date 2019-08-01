@@ -8,14 +8,15 @@
   "license": "MIT",
   "scripts": {
     "lunr": "gulp lunr",
-    "build": "NODE_ENV=production webpack",
-    "build:dev": "NODE_ENV=development webpack",
-    "watch": "NODE_ENV=development webpack --progress --watch",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "watch": "cross-env NODE_ENV=development webpack --progress --watch",
     "start": "npm run watch"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.0",
     "clipboard": "^2.0.4",
+    "cross-env": "^5.2.0",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
     "fs": "0.0.1-security",
