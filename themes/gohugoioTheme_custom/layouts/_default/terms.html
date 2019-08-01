@@ -18,13 +18,13 @@
           {{ range $key, $value := .Data.Terms }}
             <div class="break-inside-avoid-l nested-copy-line-height mb5">
               <h2 class="f3">
-                <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}" class="link black hover-blue">
+                <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}" class="link black">
                   {{ $key }} <span class="f6 gray"> &#8599;</span>
                 </a>
               </h2>
               {{ range $value.Pages }}
                 <h3>
-                  <a href="{{ .Permalink }}" class="link blue">
+                  <a href="{{ .Permalink }}" class="link">
                     {{ .Title }}
                   </a>
                 </h3>
