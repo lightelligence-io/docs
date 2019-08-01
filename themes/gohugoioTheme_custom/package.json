@@ -10,7 +10,7 @@
     "lunr": "gulp lunr",
     "build": "cross-env NODE_ENV=production webpack",
     "build:dev": "cross-env NODE_ENV=development webpack",
-    "watch": "cross-env NODE_ENV=development webpack --progress --watch",
+    "watch": "cross-env NODE_ENV=development npm run build:dev && webpack --progress --watch",
     "start": "npm run watch"
   },
   "devDependencies": {
