@@ -25,6 +25,11 @@
 @import 'hybrid';
 @import 'variables';
 
+
+a .linkwrap {
+  display: block;
+}
+
 .mid-gray { color: #343a40}
 .nested-blockquote blockquote {
   border-left: 4px solid #46b4cd;
@@ -100,6 +105,7 @@ ul.related li:before {
 .boxes a:hover .bg-icon{
   background-image: url("/images/docsIcon_rocket_wt.svg");
   background-repeat: no-repeat;
+
 }
 
 .tag{
