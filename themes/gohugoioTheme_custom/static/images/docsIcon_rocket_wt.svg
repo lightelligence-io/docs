@@ -3,13 +3,13 @@
     <style>
       .a {
         fill: none;
-        stroke: #fff;
+        stroke: #FFF;
         stroke-linejoin: round;
         stroke-width: 1.5px;
       }
 
       .b {
-        fill: #fff;
+        fill: #FFF;
       }
     </style>
   </defs>

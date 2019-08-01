@@ -89,8 +89,3 @@ pre {
     top: -50px;
     width: 138px
 }
-
-.code-block .line-numbers-rows>span:before {
-    color: inherit;
-    padding-right: 30px
-}

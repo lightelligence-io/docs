@@ -111,3 +111,30 @@ ul.related li:before {
 a {
   text-decoration: none
 }
+
+@media (min-width: 1400px){
+  .mw8-l {
+    max-width: 58rem;
+  }
+}
+
+
+.code-block .line-numbers-rows>span:before {
+  color: inherit;
+  padding-right: 30px
+}
+
+.nested-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.nested-links a:hover {
+  color: #solid var(--primary-color);
+  transition: color .15s ease-in;
+}
+
+.nested-links a:focus {
+  color: #solid var(--primary-color);
+  transition: color .15s ease-in;
+}

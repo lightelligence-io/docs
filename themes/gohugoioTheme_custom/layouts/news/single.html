@@ -49,7 +49,7 @@
 
       </aside>
 
-      <div class="fn pl5-l pt3 mid-gray w-100 w-two-third-l sans-serif nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote measure-wide-l"><!-- TODO: Can the content top and the description top line up more precisely, or is just winging it with padding the best we've got? -->
+      <div class="fn pl5-l pt3 mid-gray w-100 w-two-third-l sans-serif nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote measure-wide-m"><!-- TODO: Can the content top and the description top line up more precisely, or is just winging it with padding the best we've got? -->
         {{ with .Params.featured_image_path }}
           <img src="{{ . }}" alt="Featured Image for {{ $.Title }}" class="mw-100">
         {{ else }}
@@ -63,7 +63,7 @@
       </div>
     </div>
     {{ if and .Params.tags .Site.Taxonomies.tags }}
-      <div class="mt5 f6 gray nested-lh-copy bg-light-gray ph3 pv2 measure-wide-l">
+      <div class="mt5 f6 gray nested-lh-copy bg-light-gray ph3 pv2 measure-wide-m">
           {{ $name := index .Params.tags 0 }}
           {{ $name := $name | urlize }}
           {{ $tags := index .Site.Taxonomies.tags $name }}

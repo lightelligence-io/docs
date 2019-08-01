@@ -3,7 +3,7 @@
     <style>
       .a {
         fill: none;
-        stroke: #f60;
+        stroke: #a7a8aa;
         stroke-linejoin: round;
         stroke-width: 1.5px;
       }
