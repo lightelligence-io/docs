@@ -6,21 +6,18 @@ This document documents how to install Hugo and how we customized the `gohugoioT
 
 # Generating the Documentation with Hugo
 
+## Build Frontend
+
+1. `cd themes/gohugoioTheme_custom`
+2. Optional, if not already exists or for rebuild purposes: Build lunr-search files `npm run lunr`
+3. Run watch task `npm run watch`
+
 ## Local Server
 
 Dynamicylly generating the web site on a local server allows you to review layout changes while you perform them. The server listens to your changes.
 
-1. To install Hugo, follow the instructions under https://gohugo.io/getting-started/installing.
-2. Clone the repository and cd into the current directory (\lightelligence-io\docs).
-3. Execute `hugo server`.
-	
-	Hugo builds the site running on a local server. 
-	
-	
-	The web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-	
-	
-4. To display the web site, enter `http://localhost:1313/` in the address field of your browser.
+1. If not installed: Install Hugo, follow the instructions under https://gohugo.io/getting-started/installing.
+2. Execute `hugo server`.	The web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 
 
 ## Publishing HTML

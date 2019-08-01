@@ -7,10 +7,11 @@
   "author": "budparr",
   "license": "MIT",
   "scripts": {
-    "lunr": "gulp lunr-index && gulp lunr",
-    "build": "NODE_ENV=production npm run lunr && webpack",
-    "build-dev": "NODE_ENV=development npm run lunr && webpack --progress --watch",
-    "start": "npm run build-dev"
+    "lunr": "gulp lunr",
+    "build": "NODE_ENV=production webpack",
+    "build:dev": "NODE_ENV=development webpack",
+    "watch": "NODE_ENV=development webpack --progress --watch",
+    "start": "npm run watch"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.0",
@@ -19,7 +20,6 @@
     "file-loader": "^2.0.0",
     "fs": "0.0.1-security",
     "glob-all": "^3.1.0",
-    "grunt": "^1.0.4",
     "gulp": "^4.0.2",
     "gulp-filenames": "^4.0.1",
     "gulp-jsoncombine-array": "^1.0.0",

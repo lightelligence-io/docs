@@ -16,7 +16,7 @@ marked.setOptions({
     smartypants: true
 });
 
-gulp.task('lunr-index', () => {
+gulp.task('lunr-page-index', () => {
     return gulp.src(CONTENT_PATH_PREFIX + '/**/*.md')
     .pipe(filenames('markdownfiles'))
     .pipe(markdownToJSON(marked))
@@ -35,7 +35,7 @@ gulp.task('lunr-index', () => {
     .pipe(gulp.dest('../../static/js/lunr/PagesIndex.json'))
 });
 
-gulp.task('lunr', (done) => {
+gulp.task('lunr-index', (done) => {
   const documents = JSON.parse(fs.readFileSync('./assets/js/lunr/PagesIndex.json'));
 
   const lunrIndex = lunr(function() {
@@ -70,3 +70,5 @@ gulp.task('lunr', (done) => {
 
   done()
 });
+
+gulp.task('lunr', gulp.series('lunr-page-index', 'lunr-index'))
