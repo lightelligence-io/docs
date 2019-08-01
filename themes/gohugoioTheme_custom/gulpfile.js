@@ -32,7 +32,7 @@ gulp.task('lunr-page-index', () => {
         })
         return new Buffer.from(JSON.stringify(pageIndex));
     }))
-    .pipe(gulp.dest('../../static/js/lunr/PagesIndex.json'))
+    .pipe(gulp.dest('../../static/js/lunr/'))
 });
 
 gulp.task('lunr-index', (done) => {
@@ -66,7 +66,7 @@ gulp.task('lunr-index', (done) => {
       index: lunrIndex
   }
 
-  fs.writeFileSync('../../static/js/lunr-index.json', JSON.stringify(object));
+  fs.writeFileSync('../../static/js/lunr/lunr-index.json', JSON.stringify(object));
 
   done()
 });
