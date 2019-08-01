@@ -45,21 +45,29 @@
   url = "/applications/"
   
 [[docs]]
-  name = "Processing Data"
-  weight = 50
-  identifier = "data"
-  url = "/data/"
+  name = "Considering Security"
+  weight = 60
+  identifier = "security"
+  url = "/security/"
   post = "break"
+  
+#[[docs]]
+#  name = "Processing Data"
+#  weight = 50
+#  identifier = "data"
+#  url = "/data/"
+#  post = "break"
 
 
 
 # LOW LEVEL ITEMS
 
-[[docs]]
-  name = "Troubleshooting"
-  weight = 60
-  identifier = "troubleshooting"
-  url = "/troubleshooting/"
+
+#[[docs]]
+#  name = "Troubleshooting"
+#  weight = 70
+#  identifier = "troubleshooting"
+#  url = "/troubleshooting/"
 
 
 

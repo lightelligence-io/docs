@@ -161,21 +161,27 @@ anchor = "smart"
   weight = 40
   identifier = "applications"
   url = "/applications/"
-  
+ 
 [[menu.docs]]
-  name = "Processing Data"
-  weight = 50
-  identifier = "data"
-  url = "/data/"
-  post = "break"
-
-
-[[menu.docs]]
-  name = "Troubleshooting"
+  name = "Considering Security"
   weight = 60
-  identifier = "troubleshooting"
-  url = "/troubleshooting/"
+  identifier = "security"
+  url = "/security/"
   post = "break"
+ 
+#[[menu.docs]]
+#  name = "Processing Data"
+#  weight = 50
+#  identifier = "data"
+#  url = "/data/"
+#  post = "break"
+
+#[[menu.docs]]
+#  name = "Troubleshooting"
+#  weight = 70
+#  identifier = "troubleshooting"
+#  url = "/troubleshooting/"
+#  post = "break"
 
 
 

@@ -10,7 +10,7 @@ menu:
     weight: 5
 weight: 5
 sections_weight: 5
-draft: false
+draft: true
 toc: true
 tags: [shortcodes]
 ---

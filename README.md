@@ -153,7 +153,13 @@ To adjust the order how the flex boxes are arranged, in the `_index.md` correspo
 
 ### Controlling the vertical navigation
 
+To include new topics (.md files) in nav: 
 
+1. In config.toml, add [[menu.docs]] item.
+
+2. In `\config\_default\menus\menus.en.toml`, add [[docs]] item.
+
+3. In `_index.md` adjust the following.
 
 menu:
   docs:
