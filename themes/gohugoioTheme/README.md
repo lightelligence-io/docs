@@ -14,7 +14,7 @@ We use [NPM](https://www.npmjs.com/) for package management The theme's `.gitign
 
 ### Webpack 4+
 
-We use Webpack to manage our asset pipeline. Arguably, Webpack is overkill for this use-case, but we're using it here because once it's set up (which we've done for you), it's really easy to use. If you want to use an external script, just add it via Yarn, and reference it in main.js. You'll find instructions in the js/main.js file.
+We use Webpack to manage our asset pipeline. Arguably, Webpack is overkill for this use-case, but we're using it here because once it's set up (which we've done for you), it's really easy to use. If you want to use an external script, just add it via Yarn, and reference it in index.js. You'll find instructions in the js/index.js file.
 
 ### PostCSS
 PostCSS is just CSS. You'll find `postcss.config.js` in the Webpack.config.js file. There you'll find that we're using [`postcss-import`](https://github.com/postcss/postcss-import) which allows us import css files directly from the node_modules folder, [`postcss-cssnext`](http://cssnext.io/features/) which gives us the power to use upcoming CSS features today. If you miss Sass you can find PostCss modules for those capabilities, too.

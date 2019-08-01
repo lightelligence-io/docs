@@ -1,29 +1,29 @@
 /*Base Styles*/
-@import '_tachyons';
+@import 'tachyons';
 
 /* purgecss start ignore */
-@import '_anchorforid';
-@import '_animation';
-@import '_documentation-styles';
+@import 'anchorforid';
+@import 'animation';
+@import 'documentation-styles';
 
 /*@import 'docsearch.js/dist/cdn/docsearch.min';*/
-@import '_carousel';
-@import '_code';
-@import '_tabs';
-@import '_color-scheme';
-@import '_columns';
-@import '_content';
-@import '_content-tables';
-@import '_definition-lists';
-@import '_fluid-type';
-@import '_font-family';
-@import '_hugo-internal-template-styling';
-@import '_no-js';
-@import '_social-icons';
-@import '_stickyheader';
-@import '_svg';
+@import 'carousel';
+@import 'code';
+@import 'tabs';
+@import 'color-scheme';
+@import 'columns';
+@import 'content';
+@import 'content-tables';
+@import 'definition-lists';
+@import 'fluid-type';
+@import 'font-family';
+@import 'hugo-internal-template-styling';
+@import 'no-js';
+@import 'social-icons';
+@import 'stickyheader';
+@import 'svg';
 @import 'hybrid';
-@import '_variables';
+@import 'variables';
 
 .mid-gray { color: #343a40}
 .nested-blockquote blockquote {

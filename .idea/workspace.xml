@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74d9690d-598f-425c-83f5-92c136cdbddd" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/docs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/lightelligence.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/lightelligence.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/output/css/app.min.679b7a769d85e9d4a16ec73359949a24541d51f86887824263bc396bf87102f5.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/output/css/app.min.679b7a769d85e9d4a16ec73359949a24541d51f86887824263bc396bf87102f5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/css/output/css/app.css_d11fe7b62c27961c87ecd0f2490357b9.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/css/output/css/app.css_d11fe7b62c27961c87ecd0f2490357b9.content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/css/output/css/app.css_d11fe7b62c27961c87ecd0f2490357b9.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/css/output/css/app.css_d11fe7b62c27961c87ecd0f2490357b9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/js/output/js/app.js_8848f55d07695b7ff7188138f23d69e3.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/js/output/js/app.js_8848f55d07695b7ff7188138f23d69e3.content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/js/output/js/app.js_8848f55d07695b7ff7188138f23d69e3.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/js/output/js/app.js_8848f55d07695b7ff7188138f23d69e3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme/assets/css/_algolia.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme/assets/css/_algolia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme/assets/css/_tachyons.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme/assets/css/_tachyons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_algolia.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_algolia.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_anchorforid.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_anchorforid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_animation.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_animation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_chroma.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_chroma.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_code.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_color-scheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_color-scheme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_columns.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_columns.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_content-tables.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_content-tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_content.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_definition-lists.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_definition-lists.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_documentation-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_documentation-styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_fluid-type.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_fluid-type.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_font-family.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_font-family.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_hljs.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_hljs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_hugo-internal-template-styling.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_hugo-internal-template-styling.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_no-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_no-js.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_social-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_social-icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_stickyheader.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_stickyheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_svg.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_svg.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_tabs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_tachyons.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_tachyons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/_variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/hybrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/hybrid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/lightelligence.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/lightelligence.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/output/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/output/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/output/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/output/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/gohugoioTheme_custom/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/gohugoioTheme_custom/webpack.config.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <folding>
+                <element signature="e#25#51#0" expanded="true" />
+                <element signature="e#293#317#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".browserslistrc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/.browserslistrc">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="tachyons.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/tachyons/css/tachyons.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="postcss.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/postcss.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_tachyons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_tachyons.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_flexbox.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/tachyons/src/_flexbox.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="191" column="10" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>app.min</find>
+      <find>app.css</find>
+      <find>ress</find>
+      <find>box</find>
+      <find>boxes</find>
+      <find>.css</find>
+      <find>bg-ico</find>
+      <find>Muli</find>
+      <find>index.js</find>
+      <find>main.css</find>
+      <find>bg-icon</find>
+      <find>tachyo</find>
+      <find>orlize</find>
+      <find>normalize</find>
+      <find>flex-</find>
+      <find>flex</find>
+      <find>grid</find>
+      <find>flex-l</find>
+      <find>exclude</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\petra.emsbach\PhpstormProjects\docs\themes\gohugoioTheme_custom\layouts</dir>
+      <dir>C:\Users\petra.emsbach\PhpstormProjects\docs\themes\gohugoioTheme_custom</dir>
+      <dir>C:\Users\petra.emsbach\PhpstormProjects\docs</dir>
+      <dir>C:\Users\petra.emsbach\PhpstormProjects\docs\themes\gohugoioTheme_custom\assets</dir>
+      <dir>C:\Users\petra.emsbach\PhpstormProjects\docs\themes\gohugoioTheme_custom\assets\css</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css/main.scss" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/index.js" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/.browserslistrc" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/postcss.config.js" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/webpack.config.js" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme/README.md" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/js/index.js" />
+        <option value="$PROJECT_DIR$/themes/gohugoioTheme_custom/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/themes/gohugoioTheme_custom/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <task-name>lunr-page-index</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>lunr-index</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>lunr</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/themes/gohugoioTheme/package.json" />
+      <path value="$PROJECT_DIR$/themes/gohugoioTheme/src/package.json" />
+      <path value="$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json" />
+      <path value="$PROJECT_DIR$/themes/gohugoioTheme_custom/src/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="gohugoioTheme_custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="gohugoioTheme_custom" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="gohugoioTheme_custom" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="gohugoioTheme_custom" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="gohugoioTheme_custom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="main.css&#9;FILE&#9;file://C:/Users/petra.emsbach/PhpstormProjects/docs/public/dist/main.css&#10;index.js&#9;FILE&#9;file://C:/Users/petra.emsbach/PhpstormProjects/docs/themes/gohugoioTheme_custom/assets/index.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/css" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\petra.emsbach\PhpstormProjects\docs\themes\gohugoioTheme_custom\assets\js" />
+      <recent name="C:\Users\petra.emsbach\PhpstormProjects\docs\themes\gohugoioTheme_custom\assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\petra.emsbach\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74d9690d-598f-425c-83f5-92c136cdbddd" name="Default" comment="" />
+      <created>1564651198141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564651198141</updated>
+      <workItem from="1564651199361" duration="12294000" />
+      <workItem from="1564664657590" duration="4846000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17140000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.2283237" />
+      <window_info id="npm" order="3" sideWeight="0.081914894" side_tool="true" weight="0.21748401" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32851636" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.38728324" />
+      <window_info id="Gulp" order="0" sideWeight="0.12893082" side_tool="true" visible="true" weight="0.21748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.8710692" visible="true" weight="0.21748401" />
+      <window_info anchor="bottom" id="Docker" order="0" weight="0.32947975" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32851636" />
+      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_tachyons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/tachyons/src/_flexbox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3264">
+          <caret line="192" column="9" selection-start-line="192" selection-start-column="3" selection-end-line="192" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/src/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/mini-css-extract-plugin/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/mini-css-extract-plugin/dist/cjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_font-family.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_color-scheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" lean-forward="true" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dist/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret column="920" lean-forward="true" selection-start-column="920" selection-end-column="920" />
+          <folding>
+            <element signature="e#89783#90096#2" expanded="true" />
+            <element signature="e#91473#99978#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/layouts/_default/baseof.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/output/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_code.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_chroma.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_carousel.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_content-tables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_animation.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_anchorforid.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_algolia.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/lightelligence.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/output/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3042">
+          <caret line="2" column="116059" selection-start-line="2" selection-start-column="116059" selection-end-line="2" selection-end-column="116059" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/hybrid.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/tachyons/css/tachyons.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/tachyons/src/tachyons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/node_modules/tachyons/src/_flexbox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="191" column="10" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/scss/_tachyons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/.browserslistrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#131#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="680">
+            <caret line="40" column="110" lean-forward="true" selection-start-line="40" selection-start-column="110" selection-end-line="40" selection-end-column="110" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#25#51#0" expanded="true" />
+            <element signature="e#293#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gohugoioTheme_custom/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

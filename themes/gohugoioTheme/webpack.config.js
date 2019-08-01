@@ -30,7 +30,7 @@ module.exports = env => {
 					use: [
 						MiniCssExtractPlugin.loader,
 						{
-							loader: "css-loader",
+							loader: "scss-loader",
 							options: {
 								importLoaders: 1,
 								minimize: true || {
@@ -83,7 +83,7 @@ module.exports = env => {
 				allowExternal: true
 			}),
 			new MiniCssExtractPlugin({
-				filename: "css/[name].css"
+				filename: "scss/[name].css"
 			})
 		]
 	};
