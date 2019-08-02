@@ -231,11 +231,7 @@ hr {
           box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
-  border: 2px solid; /* 2px to use <hr> for nested/indented notes */
-  border-color: #ff6300; /* lightblue (#96ccff) to use <hr> for nested/indented notes;    Orange: #ff6300 */
 }
-
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -4883,8 +4879,7 @@ pre {
 .tab-content .tab-pane.active + .copy, .tab-content .tab-pane.active + .copied{
 	display: block;
 }
-
-/* .primary-color                      {color: #0594CB}
+.primary-color                      {color: #0594CB}
 .bg-primary-color                   {background-color: #0594CB}
 .hover-bg-primary-color:hover       {background-color: #0594CB}
 .primary-color-dark                  {color: #0A1922}
@@ -4900,31 +4895,6 @@ pre {
 .hover-accent-color-light:hover                   {color: #FF4088}
 .bg-accent-color-light                {background-color: #FF4088}
 .hover-bg-accent-color-light:hover    {background-color: #FF4088}
-.accent-color-dark                    {color: #33ba91}
-.bg-accent-color-dark                 {background-color: #33ba91}
-.hover-bg-accent-color-dark:hover     {background-color: #33ba91}
-.text-color-primary    {color: #373737}
-.text-on-primary-color {color: #fff}
-.text-color-secondary  {color: #ccc}
-.text-color-disabled   {color: #F7f7f7}
-.divider-color         {color: #f6f6f6}
-.warn-color            {color: red} */
-.primary-color                      {color: #0594CB}
-.bg-primary-color                   {background-color: #0594CB}
-.hover-bg-primary-color:hover       {background-color: #0594CB}
-.primary-color-dark                  {color: #0A1922}
-.bg-primary-color-dark               {background-color: #0A1922}
-.hover-bg-primary-color-dark:hover   {background-color: #0A1922}
-.primary-color-light                  {color: #f9f9f9}
-.bg-primary-color-light               {background-color: #f9f9f9}
-.hover-bg-primary-color-light:hover   {background-color: #f9f9f9}
-.accent-color                         {color: #EBB951}
-.bg-accent-color                      {background-color: #EBB951}
-.hover-bg-accent-color:hover          {background-color: #EBB951}
-.accent-color-light                   {color: #ff4500}
-.hover-accent-color-light:hover                   {color: #ff4500}
-.bg-accent-color-light                {background-color: #ff4500}
-.hover-bg-accent-color-light:hover    {background-color: #ff4500}
 .accent-color-dark                    {color: #33ba91}
 .bg-accent-color-dark                 {background-color: #33ba91}
 .hover-bg-accent-color-dark:hover     {background-color: #33ba91}
@@ -5302,9 +5272,8 @@ code, .code, pre code, .highlight pre  {
 /* TextWhitespace */
 .chroma .w { color: #bbbbbb }
 .nested-blockquote blockquote {
-  border-left: 2px solid #0594CB;
+  border-left: 4px solid #0594CB;
   padding-left: 1em;
-  margin: 0;
   /*margin: 0;*/
 }
 .mw-90 {
@@ -5312,27 +5281,4 @@ code, .code, pre code, .highlight pre  {
 }
 /* purgecss end ignore */
 
-
-
-/* custom classes */
-
-/* class to test:  */
-.green { color: green; }
-
-
-/* class for tables to be used in custom notes:  */
-.table-border table {
-
-  border-left-width: 4px;
-  border-left-style: solid;
-  position: relative;
-  border-color: #0594CB;
-
-  display: block;
-}
-
-.table {
-  border-collapse: collapse;
-  border: 4px solid black;
-}
 

@@ -1,21 +1,19 @@
-<!-- use this as a template for banners on the landing page, for example to promote Osram companies:
+# use this as a template for banners on the landing page, for example to promote Osram companies:
 
-[[banners]]
-name = "Forestry.io"
-link = "https://forestry.io/"
-logo = "/images/sponsors/forestry-logotype.svg"
-copy = ""
-
-[[banners]]
-name = "Linode"
-link = "https://www.linode.com/"
-logo = "/images/sponsors/linode-logo_standard_light_medium.png"
-copy = ""
-
-[[banners]]
-name = "eSolia"
-link = "https://esolia.com/post/why-did-esolia-choose-hugo/"
-logo = "/images/sponsors/esolia-logo.svg"
-copy = ""
-
--->
+#[[banners]]
+#name = "Forestry.io"
+#link = "https://forestry.io/"
+#logo = "/images/sponsors/forestry-logotype.svg"
+#copy = ""
+#
+#[[banners]]
+#name = "Linode"
+#link = "https://www.linode.com/"
+#logo = "/images/sponsors/linode-logo_standard_light_medium.png"
+#copy = ""
+#
+#[[banners]]
+#name = "eSolia"
+#link = "https://esolia.com/post/why-did-esolia-choose-hugo/"
+#logo = "/images/sponsors/esolia-logo.svg"
+#copy = ""
