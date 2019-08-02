@@ -1,5 +1,5 @@
-var indexedJson = require('./lunr/lunr-index.json'),
-    pagesJson = require('./lunr/PagesIndex.json'),
+var indexedJson = require('../../../../static/js/lunr/lunr-index.json'),
+    pagesJson = require('../../../../static/js/lunr/PagesIndex.json'),
     lunr = require('lunr'),
     wrapper = require('./wrapper.js')
 
