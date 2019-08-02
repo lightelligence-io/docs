@@ -28,6 +28,7 @@
     "gulp-filenames": "^4.0.1",
     "gulp-jsoncombine-array": "^1.0.0",
     "gulp-markdown-to-json": "^1.1.0",
+    "gulp-rm": "^2.0.0",
     "highlight.js": "^9.13.1",
     "lazysizes": "^4.1.4",
     "lunr": "^2.3.6",

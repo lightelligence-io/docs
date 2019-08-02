@@ -1,15 +1,18 @@
-
 var gulp = require('gulp');
 var filenames = require("gulp-filenames");
 var marked = require('marked');
 var markdownToJSON = require('gulp-markdown-to-json');
 var jsoncombinearray = require("gulp-jsoncombine-array");
 var S = require("string");
-
+var rm = require( 'gulp-rm' );
 var lunr = require('lunr');
-var fs = require('fs')
+var fs = require('fs');
+var CONTENT_PATH_PREFIX = "../../content/en/**/*.md";
 
-var CONTENT_PATH_PREFIX = "../../content/en";
+gulp.task( 'clean:index', function() {
+    return gulp.src( '../../static/js/lunr/*', { read: false })
+        .pipe( rm() );
+});
 
 marked.setOptions({
     pedantic: true,
@@ -17,22 +20,22 @@ marked.setOptions({
 });
 
 gulp.task('lunr-page-index', () => {
-    return gulp.src(CONTENT_PATH_PREFIX + '/**/*.md')
+    return gulp.src(CONTENT_PATH_PREFIX)
     .pipe(filenames('markdownfiles'))
     .pipe(markdownToJSON(marked))
     .pipe(jsoncombinearray("PagesIndex.json",function(dataArray) {
-        const hrefs = filenames.get('markdownfiles')
+        const hrefs = filenames.get('markdownfiles');
         const pageIndex = dataArray.map((data, index) => {
             return {
                 title: data.title,
                 tags: data.tags,
                 href: S('/' + hrefs[index]).chompRight(".md").s,
                 body: S(data.body).trim().stripTags().stripPunctuation().s
-            }
-        })
+            };
+        });
         return new Buffer.from(JSON.stringify(pageIndex));
     }))
-    .pipe(gulp.dest('../../static/js/lunr/'))
+    .pipe(gulp.dest('../../static/js/lunr/'));
 });
 
 gulp.task('lunr-index', (done) => {
@@ -62,13 +65,11 @@ gulp.task('lunr-index', (done) => {
           if(doc) this.add(doc);
       }, this);
   });
-  var object = {
-      index: lunrIndex
-  }
+  var object = { index: lunrIndex };
 
-  fs.writeFileSync('../../static/js/lunr/lunr-index.json', JSON.stringify(object));
+  fs.writeFileSync('./assets/js/lunr/lunrIndex.json', JSON.stringify(object));
 
-  done()
+  done();
 });
 
-gulp.task('lunr', gulp.series('lunr-page-index', 'lunr-index'))
+gulp.task('lunr', gulp.series('lunr-page-index', 'lunr-index'));
