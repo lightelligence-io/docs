@@ -12,7 +12,7 @@ var documents = pagesJson.reduce(function (memo, doc) {
 $(document).ready(function () {
     'use strict';
     // Set up search
-    $.getJSON('../js/lunr-index.json', function (response) {
+    $.getJSON(indexedJson, function (response) {
         var idx = lunr.Index.load(response.index);
         console.log(idx);
 
@@ -33,12 +33,11 @@ window.search = function (q) {
 $(document).ready(function () {
     'use strict';
     // Set up search
-    $.getJSON('../js/lunr-index.json', function (response) {
+    $.getJSON('/js/lunr/lunr-index.json', function (response) {
         // Create index
         var index;
-        console.log(response.index);
-        console.log(response);
         index = lunr.Index.load(response.index);
+        console.log(index)
 
         // Handle search
         $('#search-input').on('keyup', function () {

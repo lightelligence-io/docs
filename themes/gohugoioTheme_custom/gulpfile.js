@@ -36,7 +36,7 @@ gulp.task('lunr-page-index', () => {
 });
 
 gulp.task('lunr-index', (done) => {
-  const documents = JSON.parse(fs.readFileSync('./assets/js/lunr/PagesIndex.json'));
+  const documents = JSON.parse(fs.readFileSync('../../static/js/lunr/PagesIndex.json'));
 
   const lunrIndex = lunr(function() {
       this.field("title", {
