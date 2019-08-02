@@ -2,28 +2,14 @@
 @import 'tachyons';
 
 /* purgecss start ignore */
-@import 'anchorforid';
-@import 'animation';
-@import 'documentation-styles';
 
 /*@import 'docsearch.js/dist/cdn/docsearch.min';*/
-@import 'carousel';
-@import 'code';
-@import 'tabs';
-@import 'color-scheme';
-@import 'columns';
-@import 'content';
-@import 'content-tables';
-@import 'definition-lists';
-@import 'fluid-type';
-@import 'font-family';
-@import 'hugo-internal-template-styling';
-@import 'no-js';
-@import 'social-icons';
-@import 'stickyheader';
-@import 'svg';
-@import 'hybrid';
-@import 'variables';
+@import '1-settings/all';
+@import '2-tools/all';
+@import '3-generic/all';
+@import '4-objects/all';
+@import '5-layouts/all';
+@import '6-components/all';
 
 
 a .linkwrap {

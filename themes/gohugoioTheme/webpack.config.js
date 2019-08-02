@@ -99,7 +99,7 @@ module.exports = env => {
 			//, Temporarily moving purge to fix themes site.
 			// new PurgecssPlugin({
 			// 	paths: glob.sync([
-			// 		path.join(__dirname, "layouts/**/*.html")
+			// 		path.join(__dirname, "5-layouts/**/*.html")
 			// 	]),
 			// 	extractors: [
 			// 		{
