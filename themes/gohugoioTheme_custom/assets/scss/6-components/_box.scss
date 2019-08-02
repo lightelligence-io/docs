@@ -2,11 +2,13 @@
   background: var(--primary-color);
   border-radius: 4px;
   box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
+  transition: all .5s ease-in-out;
 }
 
 .box {
   border-radius: 4px;
   box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
+  transition: all .5s ease-in-out;
 }
 
 .boxes a {
@@ -22,23 +24,33 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 50%;
+  transition: all .5s ease-in-out;
 
   @media (--breakpoint-large) {
     background-position: center;
   }
 }
-.boxes a:hover .bg-icon{
-  background-image: url("/images/docsIcon_rocket_wt.svg");
-  background-repeat: no-repeat;
-
+.boxes a:hover {
+  .bg-icon {
+    background-image: url("/images/docsIcon_rocket_wt.svg");
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+  }
 }
 
-.boxes {
-  .arrow-right {
-    background: url("/images/svg/ic_chevron_right_black_24px.svg");
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-  }
+  .boxes {
+    .arrow-right {
+      background: url("/images/svg/ic_chevron_right_orange_24px.svg");
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      transition: all .5s ease-in-out;
+    }
+    a :hover {
+      .arrow-right {
+        background: url("/images/svg/ic_chevron_right_white_24px.svg");
+        transition: all .5s ease-in-out;
+      }
+    }
 }
