@@ -57,15 +57,15 @@
 <meta property="og:url" content="https://lightelligence.io/applications/registering-background-applications/" />
 
 <meta property="og:image" content="https://lightelligence.io/images/lightelligence-card.jpg" />
-<meta property="article:published_time" content="2019-06-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-07-12T12:29:16&#43;02:00"/>
+<meta property="article:published_time" content="2019-08-02T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-08-02T15:54:26&#43;02:00"/>
 
 <meta itemprop="name" content="Registering and Implementing Background Applications">
 <meta itemprop="description" content="To turn a background application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.">
 
 
-<meta itemprop="datePublished" content="2019-06-01T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-07-12T12:29:16&#43;02:00" />
+<meta itemprop="datePublished" content="2019-08-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-02T15:54:26&#43;02:00" />
 <meta itemprop="wordCount" content="720">
 
 
@@ -124,7 +124,7 @@
       
         <li class="f5 dib mr4" role="menuitem">
             
-          <a href="https://mangogul.bitbucket.io/downloads/downloading-scripts/" class="dim link light-silver">
+          <a href="https://github.com/lightelligence-io/scripts/" class="dim link light-silver">
             Download Scripts
               
             
@@ -283,16 +283,16 @@
 <h2 id="registering-and-installing-a-background-application">Registering and Installing a Background Application</h2>
 
 <ol>
-<li><p>From the OLT portal, under <strong>Developer Area</strong>, obtain the tenant ID and the authentication token of the tenant who is to own the application.</p>
+<li><p>From the OLT portal, under <strong>Developer Area</strong>, obtain the tenant ID and the API token of the tenant who is to own the application.</p>
 
-<p>For more information, see the analogous process under <a href="/applications/registering-user-applications/">Creating and Implementing User Applications</a>. <!-- todo 10 --></p></li>
+<p>For more information, see the analogous process under <a href="/applications/registering-user-applications/">Creating and Implementing User Applications</a>.</p></li>
 
 <li><p>To register the application to the OLT platform, make a <code>POST</code> request to the <a href="https://api.lightelligence.io/v1/api-collection/#tag/application-developer/paths/~1application-developer~1applications/post"><code>/application-developer/applications</code></a> endpoint.</p>
 
 <p>The request passes the following data:</p>
 
 <ul>
-<li>the authentication token</li>
+<li>the API token</li>
 <li>the tenant ID of the tenant owning the application</li>
 </ul>
 
@@ -312,7 +312,7 @@
 
 <div class="highlight"><pre class="chroma"><code class="language-curl" data-lang="curl">	curl -X POST \
 	  https://api.lightelligence.io/v1/application-developer/applications \
-	  -H &#39;Authorization: Bearer {authentication token}&#39; \
+	  -H &#39;Authorization: Bearer {API token}&#39; \
 	  -H &#39;Content-Type: application/json&#39; \
 	  -d &#39;{
 	    &#34;name&#34;: &#34;Sample Application&#34;,
@@ -366,7 +366,7 @@
 
 <div class="highlight"><pre class="chroma"><code class="language-curl" data-lang="curl">	curl -X PUT \
 	  https://api.lightelligence.io/v1/applications/{application ID}/installation \
-	  -H &#39;Authorization: Bearer {authentication token}&#39; \
+	  -H &#39;Authorization: Bearer {API token}&#39; \
 	  -H &#39;Content-Type: application/json&#39;
 	</code></pre></div>
 
@@ -374,7 +374,7 @@
 
 <div class="highlight"><pre class="chroma"><code class="language-curl" data-lang="curl">	curl -X PUT \
 	  https://api.lightelligence.io/v1/applications/9aa3b618-8cd2-4dc0-b7a1-da6df60af254/installation \
-	  -H &#39;Authorization: Bearer {authentication token}&#39; \
+	  -H &#39;Authorization: Bearer {API token}&#39; \
 	  -H &#39;Content-Type: application/json&#39;
 	</code></pre></div></li>
 
@@ -476,13 +476,13 @@
 	
 	<li><a href="/applications/registering-user-applications/">Registering and Implementing User Applications</a></li>
 	
-	<li><a href="/applications/creating-initial-application/">Creating an Initial Application</a></li>
+	<li><a href="/applications/managing-applications/">Managing Custom Applications</a></li>
+	
+	<li><a href="/applications/troubleshooting-application-management/">Troubleshooting Application Management</a></li>
 	
 	<li><a href="/applications/use-cases/">Identifying Your Use Case</a></li>
 	
 	<li><a href="/applications/defining-custom-permissions/">Defining Custom Permissions and Roles</a></li>
-	
-	<li><a href="/applications/managing-applications/">Managing Custom Applications</a></li>
 	
 </ul>
 
@@ -504,11 +504,6 @@
           <li class="f6 fw4">
             <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Getting Started
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/getting-started/testing-shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Testing Shortcodes
             </a>
           </li>
           <li class="f6 fw4">
@@ -538,11 +533,6 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/users/roadmap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Roadmap
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/users/creating-tenants/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Creating Tenants
             </a>
@@ -555,6 +545,11 @@
           <li class="f6 fw4">
             <a href="/users/creating-custom-roles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Defining Custom Roles
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/users/security/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Considering Security
             </a>
           </li>
         </ul>
@@ -578,31 +573,6 @@
               Executing Commands on Devices
             </a>
           </li>
-          <li class="f6 fw4">
-            <a href="/devices/synchronizing-device-configurations/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Synchronizing Device Configurations
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/devices/monitoring-devices/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Monitoring Devices and Alerting
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/devices/connecting-gateways/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Connecting Gateway Devices
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/devices/deploying-binaries-to-devices/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Deploying Binaries to Devices
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/devices/managing-devices/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Managing Devices
-            </a>
-          </li>
         </ul>
       </li>
       
@@ -610,23 +580,13 @@
         <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".applications">Developing Custom Applications</a>
         <ul class="applications desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
-            <a href="/security/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/applications/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Developing Custom Applications
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/applications/using-application-sdk/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Developing Applications with the SDK
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/applications/authenticating-with-oauth2/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Authenticating with OAuth2
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/applications/creating-initial-application/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Creating a First Application
             </a>
           </li>
           <li class="f6 fw4">
@@ -662,76 +622,8 @@
         </ul>
       </li>
       
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".data">Processing Data</a>
-        <ul class="data desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Processing Data
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/data/get-aggregated-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Using Aggregated Data
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/data/generating-timeseries-dumps/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Generating Time Series Data Dumps
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/data/querying-times-series-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Querying Times Series Data
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/data/streaming-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Streaming Data
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/data/visualizing-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Visualizing Data
-            </a>
-          </li>
-        </ul>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".troubleshooting">Troubleshooting</a>
-        <ul class="troubleshooting desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              FAQ
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/troubleshooting/known-issues/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Known Issues
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/troubleshooting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Troubleshooting
-            </a>
-          </li>
-        </ul>
-      </li>
-      
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
         <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Tracking Changes</a>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">security</a>
-        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/security/2fa/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Enabling Two-Factor Authentication
-            </a>
-          </li>
-        </ul>
       </li>
   </ul>
 </nav>
@@ -748,7 +640,7 @@
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Registering and Implementing Background Applications”
-  </a> was last updated: July 12, 2019: <a class="hide-child link primary-color" href="https://github.com/commit/8ef8aa7104776610f002746310014c878b54a1f3">Handover to UI team for css/layout adjustments (8ef8aa7)</a>
+  </a> was last updated: August 2, 2019: <a class="hide-child link primary-color" href="https://github.com/commit/354bbb2345f00e05e786b491cfb11eb5fc419178">Reade to be checked and verified with Raspi hardware (354bbb2)</a>
 </h6>
 
       
@@ -809,7 +701,7 @@
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="https://mangogul.bitbucket.io/downloads/downloading-scripts/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+        <a href="https://github.com/lightelligence-io/scripts/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
           Download Scripts
         </a>
     </li>
@@ -864,27 +756,9 @@
         </a>
     </li>
   
-    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
-        <a href="/data/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Processing Data
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Troubleshooting
-        </a>
-    </li>
-  
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
           Tracking Changes
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          security
         </a>
     </li>
   

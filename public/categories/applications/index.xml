@@ -6,7 +6,7 @@
     <description>Recent content in applications on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lightelligence.io/categories/applications/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,36 +14,12 @@
     <item>
       <title>Developing Custom Applications</title>
       <link>https://lightelligence.io/applications/</link>
-      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/applications/</guid>
       <description>Design your OLT travel experience with custom applications.
 Explore your IoT system landscape(s) and exploit its data resources. As the tour guide of your end users, develop custom applications to shape the lookout points and views on the data that your IoT system landscapes deliver.
 With custom applications you access the OLT API endpoints (https://api.lightelligence.io/v1/api-collection) and manage them.</description>
-    </item>
-    
-    <item>
-      <title>Developing Custom Applications</title>
-      <link>https://lightelligence.io/security/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lightelligence.io/security/</guid>
-      <description>Design your OLT travel experience with custom applications.
-Explore your IoT system landscape(s) and exploit its data resources. As the tour guide of your end users, develop custom applications to shape the lookout points and views on the data that your IoT system landscapes deliver.
-With custom applications you access the OLT API endpoints (https://api.lightelligence.io/v1/api-collection) and manage them.</description>
-    </item>
-    
-    <item>
-      <title>Developing Applications with the SDK</title>
-      <link>https://lightelligence.io/applications/using-application-sdk/</link>
-      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lightelligence.io/applications/using-application-sdk/</guid>
-      <description>@tbd, this chapter is a placeholder
- Installing the Lightelligence Demo App Use: Get an idea what &amp;ldquo;applications&amp;rdquo; using the OLT API are.
-Procedure
- Install node.js (if I don&amp;rsquo;t have it already).
- Install the @lightelligence/browser-sdk dependency. How exactly: npm install git@bitbucket.org:lightelligence/lightelligence-demo-app.git ? Result: As of now, I get &amp;ldquo;Could not install from &amp;ldquo;bitbucket.org:lightelligence\lightelligence-demo-app.git&amp;rdquo; as it does not contain a package.json file.&amp;rdquo; Reason: I probably need the local private read access token to our npm, since the demo app is not public.</description>
     </item>
     
     <item>
@@ -61,20 +37,6 @@ For more information, see Troubleshooting Application Management.</description>
     </item>
     
     <item>
-      <title>Creating an Initial Application</title>
-      <link>https://lightelligence.io/applications/creating-initial-application/</link>
-      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lightelligence.io/applications/creating-initial-application/</guid>
-      <description>@tbd: Explain use case
-Procedure
- In the Developer Area, choose Create application. @Sebastian: Apply Title Case in UI elements (&amp;ldquo;Application&amp;rdquo; with capital &amp;ldquo;A&amp;rdquo;)
-  Creating an Initial Application
-   Specify the application data as required:
- Name: @Sebastian: what makes a meaningful name?; are there restrictions, e.g. blank spaces and special characters Description: Describe the application&amp;rsquo;s use. Link: @Sebastian, what URL am I supposed to submit in what format?</description>
-    </item>
-    
-    <item>
       <title>Identifying Your Use Case</title>
       <link>https://lightelligence.io/applications/use-cases/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
@@ -88,7 +50,7 @@ Applications with User Interaction To retrieve an OAuth2 access token, you can i
     <item>
       <title>Registering and Implementing User Applications</title>
       <link>https://lightelligence.io/applications/registering-user-applications/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/applications/registering-user-applications/</guid>
       <description>To turn a user application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
@@ -105,7 +67,7 @@ Checking permissions
     <item>
       <title>Registering and Implementing Background Applications</title>
       <link>https://lightelligence.io/applications/registering-background-applications/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/applications/registering-background-applications/</guid>
       <description>To turn a background application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
@@ -120,7 +82,7 @@ Checking permissions
     <item>
       <title>Managing Custom Applications</title>
       <link>https://lightelligence.io/applications/managing-applications/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/applications/managing-applications/</guid>
       <description>As the developer, deactivate custom applications temporarily or whitelist additional tenants, for example.
@@ -147,7 +109,7 @@ How it Works How does the custom roles mechanism work?
     <item>
       <title>Troubleshooting Application Management</title>
       <link>https://lightelligence.io/applications/troubleshooting-application-management/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/applications/troubleshooting-application-management/</guid>
       <description>Access Denied Your custom application can&amp;rsquo;t access a certain endpoint?

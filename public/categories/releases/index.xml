@@ -6,18 +6,18 @@
     <description>Recent content in Releases on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lightelligence.io/categories/releases/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Lightelligence 0.1</title>
-      <link>https://lightelligence.io/news/0.1-relnotes/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Lightelligence 1.0</title>
+      <link>https://lightelligence.io/news/1.0-relnotes/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/news/0.1-relnotes/</guid>
-      <description>This is our initial version.</description>
+      <guid>https://lightelligence.io/news/1.0-relnotes/</guid>
+      <description>This is the initial version of our documentation, covering basic functions.</description>
     </item>
     
   </channel>

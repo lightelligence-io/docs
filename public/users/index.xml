@@ -6,24 +6,15 @@
     <description>Recent content in Mapping the OLT Landscape on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lightelligence.io/users/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Roadmap</title>
-      <link>https://lightelligence.io/users/roadmap/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lightelligence.io/users/roadmap/</guid>
-      <description> TBD </description>
-    </item>
-    
-    <item>
       <title>Creating Tenants</title>
       <link>https://lightelligence.io/users/creating-tenants/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/users/creating-tenants/</guid>
       <description>What&amp;rsquo;s a Tenant? A tenant is the owner of a system landscape.
@@ -35,7 +26,7 @@ Use Cases Create multiple tenants in one of the following cases, for example:
     <item>
       <title>Managing Users</title>
       <link>https://lightelligence.io/users/managing-users/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/users/managing-users/</guid>
       <description>Understanding the Role Concept When creating a tenant, a default user is created whose role is owner.
@@ -49,12 +40,28 @@ Writers can, for example
     <item>
       <title>Defining Custom Roles</title>
       <link>https://lightelligence.io/users/creating-custom-roles/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lightelligence.io/users/creating-custom-roles/</guid>
       <description>Custom Roles and Permissions for Applications By default, the OLT platform checks whether a user has the read or write OLT permission to access a specific endpoint.
 With custom applications, you access the OLT API endpoints. With custom roles, you can assign custom permissions to control on a more granular level what a user is allowed to do with a custom application.
 So, a part of designing custom applications is to determine whether you wish to define custom roles.</description>
+    </item>
+    
+    <item>
+      <title>Considering Security</title>
+      <link>https://lightelligence.io/users/security/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lightelligence.io/users/security/</guid>
+      <description>Enabling Two-Factor Authentication We recommend using two-factor authentication.
+Procedure
+As a user, proceed as follows:
+ Choose Profile.   Editing the Profile Settings
+   On the Two-Factor Authentication tab, follow the instructions.
+  Downloading the Audit Log As a tenant, to comply with the General Data Protection Regulation (GDPR), you can download an csv file logging tenant-related user activities.
+Audit message example:
+ User tom.tester@example.com (ID 1a7db926-e0fa-459f-ba91-7390f03b6688) accepted the invite to &amp;lsquo;Central Plant&amp;rsquo; (ID e6a3d2ef-16f7-4d50-883f-5b17a5def7ae).</description>
     </item>
     
   </channel>
