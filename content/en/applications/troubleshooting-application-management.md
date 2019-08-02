@@ -2,8 +2,8 @@
 title: Troubleshooting Application Management
 linktitle: Troubleshooting Application Management
 description: Resolve typical issues when developing custom applications.
-date: 2019-06-27
-publishdate: 2019-06-01
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [applications]
 keywords: [application,troubleshooting,issues]
 menu:
@@ -35,7 +35,10 @@ You can access these endpoints only in the OLT portal.
 
 So even if your user has the `owner` role, with a custom application the access is restricted to permissions assigned to the `writer` role.
 
-If you need to develop custom applications that use endpoints related to user management, contact our OLT support under <contact@lightelligence.io>. <!-- todo 10-->
+If you need to develop custom applications that use endpoints related to user management, contact our OLT support under <contact@lightelligence.io>. 
+{{% todo %}}@tbd: add new feature when available: 
+	new feature application permissions (has nothing to do with custom roles) to be implemented in 2019 Q3 will allow the customer to add permissions when ceating an app, i.e. allow internal user management (tenant_user_management:read) in app:
+	Apps can set a list of permissions the user has to accept when they install the app: „This app needs access to your user data“    {{% /todo %}}
 
 ---
 
@@ -98,6 +101,17 @@ You get a response similar to the following:
 }
 ```
 	
-<!-- todo 20 -->
+{{% todo %}} @tbd: 
+check whether bug is fixed: 20190517:  Simon Nielsen [09:34 Uhr]
+A) Yes that seem correct, we have a ticket to look over the permissions for applications that we will do asap. So assume you can access it and that it is correct @Christoph Albrecht (bearbeitet) 
+
+@Simon: to be able to do this I need the permission I want to verify I have.
+
+Issue: With the Oauth2 access token, access is denied, because the request requires user-management authorization (x-olt-permissions: ["tenant_user_management:read"]).
+
+I have the feeling I’m in a circle: to check my app permissions I need permissions that I don’t have.
+
+So in case access to an endpoint is denied, I can’t identify which endpoints I have permissions for.
+{{% /todo %}}
 
 

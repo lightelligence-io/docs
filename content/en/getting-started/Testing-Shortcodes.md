@@ -1,7 +1,7 @@
 ---
-title: Testing Shortcodes 2
+title: Testing Shortcodes
 description: Test page for Hugo functions
-date: 2019-06-14
+date: 2019-08-02
 categories: [getting-started]
 keywords: [installation,Raspberry]
 menu:
@@ -10,14 +10,18 @@ menu:
     weight: 5
 weight: 5
 sections_weight: 5
-draft: false
+draft: true
 toc: true
 tags: [shortcodes]
 ---
 
+This file is just to test some Hugo functions!
+
 ## Todo
 
 {{% todo %}}Text in the todo shortcode is not rendered in HTML! {{% /todo %}}
+
+{{% todo %}} But it is displayed under http://localhost:1313/maintenance/#todos  {{% /todo %}}
 
 ## Syntax Highlighting
 
@@ -43,23 +47,6 @@ grunt.initConfig({
   }
 };
 ```
-
-```php
-<!DOCTYPE html>
-<html>
-<body>
-
-<?php
-$color = "red";
-echo "My car is " . $color . "<br>";
-echo "My house is " . $COLOR . "<br>";
-echo "My boat is " . $coLOR . "<br>";
-?>
-
-</body>
-</html>
-```
-
 
 ### Code Toggle
 

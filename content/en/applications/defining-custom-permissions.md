@@ -64,7 +64,7 @@ Developing custom roles and developing custom creations are processes that are m
 
 1. Log on to the OLT portal as an application developer.
 
-2. Under **Developer Area**, obtain the authentication token.
+2. Under **Developer Area**, obtain the API token.
 
 3. Optional: To identify the application ID, make a `GET` request to the [`/application-developer/applications`](https://api.lightelligence.io/v1/api-collection/#tag/application-developer/paths/~1application-developer~1applications/get) endpoint. 
 
@@ -126,7 +126,7 @@ As a tenant, create a custom role and assign the custom application permission(s
 
 1. Log on to the OLT portal as a user with `owner` authorization.
 
-2. Under **Developer Area**, obtain the authentication token.
+2. Under **Developer Area**, obtain the API token.
 
 3. Optional: To identify the application ID of the custom application and to verify it's installed, make a `GET` request to the [/applications](https://api.lightelligence.io/v1/api-collection/#tag/applications) endpoint.
 

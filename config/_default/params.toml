@@ -1,0 +1,27 @@
+
+## Getting-started button:    
+getting_started = "Get started here: Connect your Raspberry Pi in 3 steps"
+description = "Start Your LIGHTELLIGENCE® User Journey"
+## Used for views in rendered HTML (i.e., rather than using the .Hugo variable)
+release = "0.52"
+## Setting this to true will add a "noindex" to *EVERY* page on the site..
+removefromexternalsearch = false
+## Gh repo for site footer (include trailing slash)
+ghrepo = "https://github.com/"
+## GH Repo for filing a new issue
+github_repo = "https://github.com/"
+### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
+ghdocsrepo = "https://github.com/gohugoio"
+## Gitter URL
+gitter = "https://gitter.im/"
+## Discuss Forum URL
+#forum = "https://discourse.gohugo.io/"
+## Google Tag Manager
+gtmid = ""
+
+# First one is picked as the Twitter card image if not set on page.
+images = ["images/lightelligence-card.jpg"]
+
+flex_box_interior_classes = "flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height"
+
+#sidebar_direction = "sidebar_left"

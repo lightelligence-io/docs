@@ -142,6 +142,7 @@ If desired, we can adjust and use the following partial as a template to invite 
 
 
 * Layout of the introduction text with the get started button: `\themes\gohugoioTheme_custom\layouts\partials\hero.html`
+* Text of the get started button: `params.toml` (and `config.toml` as fallback) 
 * Layout of the overview flex boxes: partial `\themes\gohugoioTheme_custom\layouts\partials\pagelayout_landingpage.html`
 * Main template, containing also the text below the hero: `\themes\gohugoioTheme_custom\layouts\index.html`
 * Text content: `\content\en\_index.md`
@@ -171,6 +172,10 @@ In `\themes\gohugoioTheme_custom\layouts\news\single.html`template, switch on/of
 ### Adjusting the Horizontal Navigation
 
 Partial `\themes\gohugoioTheme_custom\layouts\partials\navtop.html`
+
+Adjust values in menus.en.toml and config.toml.
+
+
 
 ### Adjusting Product  name LIGHTELLIGENCE® 
 

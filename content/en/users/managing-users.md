@@ -3,8 +3,8 @@
 title: Managing Users
 linktitle: Managing Users
 description: Create users and assign the roles required. Define who is authorized to perform which activities in a tenant.
-date: 2019-06-01
-publishdate: 2019-06-01
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [users,roles]
 keywords: [roles,users]
 menu:

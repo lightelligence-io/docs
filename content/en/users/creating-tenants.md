@@ -1,11 +1,9 @@
-
-
 ---
 title: Creating Tenants
 linktitle: Creating Tenants
 description: Create one or multiple tenants depending on your organizational structure or monitoring needs.
-date: 2019-06-01
-publishdate: 2019-06-01
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [users,tenants]
 keywords: [tenant,users]
 menu:
@@ -26,6 +24,10 @@ A tenant is the owner of a system landscape.
 
 As a tenant, assign users and roles to manage the system landscape composed of IoT devices.
 
+{{% todo %}}@tbd: Who is supposed to create tenant, what's the typical role in the company?
+
+@tbd: What prerequisites must be met: e.g. payment information I have to have at hand{{% /todo %}}
+
 ## Use Cases
 
 Create multiple tenants in one of the following cases, for example:
@@ -36,7 +38,8 @@ Create multiple tenants in one of the following cases, for example:
 	Separate tenants can help you to keep the overview of complex system landscapes and monitor devices more efficiently. 
 	Alternatively, you can tag the devices according to their site.
 * For reporting reasons, you want to assign tenants to cost centers.
-<!-- todo 20 -->
+
+{{% todo %}}@tbd: Where do I find information about how to be compliant with Osaram export regulation (managed in SAP GTS)?  {{% /todo %}}
 
 ## Creating A Tenant
 
@@ -53,9 +56,9 @@ Create multiple tenants in one of the following cases, for example:
  
 5. Choose the appropriate plan according to your organizational needs and enter data as required:
 
-	* **Tenant Name**: Indicate the location to be connected to the OLT plarform, `Northern plant`, for example.
-	* **VAT Registration Number**: <!-- todo 25  in a multi-tenency envoronemt, what must I know about the VAT no.? Will Osram check it in the public register? -->
-	* **Contact Person**: <!-- todo 26: What formal qualification must a contact person have to create a tenant; e.g., power of attorney (Prokura)? -->
+	* **Tenant Name**: Indicate the location to be connected to the OLT platform, `Northern plant`, for example. 
+	* **VAT Registration Number** {{% todo %}}@tbd: in a multi-tenency envoronemt, what must I know about the VAT no.? Will Osram check it in the public register?   {{% /todo %}} 
+	* **Contact Person** {{% todo %}}@tbd: Which formal qualification must a contact person have to create a tenant; e.g., power of attorney (Prokura)?  {{% /todo %}} 
 
 	{{< figure src="/images/users-create-tenant.png" caption="Creating a Tenant" alt="Creating a Tenant" >}}	
 

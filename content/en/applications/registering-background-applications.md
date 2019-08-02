@@ -2,8 +2,8 @@
 title: Registering and Implementing Background Applications
 linktitle: Registering and Implementing Background Applications
 description: To turn a background application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
-date: 2019-06-01
-publishdate: 2019-06-01
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [applications]
 keywords: [application,background application,OAuth2]
 menu:
@@ -41,15 +41,16 @@ To register applications to the OLT platform, you have `owner` or `writer` autho
 ## Registering and Installing a Background Application
 
 
-1. From the OLT portal, under **Developer Area**, obtain the tenant ID and the authentication token of the tenant who is to own the application.
+1. From the OLT portal, under **Developer Area**, obtain the tenant ID and the API token of the tenant who is to own the application.
 
-	For more information, see the analogous process under [Creating and Implementing User Applications](/applications/registering-user-applications/). <!-- todo 10 -->
+	For more information, see the analogous process under [Creating and Implementing User Applications](/applications/registering-user-applications/).
+	{{% todo %}} @Jewgeni: *So this will completely change*, I'm not sure exactly how but hopefully they actually can create Applications through the UI soon. So you should probably update the getting started guide you have to include some UI elements (talk to #team-rams). Because the APIs for creating and managing APIs will not be used in the same way (as default at least) - talk to @Jewgeni here as well because he's driving the change.   {{% /todo %}} 
 	
 2. To register the application to the OLT platform, make a `POST` request to the [`/application-developer/applications`](https://api.lightelligence.io/v1/api-collection/#tag/application-developer/paths/~1application-developer~1applications/post) endpoint.
 
 	The request passes the following data:
 
-	* the authentication token
+	* the API token
 	* the tenant ID of the tenant owning the application
 
 	---
@@ -68,7 +69,7 @@ To register applications to the OLT platform, you have `owner` or `writer` autho
 	{{< highlight curl  >}}
 	curl -X POST \
 	  https://api.lightelligence.io/v1/application-developer/applications \
-	  -H 'Authorization: Bearer {authentication token}' \
+	  -H 'Authorization: Bearer {API token}' \
 	  -H 'Content-Type: application/json' \
 	  -d '{
 	    "name": "Sample Application",
@@ -122,7 +123,7 @@ To register applications to the OLT platform, you have `owner` or `writer` autho
 	{{< highlight curl  >}}
 	curl -X PUT \
 	  https://api.lightelligence.io/v1/applications/{application ID}/installation \
-	  -H 'Authorization: Bearer {authentication token}' \
+	  -H 'Authorization: Bearer {API token}' \
 	  -H 'Content-Type: application/json'
 	{{< / highlight >}}
 
@@ -131,7 +132,7 @@ To register applications to the OLT platform, you have `owner` or `writer` autho
 	{{< highlight curl  >}}
 	curl -X PUT \
 	  https://api.lightelligence.io/v1/applications/9aa3b618-8cd2-4dc0-b7a1-da6df60af254/installation \
-	  -H 'Authorization: Bearer {authentication token}' \
+	  -H 'Authorization: Bearer {API token}' \
 	  -H 'Content-Type: application/json'
 	{{< / highlight >}}		
 

@@ -61,11 +61,11 @@ With this scenario, you have installed an MQTT client, Python, and the Python mo
 	| Green   | GPIO Pin 24  |
 	| Blue    | GPIO Pin 25  |
 
-2. Under [github.com/ounis/raspberry-pi-device-onboarding](https://github.com/ounis/raspberry-pi-device-onboarding), download the `install_rgb.sh` Bash script.<!-- todo 30  -->
+2. Under [github.com/lightelligence-io/scripts](https://github.com/lightelligence-io/scripts), download the [`install_rgb-led.sh`](github.com/lightelligence-io/scripts/install_rgb-led.sh) Bash script.<!-- todo 30  -->
 
 	The bash script does the following:
 	
-	* Prompt you to enter your authentication token.
+	* Prompt you to enter your API token.
 	* Prompt you to enter the tenant name or ID.
 	* Create a device in the OLT platform and a corresponding device type.
 	* Generate a device key
@@ -76,13 +76,13 @@ With this scenario, you have installed an MQTT client, Python, and the Python mo
  
 3. To execute the Bash script, do the following:
 
-	1. Make it executable: `chmod +x install_rgb.sh`.
-	2. Execute the script: `./install_rgb.sinstall_rgb`. 
+	1. Make it executable: `chmod +x install_rgb-led.sh`.
+	2. Execute the script: `./install_rgb-led.sh`. 
 
 4. On request of the Bash script, do the following: 
 
 	* Enter the platform URL ´lightelligence.io`.
-	* Enter the authentication token displayed in in the OLT portal under **Developer Area**.
+	* Enter the API token displayed in in the OLT portal under **Developer Area**.
 	* Enter your tenant name or your tenant ID displayed in in the OLT portal under **Developer Area**.
 
 

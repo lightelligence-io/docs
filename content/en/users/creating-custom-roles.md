@@ -2,9 +2,9 @@
 title: Defining Custom Roles
 linktitle: Defining Custom Roles
 description: Use the OLT role management to control how users can use your custom applications if required.
-date: 2019-06-01
-publishdate: 2019-06-01
-categories: [users,roles]
+date: 2019-08-02
+publishdate: 2019-08-02
+categories: [users]
 keywords: [users,custom roles,custom application roles,custom applications]
 menu:
   docs:

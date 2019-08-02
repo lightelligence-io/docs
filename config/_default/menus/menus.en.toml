@@ -1,3 +1,15 @@
+
+
+
+#[[docs]]
+#  name = "About Lightelligence"
+#  weight = 5
+#  identifier = "about"
+#  url = "/about/"
+#  post = "break"
+  
+
+  
 #   post = "break": generates a horizontal line between the items
 
 [[docs]]
@@ -32,22 +44,23 @@
   identifier = "applications"
   url = "/applications/"
   
-[[docs]]
-  name = "Processing Data"
-  weight = 50
-  identifier = "data"
-  url = "/data/"
-  post = "break"
+#[[docs]]
+#  name = "Processing Data"
+#  weight = 50
+#  identifier = "data"
+#  url = "/data/"
+#  post = "break"
 
 
 
 # LOW LEVEL ITEMS
 
-[[docs]]
-  name = "Troubleshooting"
-  weight = 60
-  identifier = "troubleshooting"
-  url = "/troubleshooting/"
+
+#[[docs]]
+#  name = "Troubleshooting"
+#  weight = 70
+#  identifier = "troubleshooting"
+#  url = "/troubleshooting/"
 
 
 
@@ -82,36 +95,36 @@
 
 
   [[global]]
-    name = "API Docs"
+    name = "Start OLT Journey"
 	identifier = "start"
     url = "/getting-started/setting-up-getting-started/"
     weight = 1
 
 # post = "external" gets an external icon
 
-#  [[global]]
-#    name = "Access OLT Portal"
-#	identifier = "portal"
-#    url = "https://lightelligence.io"
-#    weight = 2
-#	post = "external"
-#
-#  [[global]]
-#    name = "Download Scripts"
-#	identifier = "scripts"
-#    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
-#    weight = 3
-#	post = "external"
-#
-#  [[global]]
-#    name = "Consult API Documentation"
-#	identifier = "api"
-#    url = "https://api.lightelligence.io/v1/api-collection/"
-#    weight = 4
-#	post = "external"
+  [[global]]
+    name = "Access OLT Portal"
+	identifier = "portal"
+    url = "https://lightelligence.io"
+    weight = 2
+	post = "external"
 
   [[global]]
-    name = "Visit Lightelligence"
+    name = "Download Scripts"
+	identifier = "scripts"
+    url = "https://github.com/lightelligence-io/scripts/"
+    weight = 3
+	post = "external"
+
+  [[global]]
+    name = "Consult API Documentation"
+	identifier = "api"
+    url = "https://api.lightelligence.io/v1/api-collection/"
+    weight = 4
+	post = "external"
+
+  [[global]]
+    name = "Get Support"
 	identifier = "support"
     url = "https://api.lightelligence.io/v1/api-collection/"
     weight = 5

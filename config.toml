@@ -1,4 +1,4 @@
-baseURL = "http://osram-docs.wh1.staging-server.com/"
+baseURL = "https://lightelligence.io/"
 paginate =  100
 defaultContentLanguage = "en"
 enableEmoji = true
@@ -7,7 +7,7 @@ footnotereturnlinkcontents = "↩"
 languageCode = "en-us"
 metaDataFormat = "yaml"
 title = "Lightelligence®"
-theme = ["hugo-search-fuse-js"]
+theme = ["hugo-search-fuse-js","gohugoioTheme_custom" ,  ]
 
 googleAnalytics = ""
 
@@ -68,13 +68,26 @@ pattern = "2006"
 
 #CUSTOM PARAMS
 [params]
-  ## Getting-started button:
-  getting_started = "Get started here: Connect your Linux PC in 3 steps"
-  description = "Start Your LIGHTELLIGENCE® User Journey"
+
+  ## Getting-started button:    
+  getting_started = "Get started here: Connect your Raspberry Pi in 3 steps"
+  description = "Start Your LIGHTELLIGENCE® User Journey" 
   ## Used for views in rendered HTML (i.e., rather than using the .Hugo variable)
-  release = "0.1"
+  release = "1.0"
   ## Setting this to true will add a "noindex" to *EVERY* page on the site
   removefromexternalsearch = false
+  ## Gh repo for site footer (include trailing slash)
+  ghrepo = "https://github.com/lightelligence-io/"
+  ## GH Repo for filing a new issue
+  github_repo = "https://github.com/lightelligence-io/"
+  ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
+  ghdocsrepo = "https://github.com/lightelligence-io/"
+  ## Gitter URL
+  gitter = "https://gitter.im/"
+  ## Discuss Forum URL
+  #forum = ""
+  ## Google Tag Manager
+  gtmid = ""
 
   # First one is picked as the Twitter card image if not set on page.
   images = ["images/lightelligence-card.jpg"]
@@ -136,7 +149,7 @@ anchor = "smart"
   weight = 10
   identifier = "users"
   url = "/users/"
-
+  
 [[menu.docs]]
   name = "Managing the OLT Lifecycle"
   weight = 30
@@ -148,21 +161,23 @@ anchor = "smart"
   weight = 40
   identifier = "applications"
   url = "/applications/"
+ 
+#[[menu.docs]]
+#  name = "Processing Data"
+#  weight = 50
+#  identifier = "data"
+#  url = "/data/"
+#  post = "break"
 
-[[menu.docs]]
-  name = "Processing Data"
-  weight = 50
-  identifier = "data"
-  url = "/data/"
-  post = "break"
+#[[menu.docs]]
+#  name = "Troubleshooting"
+#  weight = 70
+#  identifier = "troubleshooting"
+#  url = "/troubleshooting/"
+#  post = "break"
 
 
-[[menu.docs]]
-  name = "Troubleshooting"
-  weight = 60
-  identifier = "troubleshooting"
-  url = "/troubleshooting/"
-  post = "break"
+
 
 #[[menu.docs]]
 #  name = "Tags"
@@ -192,36 +207,36 @@ anchor = "smart"
 
 
   [[global]]
-    name = "API Docs"
+    name = "Start OLT Journey"
 	identifier = "start"
     url = "/getting-started/setting-up-getting-started/"
     weight = 1
 
 # post = "external" gets an external icon
 
-#  [[global]]
-#    name = "Access OLT Portal"
-#	identifier = "portal"
-#    url = "https://lightelligence.io"
-#    weight = 2
-#	post = "external"
-#
-#  [[global]]
-#    name = "Download Scripts"
-#	identifier = "scripts"
-#    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
-#    weight = 3
-#	post = "external"
-#
-#  [[global]]
-#    name = "Consult API Documentation"
-#	identifier = "api"
-#    url = "https://api.lightelligence.io/v1/api-collection/"
-#    weight = 4
-#	post = "external"
+  [[global]]
+    name = "Access OLT Portal"
+	identifier = "portal"
+    url = "https://lightelligence.io"
+    weight = 2
+	post = "external"
 
   [[global]]
-    name = "Visit Lightelligence"
+    name = "Download Scripts"
+	identifier = "scripts"
+    url = "https://github.com/lightelligence-io/scripts/"
+    weight = 3
+	post = "external"
+
+  [[global]]
+    name = "Consult API Documentation"
+	identifier = "api"
+    url = "https://api.lightelligence.io/v1/api-collection/"
+    weight = 4
+	post = "external"
+
+  [[global]]
+    name = "Get Support"
 	identifier = "support"
     url = "https://api.lightelligence.io/v1/api-collection/"
     weight = 5
