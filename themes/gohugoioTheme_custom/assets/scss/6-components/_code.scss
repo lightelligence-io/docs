@@ -14,34 +14,6 @@ pre, .pre  {
     overflow-y: hidden;
 }
 
-code {
-    padding: 0.2em;
-    margin: 0;
-    font-size: 85%;
-    background-color: rgba(27,31,35,0.05);
-    border-radius: 3px;
-}
-
-
-pre  code {
-    display: block;
-    padding: 1.5em 1.5em;
-    font-size: .875rem;
-    line-height: 2;
-    overflow-x: auto;
-}
-
-
-pre {
-    background-color: #fff;
-    color: #333;
-    white-space: pre;
-    hyphens: none;
-    position: relative;
-    border-width: 1px;
-    border-color: #ccc;
-    border-style: solid;
-}
 
 /* The Pygments highlighter comes with its own styles. */
 .highlight pre {
@@ -88,4 +60,25 @@ pre {
     padding: 50px 0;
     top: -50px;
     width: 138px
+}
+
+
+.code-block .line-numbers-rows>span:before {
+  color: inherit;
+  padding-right: 30px
+}
+
+.nested-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.nested-links a:hover {
+  color: #solid var(--primary-color);
+  transition: color .15s ease-in;
+}
+
+.nested-links a:focus {
+  color: #solid var(--primary-color);
+  transition: color .15s ease-in;
 }

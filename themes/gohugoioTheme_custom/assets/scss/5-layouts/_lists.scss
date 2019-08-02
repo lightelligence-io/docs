@@ -1,0 +1,20 @@
+ul.related  li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+ul.related  {
+  list-style: none;
+}
+
+ul.related li:before {
+  content: '';
+  position: absolute;
+  border-right: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  width: 5px;
+  height: 5px;
+  top: calc(50% - 4px);
+  left: -20px;
+  transform: translateY(-50%) rotate(-45deg);
+}

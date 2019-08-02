@@ -12,122 +12,13 @@
 @import '6-components/all';
 
 
-a .linkwrap {
-  display: block;
-}
-
-.mid-gray { color: #343a40}
-.nested-blockquote blockquote {
-  border-left: 4px solid #46b4cd;
-  padding-left: 1em;
-  background-color: #f5f6f8;
-}
-
-.banner{
-  background-image: url("/images/svg/osram_lt.svg");
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .mw-90 {
   max-width:90%;
 }
-/* purgecss end ignore */
 
-ul.related  li {
-  position: relative;
-  padding-bottom: 10px;
-}
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-ul.related  {
-  list-style: none;
-}
-
-ul.related li:before {
-  content: '';
-  position: absolute;
-  border-right: 2px solid var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  width: 5px;
-  height: 5px;
-  top: calc(50% - 4px);
-  left: -20px;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-
-.box:hover {
-  background: rgb(255, 102, 0);
-  border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
-}
-
-.box {
-  border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
-}
-
-.boxes a {
- color: #343a40;
-}
-
-.boxes a:hover {
-  color: #FFF;
-}
-
-.boxes .bg-icon{
-  background-image: url("/images/docsIcon_rocket.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.boxes a:hover .bg-icon{
-  background-image: url("/images/docsIcon_rocket_wt.svg");
-  background-repeat: no-repeat;
-
-}
-
-.tag{
-  background: rgb(255, 102, 0);
-  border-radius: 100px;
-  width: 179px;
-}
-
-a {
-  text-decoration: none
-}
 
 @media (min-width: 1400px){
   .mw8-l {
     max-width: 58rem;
   }
-}
-
-
-.code-block .line-numbers-rows>span:before {
-  color: inherit;
-  padding-right: 30px
-}
-
-.nested-links a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.nested-links a:hover {
-  color: #solid var(--primary-color);
-  transition: color .15s ease-in;
-}
-
-.nested-links a:focus {
-  color: #solid var(--primary-color);
-  transition: color .15s ease-in;
 }

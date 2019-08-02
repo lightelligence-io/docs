@@ -1,6 +1,6 @@
 <div class="boxes w-100-s w-100-m w-50-l ph2-l pv1-l nested-copy-line-height">
     <a class="linkwrap" href="{{ .context.RelPermalink }}">
-  <div class="box bg-white mb2 pa3 pa4-l mb2 pa3 pa4-l flex justify-between">
+  <div class="box bg-white mb2 pa3 pa4-l mb2 pa3 pa4-l flex items-center justify-between">
     <div class="flex-auto w-20 w-20-ns pt1 mt0-l mt4">
 <!--     <img src="/images/docsIcon_rocket.svg" alt="Hugo Logo" class="h3 o-80 v-mid center w-100">-->
     <div class="bg-icon h4 o-80 v-mid center w-100"></div>
@@ -15,7 +15,7 @@
         {{- end -}}
 
       </h3>
-      <div class="db v-mid w-100 measure-wide mb3 mb0-l">
+      <div class="db v-mid w-90 measure-wide mb3 mb0-l">
           {{ if .context.Params.description  }}
           {{ .context.Params.description | markdownify }}
           {{ else }}
