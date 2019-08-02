@@ -34,11 +34,7 @@
     {{end}}
 
 
-	{{ $stylesheet := resources.Get "css/lightelligence.css"  }}
-    {{ with $stylesheet }}
-      <link rel="stylesheetcustom" href="{{ .Permalink | relURL }}"> 
-      {{ $.Scratch.Set "stylesheet" . }}    
-    {{end}}
+
 
      {{ block "scripts" . }}
       {{- partial "site-scripts.html" . -}}
