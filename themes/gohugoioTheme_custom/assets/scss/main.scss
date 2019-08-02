@@ -101,6 +101,7 @@ ul.related li:before {
 .boxes .bg-icon{
   background-image: url("/images/docsIcon_rocket.svg");
   background-repeat: no-repeat;
+  background-position: top;
 }
 .boxes a:hover .bg-icon{
   background-image: url("/images/docsIcon_rocket_wt.svg");
