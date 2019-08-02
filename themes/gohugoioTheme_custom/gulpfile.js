@@ -67,7 +67,7 @@ gulp.task('lunr-index', (done) => {
   });
   var object = { index: lunrIndex };
 
-  fs.writeFileSync('./assets/js/lunr/lunrIndex.json', JSON.stringify(object));
+  fs.writeFileSync('../../static/js/lunr/lunr-index.json', JSON.stringify(object));
 
   done();
 });
