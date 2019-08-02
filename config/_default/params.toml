@@ -1,6 +1,6 @@
 
 ## Getting-started button:    
-getting_started = "Get started here: Connect your Linux PC in 3 steps"
+getting_started = "Get started here: Connect your Raspberry Pi in 3 steps"
 description = "Start Your LIGHTELLIGENCE® User Journey"
 ## Used for views in rendered HTML (i.e., rather than using the .Hugo variable)
 release = "0.52"

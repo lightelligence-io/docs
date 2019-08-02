@@ -1,7 +1,8 @@
 ---
 title: Walking Through the OLT Portal, Step by Step
 description: To see what's under the hood and understand basic mechanisms easier, connect your device to the OLT platform manually.
-date: 2019-03-16
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [getting-started]
 keywords:
 tags: [configuration,Device Type,MQTT,Device Certificate,Mosquitto Client]
@@ -29,9 +30,8 @@ The OLT platform talks MQTT with the devices attached, so we want to achieve tha
 
 To verify the connection works you'll send a sample MQTT message to the OLT platform manually. 
 
-The process does the the same as our Bash script.
+The process does the same as our Bash script.
 
-<!-- todo 10 -->
 
 
 ## Creating a Device Type
@@ -95,7 +95,7 @@ The following procedure is equivalent to the `POST` request to the [`/devices`](
 	
 	**Note**
 	
-	In a production system, metadata like name, location, description and tags help you to monitor and maintain the devices in your system landschape.
+	In a production system, metadata like name, location, description and tags help you to monitor and maintain the devices in your system landscape.
 	
 	For more information, see [Managing Devices](/devices/).
 	

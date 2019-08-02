@@ -57,7 +57,7 @@ ____ Begin Notes 20190611:
 Adapter SDK encapsulates calls of the gateway API, bot MQTT and HTPP.
 It binds libraries and facilities, e.g.
 
-if it creates a device in the gateway and in the OLT platform, it automatically adds the gatreway device ID as the connectedBy, including the the adapter and the field devices.
+if it creates a device in the gateway and in the OLT platform, it automatically adds the gatreway device ID as the connectedBy, including the adapter and the field devices.
 
 Every device that needs to be reached from the cloud needs to have the `connectedBy` attribute set.
 

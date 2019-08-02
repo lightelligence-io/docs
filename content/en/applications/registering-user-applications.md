@@ -2,8 +2,8 @@
 title: Registering and Implementing User Applications
 linktitle: Registering and Implementing User Applications
 description: To turn a user application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
-date: 2019-06-01
-publishdate: 2019-06-01
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [applications]
 keywords: [application,user application,OAuth2]
 menu:
@@ -20,7 +20,7 @@ toc: true
 To turn a user application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
 
 ---
-<!-- todo 10 -->
+{{% todo %}}@tbd: Replace https://oauthdebugger.com/debug by OLT debuggger as soon as available: in Q3   {{% /todo %}}
 **Note**
 	
 **Simulating Applications**
@@ -58,15 +58,15 @@ To allow your application to communicate with the OLT platform, create an OAuth2
 
 **Procedure**
 
-1. Obtain your tenant ID and an authentication token:
+1. Obtain your tenant ID and an API token:
 
 	1. Log on to the OLT portal [https://portal.lightelligence.io/](https://portal.lightelligence.io/).
 	2. Select the tenant who is to own the application.
 	3. Under **Developer Area**, look up the 
-	 * authentication token (in our example "eyJhbGciOi ...")
+	 * API token (in our example "eyJhbGciOi ...")
 	 * tenant ID (in our example "b1747579-355 ...")
-	 {{< figure src="/images/tenant-id.png" caption="Displaying the Authentication Token and Tenant ID in the Developer Area" alt="Displaying the Authentication Token and Tenant ID in the Developer Area" >}}		
-		<!-- todo 20 -->
+	 {{< figure src="/images/tenant-id.png" caption="Displaying the API Ttoken and Tenant ID in the Developer Area" alt="Displaying the API Token and Tenant ID in the Developer Area" >}}		
+		{{% todo %}} @Jewgeni: *So this will completely change*, I'm not sure exactly how but hopefully they actually can create Applications through the UI soon. So you should probably update the getting started guide you have to include some UI elements (talk to #team-rams). Because the APIs for creating and managing APIs will not be used in the same way (as default at least) - talk to @Jewgeni here as well because he's driving the change.   {{% /todo %}} 
 2. To register the application to the OLT platform, make a `POST` request to the [`/application-developer/applications`](https://api.lightelligence.io/v1/api-collection/#tag/application-developer/paths/~1application-developer~1applications/post) endpoint.
 
 	You have the following options, depending on the application type:
@@ -85,7 +85,7 @@ To allow your application to communicate with the OLT platform, create an OAuth2
 		Wildcards (*) are not allowed in the redirect URLs.
 		
 		In our simulation, the redirect URL is `https://oauthdebugger.com/debug`.	<!-- todo 10 -->	
-	* the authentication token
+	* the API token
 	* the tenant ID of the tenant owning the application
 		
 		---
@@ -108,7 +108,7 @@ To allow your application to communicate with the OLT platform, create an OAuth2
 	{{< highlight curl  >}}
 	curl -X POST \
 		https://api.lightelligence.io/v1/application-developer/applications \
-		-H 'Authorization: Bearer {authentication token}' \
+		-H 'Authorization: Bearer {API token}' \
 		-H 'Content-Type: application/json' \
 		-d '{
 			"name": "My application name",
@@ -233,7 +233,7 @@ To allow your application to communicate with the OLT platform, create an OAuth2
 	{{< highlight curl  >}}
 	curl -X PUT \
 		https://api.lightelligence.io/v1/applications/{applicationID}/installation \
-		-H 'Authorization: Bearer {authentication token}' \
+		-H 'Authorization: Bearer {API token}' \
 		-H 'Content-Type: application/json'
 	{{< / highlight >}}
 
@@ -358,7 +358,7 @@ When registering the application to the OLT platform, you have set the applicati
 	
 	---
 	
-	**Note** <!-- todo 30 -->
+	**Note** {{% todo %}} @Simon: provide code example for the browser callback function    {{% /todo %}}
 	
 	We can't simulate this step because the request requires the application to be in the same session, in our example the `https://oauthdebugger.com/debug` application session.
 	
@@ -382,7 +382,7 @@ If you have a browser application without a backend service, a JavaScript applic
 
 **Prerequisites**
 
-You have registered and installed the applicattion as described above.
+You have registered and installed the application as described above.
 
 When registering your application to the OLT platform, you have set the application property `withPublicOauth2Client` to `true`.
 

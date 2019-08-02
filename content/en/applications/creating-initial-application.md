@@ -12,7 +12,7 @@ menu:
     weight: 210
 weight: 210
 sections_weight: 210
-draft: draft
+draft: true
 aliases: [/applications/,/overview/quickstart/]
 toc: true
 ---

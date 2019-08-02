@@ -1,7 +1,7 @@
 ---
 title: Testing Shortcodes
 description: Test page for Hugo functions
-date: 2019-06-14
+date: 2019-08-02
 categories: [getting-started]
 keywords: [installation,Raspberry]
 menu:
@@ -15,9 +15,13 @@ toc: true
 tags: [shortcodes]
 ---
 
+This file is just to test some Hugo functions!
+
 ## Todo
 
 {{% todo %}}Text in the todo shortcode is not rendered in HTML! {{% /todo %}}
+
+{{% todo %}} But it is displayed under http://localhost:1313/maintenance/#todos  {{% /todo %}}
 
 ## Syntax Highlighting
 

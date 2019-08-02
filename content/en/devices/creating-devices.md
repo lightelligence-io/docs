@@ -8,7 +8,7 @@ weight: 20
 Creating a device basically means the following
 
 * Assigning a device type describing the device capabilities
-* Assigning a device certificate and registering it to the the OLT platform, to ensure encrypted communication
+* Assigning a device certificate and registering it to the OLT platform, to ensure encrypted communication
 * Describing the device so as to be able to manage devices efficiently
 
 <!-- Background:
@@ -116,7 +116,7 @@ In the OLT platform, create a digital twin of your device based on the device ty
 2. Select the device type .
 3. Describe the device.
 
-	Name, description and tags help you to monitor and maintain the devices in your system landschape. 
+	Name, description and tags help you to monitor and maintain the devices in your system landscape. 
 		
    * **Name**: Enter a number according to your floor plan and naming schema, for example. <!-- @Henri: what is a typical device name? E.g. if it’s a LED bulb -->
    * **Location**: "Office 1, Desk 1", for example. <!-- @Henri/@Markus Jung: info about how customers typically describe their system landscape -->

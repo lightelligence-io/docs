@@ -70,22 +70,22 @@ pattern = "2006"
 [params]
 
   ## Getting-started button:    
-  getting_started = "Get started here: Connect your Linux PC in 3 steps"
+  getting_started = "Get started here: Connect your Raspberry Pi in 3 steps"
   description = "Start Your LIGHTELLIGENCE® User Journey" 
   ## Used for views in rendered HTML (i.e., rather than using the .Hugo variable)
-  release = "0.1"
+  release = "1.0"
   ## Setting this to true will add a "noindex" to *EVERY* page on the site
   removefromexternalsearch = false
   ## Gh repo for site footer (include trailing slash)
-  ghrepo = "https://github.com/"
+  ghrepo = "https://github.com/lightelligence-io/"
   ## GH Repo for filing a new issue
-  github_repo = "https://github.com"
+  github_repo = "https://github.com/lightelligence-io/"
   ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
-  ghdocsrepo = "https://github.com"
+  ghdocsrepo = "https://github.com/lightelligence-io/"
   ## Gitter URL
   gitter = "https://gitter.im/"
   ## Discuss Forum URL
-  #forum = "https://discourse.gohugo.io/"
+  #forum = ""
   ## Google Tag Manager
   gtmid = ""
 
@@ -162,13 +162,6 @@ anchor = "smart"
   identifier = "applications"
   url = "/applications/"
  
-[[menu.docs]]
-  name = "Considering Security"
-  weight = 60
-  identifier = "security"
-  url = "/security/"
-  post = "break"
- 
 #[[menu.docs]]
 #  name = "Processing Data"
 #  weight = 50
@@ -231,7 +224,7 @@ anchor = "smart"
   [[global]]
     name = "Download Scripts"
 	identifier = "scripts"
-    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
+    url = "https://github.com/lightelligence-io/scripts/"
     weight = 3
 	post = "external"
 

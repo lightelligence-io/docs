@@ -200,7 +200,7 @@ So step 5. in your description "The user takes this token and does a normal API 
 
 POST \
     https://api.dev.olt-dev.io/v1/application-developer/applications \
-    -H 'Authorization: Bearer {authentication token}' \
+    -H 'Authorization: Bearer {API token}' \
     -H 'Content-Type: application/json' \
     -d '{
         "name": "My application name",
@@ -253,7 +253,7 @@ Install the app:
 
 PUT \
     https://api.dev.olt-dev.io/v1/applications/d5e83d58-c4c5-41d5-9733-69aa97373b71/installation \
-    -H 'Authorization: Bearer {authentication token}'
+    -H 'Authorization: Bearer {API token}'
     -H 'Content-Type: application/json'
 Response.	
 	{
@@ -280,7 +280,7 @@ If I check "token", the response is: "Client is not allowed to initiate browser 
 
 # Client credentials, 3rd try
 
-Simon, I have repeated the whole process, including verification steps. At the end, in step 7 below, access with access token invariably fails while it works with authentication token. 
+Simon, I have repeated the whole process, including verification steps. At the end, in step 7 below, access with access token invariably fails while it works with API token. 
 
 As per step 1, I have `owner` permission. As per step 2, I have the `tenant_user_management:read` permission required for the `/tenants/{tenantId}/users/{userId}/roles` query.
 
@@ -404,7 +404,7 @@ Response:
 
 PUT 
     https://api.dev.olt-dev.io/v1/applications/6b7dee71-4dbb-4efe-9c19-b265300327e0/installation \
-    -H 'Authorization: Bearer {authentication token}'
+    -H 'Authorization: Bearer {API token}'
     -H 'Content-Type: application/json'
 
 Response:
@@ -763,7 +763,7 @@ app2
 Install app 
 curl -X PUT \
     https://api.dev.olt-dev.io/v1/applications/e09eeb8e-1574-4c56-b49d-daa9f3e8c609/installation \
-    -H 'Authorization: Bearer {authentication token}'
+    -H 'Authorization: Bearer {API token}'
 	
 From app 2	
 installed:
@@ -874,7 +874,7 @@ https://api.dev.olt-dev.io/v1/tenants/b1747579-355d-4b7a-aa72-c2336d3a7211/users
 
 That seems not to be the solution, I'm making a different error.
 
-When I display the tenant's user with https://api.dev.olt-dev.io/v1/tenants/b1747579-355d-4b7a-aa72-c2336d3a7211/users, ("tenant_user_management:read") with the authentication token from the portal,
+When I display the tenant's user with https://api.dev.olt-dev.io/v1/tenants/b1747579-355d-4b7a-aa72-c2336d3a7211/users, ("tenant_user_management:read") with the API token from the portal,
 my user is displayed as expected.
 
 When I do the same with the access token for my app, access is denied.

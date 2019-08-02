@@ -42,7 +42,7 @@ We provide two levels of metadata:
 
 ## Categorizing devices
 
-Classify devices by specifying categories in the the accociated device types.
+Classify devices by specifying categories in the accociated device types.
 
 To assign categories, define custom ones resource identifier schemas or use established ones.
 

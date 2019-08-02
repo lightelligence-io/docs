@@ -3,9 +3,9 @@
 ---
 title: Storing and Retrieving Sensor Data
 linktitle: Storing and Retrieving Sensor Data
-description: Store sensore data in the OLT platform and simulate an application retrieving the data.
-date: 2019-06-01
-publishdate: 2019-06-01
+description: Store sensor data in the OLT platform and simulate an application retrieving the data.
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [devices,data]
 keywords: [reporting,sensor data,device types,attributes]
 menu:
@@ -20,7 +20,7 @@ toc: true
 ---
 
 
-<!-- todo 10 -->
+{{% todo %}}   @tbd: Add note about prices, or link: up to 20 devices free etc. {{% /todo %}}
 
 
 
@@ -64,7 +64,7 @@ Attach a motion sensor to your Raspberry Pi and execute a Bash script to connect
 
 1. Ensure that your sensor is connected to your Raspberry Pi.
 
-	In our example, we connect an HC-SR501 PIR sensor as follows: <!-- todo 40 -->
+	In our example, we connect an HC-SR501 PIR sensor as follows: 
    
 	| Sensor | Raspberry Pi |
 	|:-------|:-------------|
@@ -72,11 +72,11 @@ Attach a motion sensor to your Raspberry Pi and execute a Bash script to connect
 	| Out    | GPIO Pin 4   |
 	| GND    | Ground       |
 
-2. Under [github.com/ounis/raspberry-pi-device-onboarding](https://github.com/ounis/raspberry-pi-device-onboarding), download the `install_presence.sh` Bash script.
+2. Under [github.com/lightelligence-io/scripts](https://github.com/lightelligence-io/scripts), download the [`install_motion-sensor.sh`](github.com/lightelligence-io/scripts/install_motion-sensor.sh) Bash script.
 
 	The script does the following:
 	
-	* Prompt you to enter your authentication token.
+	* Prompt you to enter your API token.
 	* Prompt you to enter the tenant name or ID.
 	* Create a device in the OLT platform and a corresponding device type.
 	* Generate a device key
@@ -86,13 +86,13 @@ Attach a motion sensor to your Raspberry Pi and execute a Bash script to connect
  
 3. To execute the Bash script, do the following:
 
-	1. Make it executable: `chmod +x raspiansetup.sh`.
-	2. Execute the script: `./raspiansetup.sh`.
+	1. Make it executable: `chmod +x install_motion-sensor.sh`.
+	2. Execute the script: `./install_motion-sensor.sh`.
 
 4. On request of the Bash script, do the following: 
 
 	* Enter the platform URL ´lightelligence.io`.
-	* Enter the authentication token displayed in in the OLT portal under **Developer Area**.
+	* Enter the API token displayed in in the OLT portal under **Developer Area**.
 	* Enter your tenant name or your tenant ID displayed in in the OLT portal under **Developer Area**.
 	
 **Result**
@@ -123,7 +123,7 @@ Let's check:
 
 	The latest sensor signal is displayed under **Status & Diagnosis**.
 
-	{{< figure src="/images/reporting-getting-started-status-sensor.png" caption="Verifying Sensor Data Is Transmitted" alt="Verifying Sensor Data Is Transmitted" >}}
+	{{< figure src="/images/reporting-getting-started-status-sensor.png" caption="Verifying Sensor Data Is Transmitted" alt="Verifying Sensor Data Is Transmitted" >}} {{% todo %}} @tbd: insert new image in 150 px resolution   {{% /todo %}}
 	
 	Note that the sensor data is displayed under **Attributes**.
 	
@@ -134,7 +134,6 @@ Let's check:
 3. Optional: To verify if your sensor is actually sending data, execute `./presence/presence.py` and move the sensor. 
 
 	`1` means the sensor is detecting motion, `0` means there is no motion.
-	<!-- todo 50 -->
 	
 	
 ## Enabling Reporting
@@ -165,7 +164,6 @@ To store the data, activate reporting in the corresponding device type.
 	{{< / highlight >}}
 
 	A reporting rule is composed of a [JSON Path](https://goessner.net/articles/JsonPath/) and a `reportTo` property. 
-	<!-- todo 100 -->
 	
 	{{< figure src="/images/reporting-getting-started-editing-reporting-rules.png" caption="Editing Reporting Rules" alt="Editing Reporting Rules" >}}
 
@@ -185,11 +183,11 @@ To get, for example, the last hour of the sensor's time series data, make a `GET
 
 1. To obtain the motion sensor's device ID, choose **Devices & Types**.
 
-	The ID is displayed in the device oveview.
+	The ID is displayed in the device overview.
 	
 	{{< figure src="/images/reporting-getting-started-device-ids.png" caption="Displaying Device IDs" alt="Displaying Device IDs" >}}
 
-2. Obtain the authentication token under **Developer Area**. 
+2. Obtain the API token under **Developer Area**. 
 
 3. Provide the query parameter `path` to make the request, in our example `path=$.attributes.presence`.
 
@@ -217,9 +215,7 @@ The time stamp format is Coordinated Universal Time (UTC).
 
 ---
 
-<!-- todo 110  -->
 
-<!-- todo 120 -->
  
 
 

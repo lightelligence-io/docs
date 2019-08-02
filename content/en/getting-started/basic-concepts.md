@@ -1,9 +1,9 @@
 ---
-title: Recapulating Basic Concepts
+title: Recapitulating Basic Concepts
 linktitle: Recapulating Basic Concepts
 description: Understand "tenants", "device types", and "devices".
-date: 2019-06-01
-publishdate: 2019-06-01
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [getting-started]
 keywords: [tenant, device type, device]
 tags: [tenant, device type, device]
@@ -30,7 +30,7 @@ You now know some basic concepts:
 
 	You can create and edit device types for device classes such as sensors, actors, or gateways in the OLT portal. Or create it with an HTTP request to the OLT API, as our Bash script does.
 
-* A *device* is a digital twin of a physical device, representing it in the OLT platform with the properties defined in the corresonding device type.
+* A *device* is a digital twin of a physical device, representing it in the OLT platform with the properties defined in the corresponding device type.
 
 	You can create and edit device types and display their status in the OLT Portal. Or create them with HTTP requests as in our Bash script.
 	

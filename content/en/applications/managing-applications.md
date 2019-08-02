@@ -2,8 +2,8 @@
 title: Managing Custom Applications
 linktitle: Managing Custom Applications
 description: Perform activities to maintain your custom applications as an application developer or as a tenant owner using custom applications.
-date: 2019-06-27
-publishdate: 2019-06-01
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [applications]
 keywords: [application,whitelisting,installing applications]
 tags: [deactivating applications]
@@ -166,7 +166,9 @@ Background: To be able to install an application in a tenant, you must have whit
 * To control the tenants that are to use an application, make requests to the following endpoints: 
 
 	* To list whitelisted tenants, make a `GET` request to the [`/application-developer/applications/{applicationId}/allowed-tenants`](https://api.lightelligence.io/v1/api-collection/#tag/application-developer/paths/~1application-developer~1applications~1{applicationId}~1allowed-tenants/get) endpoint.
-	* <!-- todo 10 -->To revoke whitelisting for a tenant, make a `DELETE` request to the [`/application-developer/applications/{applicationId}/allowed-tenants/{tenantId}`](https://api.lightelligence.io/v1/api-collection/#tag/application-developer/paths/~1application-developer~1applications~1{applicationId}~1allowed-tenants~1{tenantId}/delete) endpoint.
+	* {{% todo %}}@Simon: what happens if an app is installed already? Who gets which error message? How will the respective tenant owner get informed about it? -->
+	@tbd: status mentioning it is not available to be used: `available: false` in it's data. The UI will show this in some nice UX to make sure the user know exactly what has happned to the installed application.
+    Talk more to Team Rams (Timon Hass) for information on the UX.    {{% /todo %}}To revoke whitelisting for a tenant, make a `DELETE` request to the [`/application-developer/applications/{applicationId}/allowed-tenants/{tenantId}`](https://api.lightelligence.io/v1/api-collection/#tag/application-developer/paths/~1application-developer~1applications~1{applicationId}~1allowed-tenants~1{tenantId}/delete) endpoint.
 
 
 ## Deleting an Application
@@ -268,7 +270,7 @@ The custom application is whitelisted.
 	
 	3. Make a `PUT` request to the [`/applications/{applicationId}/installation`](https://api.lightelligence.io/v1/api-collection/#tag/applications/paths/~1applications~1{applicationId}~1installation/put) endpoint.
 	
-		<!-- todo 20 -->
+		{{% todo %}} @tbd: make new image with prod.io and whitelisted app   {{% /todo %}}
 	
 		{{< figure src="/images/applications-install-app.png" caption="Installing an Application" alt="Installing an Application" >}}
 	

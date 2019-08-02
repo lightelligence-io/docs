@@ -21,7 +21,7 @@ To get started with these OLT vehicles, perform the following scenarios:
 
 * Connect an existing device to the OLT platform: [Connecting a Device in 3 Steps](/getting-started/setting-up-getting-started/)
 	
-* Get an overview of the OLT portal function you will typicall use when adding devices to your IoT system landscape: [Walking Through the OLT Portal, Step by Step](/getting-started/connectivity-getting-started/)
+* Get an overview of the OLT portal function you will typically use when adding devices to your IoT system landscape: [Walking Through the OLT Portal, Step by Step](/getting-started/connectivity-getting-started/)
 
 
 

@@ -1,7 +1,8 @@
 ---
 title: Connecting a Device in 3 Steps
 description: Connect a Raspberry Pi to the OLT platform in three automated steps. See how fast you can get connected to the OLT platform.
-date: 2019-06-14
+date: 2019-08-02
+publishdate: 2019-08-02
 categories: [getting-started]
 keywords: [installation,setup,Raspberry]
 tags: 
@@ -113,7 +114,7 @@ As a tenant, you can obtain the information required to connect your Raspberry P
 
 1. Log on to your Raspberry PI and start a Web browser.
 
-2. Under [github.com/ounis/raspberry-pi-device-onboarding](https://github.com/ounis/raspberry-pi-device-onboarding), download the `raspbiansetup.sh` Bash script.
+2. Under [github.com/lightelligence-io/scripts](https://github.com/lightelligence-io/scripts), download the [`raspbiansetup.sh`](github.com/lightelligence-io/scripts/raspbiansetup.sh) Bash script.
 
 	To establish communication with the OLT platform, the Bash script does the following:
 	
@@ -130,14 +131,14 @@ As a tenant, you can obtain the information required to connect your Raspberry P
 
 4. As the platform URL enter `lightelligence.io`.
 
-5. To obtain the API authentication token, do the following:
+5. To obtain the API token for authentication, do the following:
 
 	1. Log on to the [OLT portal](https://portal.lightelligence.io).
 	2. Click the tenant you have created.
 	
 		{{< figure src="/images/getting-started-select-tenant.png" caption="Selecting a Tenant" alt="Selecting a Tenant" >}}	
 
-	3. Under **Developer Area**, copy the authentication token.
+	3. Under **Developer Area**, copy the API token.
 	
 	{{< figure src="/images/getting-started-display-developer-area.png" caption="Displaying the Developer Area" alt="Displaying the Developer Area" >}}	
 	
@@ -152,7 +153,7 @@ As a tenant, you can obtain the information required to connect your Raspberry P
 
 **Result**
 
-With these 3 steps, your Rasperry Pi is connected to the OLT portal, sending data.
+With these 3 steps, your Raspberry Pi is connected to the OLT portal, sending data.
 
 Let's check it:
 
@@ -178,7 +179,7 @@ In our example, the capabilities of the Raspberry Pi are to have a temperature a
 
 Let's check:
 	
-1. To display the device type In the OLT portal, choose Choose **Devices & Types -> Device Types**.
+1. To display the device type In the OLT portal, choose **Devices & Types -> Device Types**.
 
 	You go to the device types overview.
 

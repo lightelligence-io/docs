@@ -44,13 +44,6 @@
   identifier = "applications"
   url = "/applications/"
   
-[[docs]]
-  name = "Considering Security"
-  weight = 60
-  identifier = "security"
-  url = "/security/"
-  post = "break"
-  
 #[[docs]]
 #  name = "Processing Data"
 #  weight = 50
@@ -119,7 +112,7 @@
   [[global]]
     name = "Download Scripts"
 	identifier = "scripts"
-    url = "https://mangogul.bitbucket.io/downloads/downloading-scripts/"
+    url = "https://github.com/lightelligence-io/scripts/"
     weight = 3
 	post = "external"
 
