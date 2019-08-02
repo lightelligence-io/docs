@@ -7,4 +7,28 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .site-search-form {
+    .search-input {
+      background: transparent url('/images/icon-search.png') no-repeat 0 19px /16px 16px;
+      background-position: right;
+      position: relative;
+      right: 16px;
+      color: var(--primary-color-dark);
+      outline: none;
+    }
+    transition: top .5s ease-in-out;
+  }
+}
+
+@media (min-width: 960px) {
+  .site-search-form {
+    //width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    transition: top .5s ease-in-out;
+  }
 }

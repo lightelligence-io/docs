@@ -32,3 +32,13 @@
   background-repeat: no-repeat;
 
 }
+
+.boxes {
+  .arrow-right {
+    background: url("/images/svg/ic_chevron_right_black_24px.svg");
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+}
