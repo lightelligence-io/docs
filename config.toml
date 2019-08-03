@@ -7,7 +7,7 @@ footnotereturnlinkcontents = "↩"
 languageCode = "en-us"
 metaDataFormat = "yaml"
 title = "Lightelligence®"
-theme = ["gohugoioTheme_custom"]
+#theme = ["hugo-search-fuse-js"]
 
 googleAnalytics = ""
 
