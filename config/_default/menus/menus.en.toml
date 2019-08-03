@@ -1,15 +1,3 @@
-
-
-
-#[[docs]]
-#  name = "About Lightelligence"
-#  weight = 5
-#  identifier = "about"
-#  url = "/about/"
-#  post = "break"
-  
-
-  
 #   post = "break": generates a horizontal line between the items
 
 [[docs]]
