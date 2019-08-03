@@ -12,13 +12,13 @@
           {{ with $.context.Data.Singular }}{{ . | humanize }}: {{ end }}{{ .context.Title }}
         </h1>
         <div class="{{ .Site.Params.copyClass }} mid-gray f5 f4-l">
-          
-<!--		   {{ partial "site-search-fuse.html" }}-->
-		
+
+		   {{ partial "site-search-fuse.html" }}
+
         </div>
       </article>
     </div>
-	
+
 	<!--
 	Define width of search result content: <article class="w-50"
 	-->
