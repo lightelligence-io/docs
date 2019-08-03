@@ -3,8 +3,3 @@
     contentDir = "content/en"
     languageName = "English"
     weight = 1
-  
-  [zh]
-    contentDir = "content/zh"
-    languageName = "中文"
-    weight = 2

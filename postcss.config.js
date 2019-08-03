@@ -1,3 +1,4 @@
+/*
 module.exports = {
   ident: 'postcss',
   plugins: {
@@ -5,4 +6,4 @@ module.exports = {
     'postcss-cssnext': {},
     'cssnano': {}
   }
-}
+}*/
