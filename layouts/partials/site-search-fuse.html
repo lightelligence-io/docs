@@ -12,8 +12,8 @@
 <form id="site-search-form" action="{{ .Permalink }}" role="search" >
 	<fieldset class="bn ma0 pa0">
 		<label class="clip" for="search-query">Search</label>
-		<input id="search-query" placeholder="Enter a word or phrase …" name="q" 
-		class="needs-js bg-left bn f4 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 dark-gray" 
+		<input id="search-query" placeholder="Enter a word or phrase …" name="q"
+		class="needs-js bg-left bn f4 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 dark-gray"
 		style=" background: transparent url('/images/icon-search.png') no-repeat 0 10px /16px 16px;"  />
 
 	</fieldset>
@@ -24,12 +24,12 @@
 
 <template id="search-result-template"><div class="search_summary ">
 
-	
+
 
   <h5 class="post-title no-text-decoration f5 "><a class="search_link search_title" href=""></a></h5>
-  
+
   <p class="f5 search_snippet" > </p>
-  
+
   <small>
     <table>
       <tr class="search_iftags">		<td><strong>Tags: </strong></td><td class="search_tags"></td></tr>
@@ -39,7 +39,7 @@
   </div></template>
 
 
-<!-- If you don't need IE 11 support you can remove this next script block -->
+<!-- If you don't need IE 11 support you can remove this next script block
   <script type="text/javascript">
     if (window.navigator.userAgent.indexOf('Trident/') > 0) {
       let urls = [
@@ -56,14 +56,15 @@
       });
     }
   </script>
+   -->
   <!-- These are the two libraries needed for current browsers. -->
   <script src={{ "js/libs/fuse.js/3.2.1/fuse.min.js" | absURL }}></script>
   <script src={{ "js/libs/mark.js/9.0.0/mark.min.js" | absURL }}></script>
 
   <!-- Below works *only if* this theme component is named "hugo-search-fuse-js"
        AND *if* the themesDir is left at the default value of "themes".  -->
- <!-- { { $search_js_md5 := (readFile "themes/hugo-search-fuse-js/static/js/search.js" | md5) } }
-  <script src={ { printf "%s?%s" ("js/search.js" | absURL) $search_js_md5 } }></script>  -->
+  {{ $search_js_md5 := (readFile "themes/hugo-search-fuse-js/static/js/search.js" | md5) }}
+  <script src={{ printf "%s?%s" ("js/search.js" | absURL) $search_js_md5 }}></script>
 
 
 <!-- first working version:
@@ -86,5 +87,5 @@
     </table>
   </small>
   </div></template>
-  
+
   -->
