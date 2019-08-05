@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Developing Custom Applications on Lightelligence®</title>
-    <link>https://lightelligence.io/applications/</link>
+    <link>https://mangogul.bitbucket.io/applications/</link>
     <description>Recent content in Developing Custom Applications on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://lightelligence.io/applications/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mangogul.bitbucket.io/applications/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Authenticating with OAuth2</title>
-      <link>https://lightelligence.io/applications/authenticating-with-oauth2/</link>
+      <link>https://mangogul.bitbucket.io/applications/authenticating-with-oauth2/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/applications/authenticating-with-oauth2/</guid>
+      <guid>https://mangogul.bitbucket.io/applications/authenticating-with-oauth2/</guid>
       <description>To be able to actually use applications, perform two basic steps:
  Register your applications to the OLT platform.
 By registering your application to the OLT platform, you turn your application into an OAuth2 client authenticating via OpenID Connect.
@@ -27,10 +27,10 @@ For more information, see Troubleshooting Application Management.</description>
     
     <item>
       <title>Identifying Your Use Case</title>
-      <link>https://lightelligence.io/applications/use-cases/</link>
+      <link>https://mangogul.bitbucket.io/applications/use-cases/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/applications/use-cases/</guid>
+      <guid>https://mangogul.bitbucket.io/applications/use-cases/</guid>
       <description>Choose an applications type depending on your use case, and off you go.
 Applications with User Interaction To retrieve an OAuth2 access token, you can implement an OAuth2 client with or without OAuth2 client secret, depending on the application type:
  Web application running on a web server (in which the application source code is protected): Implement a confidential OAuth2 client with OAuth2 client secret. User agent application running in a browser (in which the application source code may be viewed), a JavaScript application, for example: Implement a public OAuth2 client without OAuth2 client secret.</description>
@@ -38,10 +38,10 @@ Applications with User Interaction To retrieve an OAuth2 access token, you can i
     
     <item>
       <title>Registering and Implementing User Applications</title>
-      <link>https://lightelligence.io/applications/registering-user-applications/</link>
+      <link>https://mangogul.bitbucket.io/applications/registering-user-applications/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/applications/registering-user-applications/</guid>
+      <guid>https://mangogul.bitbucket.io/applications/registering-user-applications/</guid>
       <description>To turn a user application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
 Note
 Simulating Applications
@@ -55,10 +55,10 @@ Checking permissions
     
     <item>
       <title>Registering and Implementing Background Applications</title>
-      <link>https://lightelligence.io/applications/registering-background-applications/</link>
+      <link>https://mangogul.bitbucket.io/applications/registering-background-applications/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/applications/registering-background-applications/</guid>
+      <guid>https://mangogul.bitbucket.io/applications/registering-background-applications/</guid>
       <description>To turn a background application into an OAuth2 client, register it to the OLT platform and implement OAuth2 in your application.
 Prerequisites
 To register applications to the OLT platform, you have owner or writer authorization.
@@ -70,10 +70,10 @@ Checking permissions
     
     <item>
       <title>Managing Custom Applications</title>
-      <link>https://lightelligence.io/applications/managing-applications/</link>
+      <link>https://mangogul.bitbucket.io/applications/managing-applications/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/applications/managing-applications/</guid>
+      <guid>https://mangogul.bitbucket.io/applications/managing-applications/</guid>
       <description>As the developer, deactivate custom applications temporarily or whitelist additional tenants, for example.
 As a tenant owner, install or uninstall custom applications, for example.
 Verifying Permissions To manage custom applications, verify you have the permissions required for the specific endpoints.
@@ -84,10 +84,10 @@ You get user data such as the user ID (in our example 72fa ...).</description>
     
     <item>
       <title>Defining Custom Permissions and Roles</title>
-      <link>https://lightelligence.io/applications/defining-custom-permissions/</link>
+      <link>https://mangogul.bitbucket.io/applications/defining-custom-permissions/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/applications/defining-custom-permissions/</guid>
+      <guid>https://mangogul.bitbucket.io/applications/defining-custom-permissions/</guid>
       <description>Custom permissions allow you to use the OLT role management to control how users can use your custom applications.
 How you design and implement custom permissions in a custom application depends on your user role concept.
 How it Works How does the custom roles mechanism work?
@@ -97,10 +97,10 @@ How it Works How does the custom roles mechanism work?
     
     <item>
       <title>Troubleshooting Application Management</title>
-      <link>https://lightelligence.io/applications/troubleshooting-application-management/</link>
+      <link>https://mangogul.bitbucket.io/applications/troubleshooting-application-management/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/applications/troubleshooting-application-management/</guid>
+      <guid>https://mangogul.bitbucket.io/applications/troubleshooting-application-management/</guid>
       <description>Access Denied Your custom application can&amp;rsquo;t access a certain endpoint?
 Verify that an endpoint has the permission required to access the tenant&amp;rsquo;s data.
 Background

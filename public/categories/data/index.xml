@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data on Lightelligence®</title>
-    <link>https://lightelligence.io/categories/data/</link>
+    <link>https://mangogul.bitbucket.io/categories/data/</link>
     <description>Recent content in data on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://lightelligence.io/categories/data/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mangogul.bitbucket.io/categories/data/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Storing and Retrieving Sensor Data</title>
-      <link>https://lightelligence.io/devices/reporting-getting-started/</link>
+      <link>https://mangogul.bitbucket.io/devices/reporting-getting-started/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/devices/reporting-getting-started/</guid>
+      <guid>https://mangogul.bitbucket.io/devices/reporting-getting-started/</guid>
       <description>You got started with setting up a Raspberry Pi and transmitting configuration data such as the IP address to the OLT platform. See Connecting a Device in 3 Steps.
 By walking through the process manually, you got an idea of how the elements of the OLT platform interact. see Walking Through the OLT Portal, Step by Step.
 Now we add a new device type, to cover a typical IoT scenario: Storing time series sensor data in the OLT platform, and retrieving the data.</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mapping the OLT Landscape on Lightelligence®</title>
-    <link>https://lightelligence.io/users/</link>
+    <link>https://mangogul.bitbucket.io/users/</link>
     <description>Recent content in Mapping the OLT Landscape on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://lightelligence.io/users/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mangogul.bitbucket.io/users/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating Tenants</title>
-      <link>https://lightelligence.io/users/creating-tenants/</link>
+      <link>https://mangogul.bitbucket.io/users/creating-tenants/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/users/creating-tenants/</guid>
+      <guid>https://mangogul.bitbucket.io/users/creating-tenants/</guid>
       <description>What&amp;rsquo;s a Tenant? A tenant is the owner of a system landscape.
 As a tenant, assign users and roles to manage the system landscape composed of IoT devices.
 Use Cases Create multiple tenants in one of the following cases, for example:
@@ -25,10 +25,10 @@ Use Cases Create multiple tenants in one of the following cases, for example:
     
     <item>
       <title>Managing Users</title>
-      <link>https://lightelligence.io/users/managing-users/</link>
+      <link>https://mangogul.bitbucket.io/users/managing-users/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/users/managing-users/</guid>
+      <guid>https://mangogul.bitbucket.io/users/managing-users/</guid>
       <description>Understanding the Role Concept When creating a tenant, a default user is created whose role is owner.
 The owner owns the tenant and has no restrictions in the OLT portal.
 Owners can assign the following roles to users:
@@ -39,10 +39,10 @@ Writers can, for example
     
     <item>
       <title>Defining Custom Roles</title>
-      <link>https://lightelligence.io/users/creating-custom-roles/</link>
+      <link>https://mangogul.bitbucket.io/users/creating-custom-roles/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/users/creating-custom-roles/</guid>
+      <guid>https://mangogul.bitbucket.io/users/creating-custom-roles/</guid>
       <description>Custom Roles and Permissions for Applications By default, the OLT platform checks whether a user has the read or write OLT permission to access a specific endpoint.
 With custom applications, you access the OLT API endpoints. With custom roles, you can assign custom permissions to control on a more granular level what a user is allowed to do with a custom application.
 So, a part of designing custom applications is to determine whether you wish to define custom roles.</description>
@@ -50,10 +50,10 @@ So, a part of designing custom applications is to determine whether you wish to 
     
     <item>
       <title>Considering Security</title>
-      <link>https://lightelligence.io/users/security/</link>
+      <link>https://mangogul.bitbucket.io/users/security/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/users/security/</guid>
+      <guid>https://mangogul.bitbucket.io/users/security/</guid>
       <description>Enabling Two-Factor Authentication We recommend using two-factor authentication.
 Procedure
 As a user, proceed as follows:

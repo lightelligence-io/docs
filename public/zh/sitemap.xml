@@ -3,88 +3,88 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://lightelligence.io/zh/documentation/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/documentation/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/templates/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/templates/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/content-management/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/content-management/</loc>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/about/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/about/</loc>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/templates/base/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/templates/base/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/categories/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/categories/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://lightelligence.io/categories/"
+                href="https://mangogul.bitbucket.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://lightelligence.io/zh/categories/"
+                href="https://mangogul.bitbucket.io/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/categories/content-management/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/categories/content-management/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://lightelligence.io/"
+                href="https://mangogul.bitbucket.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://lightelligence.io/zh/"
+                href="https://mangogul.bitbucket.io/zh/"
                 />
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/categories/fundamentals/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/categories/fundamentals/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/categories/templates/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/categories/templates/</loc>
     <lastmod>2019-07-09T12:10:45+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lightelligence.io/zh/news/</loc>
+    <loc>https://mangogul.bitbucket.io/zh/news/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://lightelligence.io/news/"
+                href="https://mangogul.bitbucket.io/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://lightelligence.io/zh/news/"
+                href="https://mangogul.bitbucket.io/zh/news/"
                 />
   </url>
   

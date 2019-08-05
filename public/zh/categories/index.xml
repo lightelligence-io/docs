@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Lightelligence®</title>
-    <link>https://lightelligence.io/zh/categories/</link>
+    <link>https://mangogul.bitbucket.io/zh/categories/</link>
     <description>Recent content in Categories on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://lightelligence.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mangogul.bitbucket.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>content management</title>
-      <link>https://lightelligence.io/zh/categories/content-management/</link>
+      <link>https://mangogul.bitbucket.io/zh/categories/content-management/</link>
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/zh/categories/content-management/</guid>
+      <guid>https://mangogul.bitbucket.io/zh/categories/content-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fundamentals</title>
-      <link>https://lightelligence.io/zh/categories/fundamentals/</link>
+      <link>https://mangogul.bitbucket.io/zh/categories/fundamentals/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/zh/categories/fundamentals/</guid>
+      <guid>https://mangogul.bitbucket.io/zh/categories/fundamentals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>templates</title>
-      <link>https://lightelligence.io/zh/categories/templates/</link>
+      <link>https://mangogul.bitbucket.io/zh/categories/templates/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/zh/categories/templates/</guid>
+      <guid>https://mangogul.bitbucket.io/zh/categories/templates/</guid>
       <description></description>
     </item>
     

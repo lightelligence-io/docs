@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>maintenance on Lightelligence®</title>
-    <link>https://lightelligence.io/categories/maintenance/</link>
+    <link>https://mangogul.bitbucket.io/categories/maintenance/</link>
     <description>Recent content in maintenance on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://lightelligence.io/categories/maintenance/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mangogul.bitbucket.io/categories/maintenance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tracking Changes</title>
-      <link>https://lightelligence.io/maintenance/</link>
+      <link>https://mangogul.bitbucket.io/maintenance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/maintenance/</guid>
+      <guid>https://mangogul.bitbucket.io/maintenance/</guid>
       <description></description>
     </item>
     

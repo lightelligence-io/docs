@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>getting-started on Lightelligence®</title>
-    <link>https://lightelligence.io/categories/getting-started/</link>
+    <link>https://mangogul.bitbucket.io/categories/getting-started/</link>
     <description>Recent content in getting-started on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://lightelligence.io/categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mangogul.bitbucket.io/categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Getting Started</title>
-      <link>https://lightelligence.io/getting-started/</link>
+      <link>https://mangogul.bitbucket.io/getting-started/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/getting-started/</guid>
+      <guid>https://mangogul.bitbucket.io/getting-started/</guid>
       <description>To get started with these OLT vehicles, perform the following scenarios:
  Connect an existing device to the OLT platform: Connecting a Device in 3 Steps
  Get an overview of the OLT portal function you will typically use when adding devices to your IoT system landscape: Walking Through the OLT Portal, Step by Step
@@ -25,10 +25,10 @@
     
     <item>
       <title>Connecting a Device in 3 Steps</title>
-      <link>https://lightelligence.io/getting-started/setting-up-getting-started/</link>
+      <link>https://mangogul.bitbucket.io/getting-started/setting-up-getting-started/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/getting-started/setting-up-getting-started/</guid>
+      <guid>https://mangogul.bitbucket.io/getting-started/setting-up-getting-started/</guid>
       <description>A Raspberry Pi is an ideal companion for the first steps on your journey.
 Connect a Raspberry Pi to the OLT platform in three easy steps:
  Flash an operating system onto a Raspberry Pi. In the OLT portal, register to the OLT platform. Let a Bash script connect your Raspberry PI to the OLT platform and let and display the temperature and the IP address the Raspberry Pi transmits to the OLT platform.</description>
@@ -36,10 +36,10 @@ Connect a Raspberry Pi to the OLT platform in three easy steps:
     
     <item>
       <title>Walking Through the OLT Portal, Step by Step</title>
-      <link>https://lightelligence.io/getting-started/connectivity-getting-started/</link>
+      <link>https://mangogul.bitbucket.io/getting-started/connectivity-getting-started/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/getting-started/connectivity-getting-started/</guid>
+      <guid>https://mangogul.bitbucket.io/getting-started/connectivity-getting-started/</guid>
       <description>In the first scenario, our Bash script connects an existing device to the OLT platform automatically, in our example a Raspberry Pi.
 Now we describe how you would connect a device manually.
 The process gives you
@@ -48,10 +48,10 @@ The process gives you
     
     <item>
       <title>Recapitulating Basic Concepts</title>
-      <link>https://lightelligence.io/getting-started/basic-concepts/</link>
+      <link>https://mangogul.bitbucket.io/getting-started/basic-concepts/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/getting-started/basic-concepts/</guid>
+      <guid>https://mangogul.bitbucket.io/getting-started/basic-concepts/</guid>
       <description>Understanding the Concepts You now know some basic concepts:
  A tenant owns the physical devices in an IoT system landscapes.
 You create a tenant by registering to the OLT platform.

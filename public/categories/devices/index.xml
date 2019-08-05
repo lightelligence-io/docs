@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devices on Lightelligence®</title>
-    <link>https://lightelligence.io/categories/devices/</link>
+    <link>https://mangogul.bitbucket.io/categories/devices/</link>
     <description>Recent content in devices on Lightelligence®</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://lightelligence.io/categories/devices/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mangogul.bitbucket.io/categories/devices/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Managing the OLT Lifecycle</title>
-      <link>https://lightelligence.io/devices/</link>
+      <link>https://mangogul.bitbucket.io/devices/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/devices/</guid>
+      <guid>https://mangogul.bitbucket.io/devices/</guid>
       <description>To connect your actual IoT system landscape to the OLT platform, replicate the processes you implemented in the Getting Started section of your OLT user journey.
 Add one device after the other, according to the travel plan you have prepared under Mapping the OLT Landscape.
 Keep in touch with the places you have visited during your OLT journey: Monitor your devices and keep their firmware and configurations up-to-date.</description>
@@ -24,10 +24,10 @@ Keep in touch with the places you have visited during your OLT journey: Monitor 
     
     <item>
       <title>Storing and Retrieving Sensor Data</title>
-      <link>https://lightelligence.io/devices/reporting-getting-started/</link>
+      <link>https://mangogul.bitbucket.io/devices/reporting-getting-started/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/devices/reporting-getting-started/</guid>
+      <guid>https://mangogul.bitbucket.io/devices/reporting-getting-started/</guid>
       <description>You got started with setting up a Raspberry Pi and transmitting configuration data such as the IP address to the OLT platform. See Connecting a Device in 3 Steps.
 By walking through the process manually, you got an idea of how the elements of the OLT platform interact. see Walking Through the OLT Portal, Step by Step.
 Now we add a new device type, to cover a typical IoT scenario: Storing time series sensor data in the OLT platform, and retrieving the data.</description>
@@ -35,10 +35,10 @@ Now we add a new device type, to cover a typical IoT scenario: Storing time seri
     
     <item>
       <title>Executing Commands on Devices</title>
-      <link>https://lightelligence.io/devices/actions-getting-started/</link>
+      <link>https://mangogul.bitbucket.io/devices/actions-getting-started/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lightelligence.io/devices/actions-getting-started/</guid>
+      <guid>https://mangogul.bitbucket.io/devices/actions-getting-started/</guid>
       <description>Besides reading sensor data, executing commands on devices is another basic IoT use case.
 So, let&amp;rsquo;s write values to devices, to trigger actions.
 In the JSON schema of a device type, we have another dedicated property for this, actions.
