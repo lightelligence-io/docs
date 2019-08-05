@@ -3,22 +3,31 @@ code, .code, pre code, .highlight pre  {
   font-family: 'inconsolata',Menlo,Monaco,'Courier New',monospace;
 }
 
-.sans-serif {
-  font-family: 'Muli',
-              avenir,
-               'helvetica neue', helvetica,
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
+$font-family-regular: 'regular';
+$font-family-italic: 'italic';
+$font-family-bold: 'bold';
+
+@font-face {
+  font-family: $font-family-regular;
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/PT_Sans-Web-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: $font-family-bold;
+  src: url('/fonts/PT_Sans-Web-Bold.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 200;
-  src: url('/images/svg/PT_Sans') format('ttf');
 }
+
+@font-face {
+  font-family: $font-family-italic;
+  src: url('/fonts/PT_Sans-Web-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 .sans-serif {
@@ -33,7 +42,7 @@ code, .code, pre code, .highlight pre  {
 
 
 .serif {
-  font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  font-family: 'PT Sans',"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
 }
 
 /* Monospaced Typefaces (for code) */

@@ -8,3 +8,8 @@
 @import "fluid-type";
 @import "blockquotes";
 @import "tags";
+
+.subtitle {
+        font-family: $font-family-regular;
+        font-size: 18px;    
+}
