@@ -1,13 +1,13 @@
 {{ $section_to_display := .section_to_display  }}
-  <div class="w-100 ph4 pb5 pb6-ns pt1 mt4 pt3-ns">
+  <div class="w-100 ph4-ns pb5-ns pb6-ns pt1 mt4 pt3-ns">
 
   <div class="flex">
     <div class="dn db-l w-20">
         {{ partial "nav-links-docs.html" .context }}
     </div>
 
-    <div class=" w-100 w-80-l ph0 ph4-l">
-      <article class="w-50 nested-copy-line-height nested-links nested-img">
+    <div class=" w-100 w-80-l ph2 ph4-l-ns">
+      <article class="nested-copy-line-height nested-links nested-img">
         <h1 class="primary-color-dark f2">
           {{ with $.context.Data.Singular }}{{ . | humanize }}: {{ end }}{{ .context.Title }}
         </h1>
