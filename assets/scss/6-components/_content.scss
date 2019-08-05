@@ -11,3 +11,7 @@
   background: var(--primary-color); /* WebKit/Blink Browsers */
   color: white;
 }
+
+#prose > * {
+  word-break: break-all;
+}

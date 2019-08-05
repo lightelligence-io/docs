@@ -39,13 +39,6 @@
      {{ block "scripts" . }}
       {{- partial "site-scripts.html" . -}}
     {{ end }}
-	
-      {{ partial "site-manifest.html" . }}
-      {{- partial "head-additions.html" . -}}
-      {{- template "_internal/opengraph.html" . -}}
-      {{- template "_internal/google_news.html" . -}}
-      {{- template "_internal/schema.html" . -}}
-      {{- template "_internal/twitter_cards.html" . -}}
 
       {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
         {{ partial "gtag" . }}
@@ -56,11 +49,10 @@
 
   </head>
   <body class="ma0 sans-serif bg-color-dark{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-    {{ block "nav" . }}{{ partial "site-nav.html" . }}{{ end }}
+  {{ block "nav" . }}{{ end }}
     {{ block "header" . }}{{ end }}
-    <main role="main" class="content-with-sidebar min-vh-100 pb2 pb0-ns">
+    <main role="main" class="content-with-sidebar min-vh-100 pb0">
       {{ block "main" . }}{{ end }}
-	<!--  {{- partial "site-search-fuse-footer.html" . -}} -->
 
 	  
 	  

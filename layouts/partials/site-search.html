@@ -1,27 +1,9 @@
-<!--Search:
-<input id="search" type="text">
-<br> Results:
-<ul id="results">
-</ul>-->
-<div id="results"></div>
-<form id="site-search-form" action="" role="search">
+<form id="site-search-form" action="{{ .Permalink }}" role="search" >
     <fieldset class="bn ma0 pa0">
-        <label class="clip" for="search-input">Search</label>
-        <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="Search the Docs" name="q" value="" style="background: transparent url('/images/icon-search.png') no-repeat 0 8px /16px 16px;">
+        <label class="clip" for="search-query">Search</label>
+        <input id="search-query" placeholder="Enter a word or phrase …" name="q"
+               class="needs-js bg-left bn f4 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 dark-gray"
+               style=" background: transparent url('/images/icon-search.png') no-repeat 0 10px /16px 16px;"  />
+
     </fieldset>
 </form>
-<!-- This partial !
-
-It's required in the site-footer.html partial. It must be in the footer, otherwise the vertical navigation doesn't work !!!
-
-
-		<form id="site-search-form" action="" role="search">
-		<fieldset class="bn ma0 pa0">
-		<label class="clip" for="search-input">Search</label>
-		<input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white"
-		placeholder="Search the Docs" name="search-input" value=""
-		style="background: transparent url('/images/icon-search.png') no-repeat 0 8px /16px 16px;">
-		</fieldset>
-		</form>
-
-		-->
