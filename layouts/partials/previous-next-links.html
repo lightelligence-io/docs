@@ -1,14 +1,16 @@
-{{if .Prev }}
-  <a href="{{ .Prev.Permalink }}" class="db-l f4 f3-ns link primary-color hover-black fw8 mr4">
-    <span class="v-mid dib">{{ partial "svg/ic_chevron_left_black_24px.svg" (dict "size" "30px") }}</span> {{ .Prev.Title }}
-  </a>
-{{end}}
+<div class="flex justify-between items-center pagination pagination-bottom">
+    {{if .Prev }}
+    <a href="{{ .Prev.Permalink }}" class="f5 link light-gray">
+        <span class="v-mid dib">{{ partial "svg/ic_chevron_left_black_24px.svg" (dict "size" "30px") }}</span> {{ .Prev.Title }}
+    </a>
+    {{end}}
 
-{{if .Next }}
-  <a href="{{.Next.Permalink }}" class="db-l f4 f3-ns link primary-color hover-black fw8">
-    {{ .Next.Title }} <span class="v-mid dib">{{ partial "svg/ic_chevron_right_black_24px.svg" (dict "size" "25px") }}</span>
-  </a>
-{{end}}
+    {{if .Next }}
+    <a href="{{.Next.Permalink }}" class="f5 link light-gray">
+        {{ .Next.Title }} <span class="v-mid dib">{{ partial "svg/ic_chevron_right_black_24px.svg" (dict "size" "25px") }}</span>
+    </a>
+    {{end}}
+</div>
 
 
 <script>

@@ -82,3 +82,14 @@ pre, .pre  {
   color: #solid var(--primary-color);
   transition: color .15s ease-in;
 }
+
+.nested-links {
+  .pagination a.link{
+    color: var(--light-gray);
+    text-decoration: none;
+    &:hover {
+      color: #solid var(--primary-color);
+      transition: color .15s ease-in;
+    }
+  }
+}
