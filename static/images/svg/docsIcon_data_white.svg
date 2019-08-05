@@ -3,17 +3,17 @@
     <style>
       .a {
         fill: none;
-        stroke: #a7a8aa;
+        stroke: #f60;
+        stroke: #fff;
         stroke-linejoin: round;
         stroke-width: 1.5px;
       }
     </style>
   </defs>
   <title>Osram_Glyphs_v1</title>
+  <path class="a" d="M16,14h3a3,3,0,0,0,0-6H17A6,6,0,0,0,5,8a3,3,0,0,0,0,6H8"/>
   <g>
-    <circle class="a" cx="12" cy="7" r="4"/>
-    <path class="a" d="M6,19V17a6,6,0,0,1,6-6h0a6,6,0,0,1,5.19,3"/>
-    <line class="a" x1="18" y1="22" x2="18" y2="16"/>
-    <line class="a" x1="15" y1="19" x2="21" y2="19"/>
+    <polyline class="a" points="8 18 12 22 16 18"/>
+    <line class="a" x1="12" y1="12" x2="12" y2="22"/>
   </g>
 </svg>

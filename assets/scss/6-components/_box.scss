@@ -20,7 +20,7 @@
 }
 
 .boxes .bg-icon{
-  background-image: url("/images/docsIcon_rocket.svg");
+  background-image: url("/images/svg/docsIcon_rocket.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 50%;
@@ -32,7 +32,7 @@
 }
 .boxes a:hover {
   .bg-icon {
-    background-image: url("/images/docsIcon_rocket_wt.svg");
+    background-image: url("/images/svg/docsIcon_rocket_white.svg");
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
   }
@@ -51,6 +51,7 @@
       .arrow-right {
         background: url("/images/svg/ic_chevron_right_white_24px.svg");
         transition: all .5s ease-in-out;
+        background-repeat: no-repeat;
       }
     }
 }
