@@ -1,0 +1,15 @@
+footer {
+  .footer-right {
+    img {
+      width: 85px;
+    }
+  }
+  &:before {
+    content: "";
+    background: var(--color-dark);
+    border-radius: 0px;
+    height: 2px;
+    width: 100%;
+    display: block;
+  }
+}

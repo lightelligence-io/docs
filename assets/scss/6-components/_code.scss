@@ -71,16 +71,19 @@ pre, .pre  {
 .nested-links a {
   color: var(--primary-color);
   text-decoration: none;
+  outline: none;
 }
 
 .nested-links a:hover {
   color: #solid var(--primary-color);
   transition: color .15s ease-in;
+  outline: none;
 }
 
 .nested-links a:focus {
   color: #solid var(--primary-color);
   transition: color .15s ease-in;
+  outline: none;
 }
 
 .nested-links {
@@ -90,6 +93,7 @@ pre, .pre  {
     &:hover {
       color: #solid var(--primary-color);
       transition: color .15s ease-in;
+      outline: none;
     }
   }
 }

@@ -1,12 +1,12 @@
-<div class="flex justify-between items-center pagination pagination-bottom">
+<div class="flex flex-wrap justify-between items-baseline pagination pagination-bottom">
     {{if .Prev }}
-    <a href="{{ .Prev.Permalink }}" class="f5 link light-gray">
+    <a href="{{ .Prev.Permalink }}" class="f5 link light-gray w-100 w-50-l tc tl-l">
         <span class="v-mid dib">{{ partial "svg/ic_chevron_left_black_24px.svg" (dict "size" "30px") }}</span> {{ .Prev.Title }}
     </a>
     {{end}}
 
     {{if .Next }}
-    <a href="{{.Next.Permalink }}" class="f5 link light-gray">
+    <a href="{{.Next.Permalink }}" class="f5 link light-gray w-100 w-50-l tc tr-l mt3 mt0-l">
         {{ .Next.Title }} <span class="v-mid dib">{{ partial "svg/ic_chevron_right_black_24px.svg" (dict "size" "25px") }}</span>
     </a>
     {{end}}
