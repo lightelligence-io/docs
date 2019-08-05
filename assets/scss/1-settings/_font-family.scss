@@ -13,6 +13,24 @@ code, .code, pre code, .highlight pre  {
                sans-serif;
 }
 
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/images/svg/PT_Sans') format('ttf');
+}
+
+
+.sans-serif {
+  font-family: 'PT Sans',
+  avenir,
+  'helvetica neue', helvetica,
+  ubuntu,
+  roboto, noto,
+  'segoe ui', arial,
+  sans-serif;
+}
+
 
 .serif {
   font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
