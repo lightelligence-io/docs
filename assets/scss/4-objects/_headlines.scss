@@ -1,0 +1,12 @@
+.subtitle {
+    font-family: $font-family-regular;
+    font-size: 18px;    
+}
+
+.headline {
+    font-family: $font-family-bold;
+
+    &--aritcle {
+        font-size: 24px;
+    }
+}
