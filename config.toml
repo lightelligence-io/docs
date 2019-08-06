@@ -195,7 +195,7 @@ anchor = "smart"
 
 
   [[global]]
-    name = "Start OLT Journey"
+    name = "API Docs"
 	identifier = "start"
     url = "/getting-started/setting-up-getting-started/"
     weight = 1
@@ -224,7 +224,7 @@ anchor = "smart"
 #	post = "external"
 
   [[global]]
-    name = "Get Support"
+    name = "Visit Lightelligence"
 	identifier = "support"
     url = "https://api.lightelligence.io/v1/api-collection/"
     weight = 5

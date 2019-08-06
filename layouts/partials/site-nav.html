@@ -6,11 +6,11 @@
     <span></span>
   </div>
   <div class="relative flex-ns flex-wrap items-center justify-start">
-    <h1 class="pv3 dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl4-ns">
-      <a href="{{ .Site.BaseURL }}" class="link white">
-         {{ .Site.Title }}
+      <a href="{{ .Site.BaseURL }}" class="link white pl4 outline-0">
+        <h1 class="header-logo pv3 dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl4-ns">
+          <span class="o-0">{{ .Site.Title }}</span>
+        </h1>
       </a>
-    </h1>
       <div class="header-links absolute right-0">
           <ul class="pv3 list ma0 pa0 dn dib-l pl4 bg-primary-color right-0">
               {{ range .Site.Menus.global }}
