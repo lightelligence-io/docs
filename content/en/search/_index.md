@@ -6,8 +6,8 @@ categories: [search]
 keywords: [search]
 menu:
   docs:
-    weight: -1
-weight: 7	#rem
+    weight: 0
+weight: 0	#rem
 slug:
 aliases: []
 toc: true
