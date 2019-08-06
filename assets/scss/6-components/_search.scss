@@ -1,0 +1,11 @@
+.search_summary {
+  flex-grow: 1;
+  background-color: #fff;
+  -moz-border-radius: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search_summary:hover {
+  -webkit-box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
