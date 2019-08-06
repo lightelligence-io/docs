@@ -1,13 +1,11 @@
 .box:hover {
-  background: var(--primary-color);
-  border-radius: 4px;
   box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
   transition: all .5s ease-in-out;
 }
 
 .box {
   border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
   transition: all .5s ease-in-out;
 }
 
@@ -15,22 +13,45 @@
   color: #343a40;
 }
 
-.boxes a:hover {
-  color: #FFF;
-}
 
 .boxes .bg-icon{
   background-image: url("/images/svg/docsIcon_rocket.svg");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: 50%;
+  background-size: 100%;
+  width: 24px;
+  background-position: 0px 15px;
   transition: all .5s ease-in-out;
 
-  @media (--breakpoint-large) {
+  @media (min-width: 480px) {
+    width: 40px;
     background-position: center;
   }
 }
-.boxes a:hover {
+
+.boxes {
+  .arrow-right {
+    background: url("/images/svg/ic_chevron_right_orange_24px.svg");
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+  }
+}
+
+
+.boxes:first-child {
+  .box {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  a {
+    .arrow-right {
+      background: url("/images/svg/ic_chevron_right_white_24px.svg");
+      transition: all .5s ease-in-out;
+      background-repeat: no-repeat;
+    }
+  }
   .bg-icon {
     background-image: url("/images/svg/docsIcon_rocket_white.svg");
     background-repeat: no-repeat;
@@ -38,20 +59,8 @@
   }
 }
 
-  .boxes {
-    .arrow-right {
-      background: url("/images/svg/ic_chevron_right_orange_24px.svg");
-      position: relative;
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      transition: all .5s ease-in-out;
-    }
-    a :hover {
-      .arrow-right {
-        background: url("/images/svg/ic_chevron_right_white_24px.svg");
-        transition: all .5s ease-in-out;
-        background-repeat: no-repeat;
-      }
-    }
+.boxes-container {
+  @media all and (min-width: 960px) {
+    max-width: 1280px;
+  }
 }
