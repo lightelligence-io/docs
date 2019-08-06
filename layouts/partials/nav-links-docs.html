@@ -1,12 +1,12 @@
 {{ $currentPage := . }}
 <nav role="navigation">
-  <ul class="list nl2">
-    <div class="db dib-ns pl3">
+  <ul class="list nl2 pl0">
+    <li class="db dib-ns pl2 mb4 w-100">
       {{- partial "site-search.html" . -}}
-    </div>
+    </li>
     {{ range .Site.Menus.docs.ByWeight }}
       {{ $post := printf "%s" .Post }}
-      <li class="f5 w-100  hover-orange fw8{{ if eq $post "break" }} mb1 bb b--moon-gray{{ end }}">
+      <li class="f5 w-90-ns  hover-orange fw8{{ if eq $post "break" }} mb1 bb b--moon-gray{{ end }}">
         <a href="{{ if .HasChildren }}javascript:void(0){{ else }}{{ .URL }}{{ end }}" class="js-toggle dib w-100 link mid-gray hover-orange pl2 pr2 pv2 {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} primary-color{{end}}" data-target=".{{ .Identifier }}">{{ .Name }}</a>
 
         {{- if .HasChildren }}
