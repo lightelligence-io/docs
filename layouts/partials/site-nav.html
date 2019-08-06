@@ -1,14 +1,17 @@
 {{ $currentPage := . }}
 <nav class="bg-primary-color-dark w-100" role="navigation">
-
+  <div id="hamburg-icon" class="js-toggle absolute right-0" data-target=".docsmenu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <div class="relative flex-ns flex-wrap items-center justify-start">
     <h1 class="pv3 dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl4-ns">
       <a href="{{ .Site.BaseURL }}" class="link white">
          {{ .Site.Title }}
       </a>
     </h1>
-
-      <ul class="pv3 list ma0 pa0 dn dib-l bg-primary-color right-0">
+    <ul class="pv3 list ma0 pa0 dn dib-l bg-primary-color right-0">
         {{ range .Site.Menus.global }}
         <li class="f5 dib mr4" role="menuitem">
           {{/* TODO: Create an "Global" active class to show which site one is currently at */}}
@@ -25,19 +28,19 @@
         </li>
         {{ end }}
       </ul>
-    <div id="hamburg-icon" class="js-toggle absolute right-0" data-target=".docsmenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   </div>
 </nav>
-<div  class="docsmenu mobilemenu pb3 dn">
+<div  class="docsmenu mobilemenu pb3 dn" style="
+    width: 80%;
+    float: right;
+    position: relative;
+    top: 0px;
+">
   {{ $currentPage := . }}
   {{ $menu := .Site.Menus.docs.ByWeight }}
-  <ul class="bg-primary-color-dark list dib ph0 ma0 scrolling-touch tc">
+  <ul class="bg-primary-color-dark list ph0 ma0 scrolling-touch tc">
     {{ range $menu }}{{ $post := printf "%s" .Post }}
-    <li  class="tl dib ma0 hover-bg-black w-100{{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
+    <li  class="tl ma0 hover-bg-black w-20 {{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
     <a href="{{.URL}}" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
     {{ .Name }}
     </a>
