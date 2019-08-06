@@ -105,3 +105,12 @@ code, .hljs {
     line-height: .5;
   }
 }
+
+.nested-links {
+  a.tags {
+    color: var(--blue);
+    border-radius: 12.5px;
+    height: 25px;
+    width: 86px;
+  }
+}

@@ -29,3 +29,6 @@ function toggleClass() {
 
     }
   }
+$('#hamburg-icon').click(function(){
+  $(this).toggleClass('open');
+});

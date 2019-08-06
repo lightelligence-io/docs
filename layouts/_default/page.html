@@ -1,7 +1,7 @@
 <header class="flex-none w-100">
   {{ if .Params.categories }}
   {{ range .Params.categories }}
-  <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="f6 fw8 mb0 link mid-gray dim mr3">
+  <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="f6 fw8 mb0 link mid-gray dim mr3 bg-light-blue blue ph2 pv1 tags">
   {{ humanize  . | upper }}
   </a>
   {{ end }}
@@ -13,7 +13,7 @@
 
   {{ if .Params.tags }}
   {{ range .Params.tags }}
-  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="f6 fw8 mb0 link mid-gray dim mr3">
+  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="f6 fw8 mb0 link mid-gray dim mr3 bg-light-blue blue ph2 pv1 tags">
   {{ humanize  . | upper }}
   </a>
   {{ end }}
