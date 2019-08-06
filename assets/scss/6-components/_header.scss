@@ -22,3 +22,11 @@
     }
   }
 }
+
+.header-detail {
+  .header-logo {
+    @media all and (max-width: 959px) {
+      width: 200px;
+    }
+  }
+}
