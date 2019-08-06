@@ -9,7 +9,7 @@
   transition: all .5s ease-in-out;
 }
 
-.boxes a {
+.boxes, .cat-boxes a {
   color: #343a40;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.boxes {
+.boxes, .cat-boxes {
   .arrow-right {
     background: url("/images/svg/ic_chevron_right_orange_24px.svg");
     position: relative;
