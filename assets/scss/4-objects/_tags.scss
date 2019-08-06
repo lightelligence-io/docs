@@ -1,5 +1,25 @@
 .tag{
-  background: var(--primary-color);
-  border-radius: 100px;
-  width: 179px;
+  li {
+    &.btn {
+      background: var(--primary-color);
+      border-radius: 100px;
+    }
+  }
+  //width: 179px;
+  .ext-link {
+    position: relative;
+    span {
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+    }
+    svg {
+      transform: scale(1.2);
+      path {
+        fill: white;
+      }
+    }
+  }
 }
