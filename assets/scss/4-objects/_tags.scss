@@ -39,3 +39,8 @@ mark {
     background-color: #ffe4a6;
     padding: 3px 0;
 }
+
+.search_iftags > tr {
+  display: flex;
+  flex-wrap: wrap;
+}

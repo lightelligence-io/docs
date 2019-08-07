@@ -83,7 +83,7 @@ function populateResults(result){
       tags.forEach(function (tag){
         var td = document.createElement('td');
         var node = document.createTextNode(tag);
-        td.setAttribute("class","f6 mb0 link mid-gray dim mr3 bg-color-dark ph2 pv1 tags search_tags");
+        td.setAttribute("class","f6 mb0 link mid-gray dim mr3 bg-color-dark ph2 pv1 tags mb2 search_tags");
         td.appendChild(node);
         tr.appendChild(td);
       });
