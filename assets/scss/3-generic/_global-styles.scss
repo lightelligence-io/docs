@@ -40,12 +40,12 @@ code {
   border-radius: 3px;
 }
 
-.highlight pre code {
+ pre code, .language-php {
   background: var(--primary-color-dark);
 }
 
 
-pre  code {
+pre code {
   display: block;
   padding: 1.5em 1.5em;
   font-size: .875rem;
