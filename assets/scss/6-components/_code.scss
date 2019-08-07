@@ -49,17 +49,18 @@ code.hljs {
 .copied:after {
     content: "Copy";
     color: #02BF1B;
-
-    svg {
-      width: 12px;
-      height: 12px;
-  
-      g > path {
-          fill: #02BF1B;
-      }
-    }
 }
 
+.copied {
+  svg {
+    width: 12px;
+    height: 12px;
+
+    g > path {
+        fill: #02BF1B;
+    }
+}
+}
 
 @media (--breakpoint-large) {
     .full-width, pre.expand:hover
