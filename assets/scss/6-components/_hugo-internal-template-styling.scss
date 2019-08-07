@@ -35,11 +35,12 @@
 #TableOfContents ul li {
   color: black;
   display: block;
-  margin-bottom: .375em;
+  margin-bottom: 1rem;
   line-height: 1.375;
 }
 
 #TableOfContents ul li a{
+  color: var(--primary-color-dark);
   width: 100%;
   padding: .25em .375em;
   margin-left: -.375em;
@@ -49,5 +50,10 @@
   opacity: 1;
   font-weight: bold;
 }
+
+#TableOfContents ul li a:focus {
+  color: var(--primary-color);
+}
+
 
 
