@@ -1,5 +1,5 @@
-
 {{ define "nav" }}{{ partial "site-nav.html" . }}{{ end }}
+
 
 {{ define "main" }}
   {{ $paginator := .Paginate (.Pages | lang.Merge (where .Sites.First.RegularPages "Section" .Section)) }}
