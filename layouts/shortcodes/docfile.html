@@ -7,5 +7,5 @@
 	<button class="copy-button" title="Copy to clipboard" data-clipboard-snippet>
 			<div class="copy-text"><i class="icon-clipboard"></i> COPY</div>
 	</button>
-	<pre><code class="language-{{if $syntaxoverride}}{{.Get 1}}{{else}}{{$syntax}}{{end}}">{{- readFile $file -}}</code></pre>
+	<pre ><code class="language-{{if $syntaxoverride}}{{.Get 1}}{{else}}{{$syntax}}{{end}}">{{- readFile $file -}}</code></pre>
 </div>

@@ -63,8 +63,8 @@ pre {
   border: none;
 }
 
-td pre code {
-  background: var(--primary-color-dark);
+td pre code, .markdown {
+  overflow: scroll;
 }
 
 
@@ -81,3 +81,6 @@ input {
   outline: none;
 }
 
+table {
+  width: 100%
+}
