@@ -1,6 +1,5 @@
+{{ define "nav" }}{{ end }}
 {{ define "header" }}
-<!-- {{ partial "boxes-small-news" . }} -->
-
     <div class="container">
         <div class="row">
             <div class="banner" role="banner">
@@ -18,6 +17,20 @@
                                     <span class="o-0">{{ .Site.Title }}</span>
                                 </h1>
                             </a>
+                        {{ partial "hamburger-menu.html" }}
+                        <div  class="docsmenu mobilemenu fixed relative fr fixed w-80 h-100 top-0 right-0 z-100 pb3 dn">
+                            {{ $currentPage := . }}
+                            {{ $menu := .Site.Menus.docs.ByWeight }}
+                            <ul class="bg-primary-color-dark list ph0 scrolling-touch tc">
+                                {{ range $menu }}{{ $post := printf "%s" .Post }}
+                                <li  class="tl hover-bg-black w-20 {{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
+                                <a href="{{.URL}}" class="ttu f6 link primary-color-light  hover-white db brand-font mb1 w-100 pv2 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
+                                {{ .Name }}
+                                </a>
+                                </li>
+                                {{end}}
+                            </ul>
+                        </div>
                         <div class="tag absolute right-0 top-0 mr4-l mt3-l">
                             <ul>
                                 <li class="dib ext-link">
@@ -37,18 +50,12 @@
                         </div>
                         <div class="lh-copy f4 w-90-ns center fw2 silver tc tc-ns">
                         </div>
-                        <!--         <div class="w4 mv4 center">
-                                     <a class="f5 db link grow tc v-mid white ba b&#45;&#45; ph3 pv2 br1" href="/getting-started/quick-start/">
-                                         Osram
-                                     </a>
-                                 </div>-->
                     </section>
                 </div>
 
             </div>
         </div>
     </div>
-
 {{ end }}
 
 
@@ -68,72 +75,6 @@
 
 
 </div>
-<!--
-
-  <section class="w-100 ph4 ph5-ns pv4">
-    {{- partial "home-page-sections/features-icons" . -}}
-
-
-<div class="flex flex-wrap">
-<section class="flex-ns flex-wrap justify-between w-100">
-
-<div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-10">
-<div class="bg-white mb2 pa3 pa4-l gray">
-
-{{ .Params.title }}	<h1 class="near-black f3"><a href="/templates/introduction/" class="link orange dim">Getting Started</a></h1>
-
-
-{{ .Params.description }}	<div class="lh-copy links">Hugo uses Go’s <code>html/template</code> and <code>text/template</code> libraries as the basis for the templating.
-
-{{ $readmore := "Read More »" }}
-
-	<a href="/templates/introduction/" class="f6 mt2 db link primary-color dim">{{ $readmore }}</a></div></div></div>
-
-
-
-<div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-10"><div class="bg-white mb2 pa3 pa4-l gray"><h1 class="near-black f3"><a href="/content-management/organization/" class="link orange dim">Mapping the OLT Landscape</a></h1><div class="lh-copy links">Hugo assumes that the same structure that works to organize your source content is used to organize the rendered site.
-<a href="/content-management/organization/" class="f6 mt2 db link primary-color dim">Read More »</a></div></div></div>
-
-<div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-15"><div class="bg-white mb2 pa3 pa4-l gray"><h1 class="near-black f3"><a href="/templates/lookup-order/" class="link primary-color dim">Managing the OLT Lifecycle</a></h1><div class="lh-copy links">Hugo searches for the layout to use for a given page in a well defined order, starting from the most specific.<a href="/templates/lookup-order/" class="f6 mt2 db link primary-color dim">Read More »</a></div></div></div>
-
-<div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-20"><div class="bg-white mb2 pa3 pa4-l gray"><h1 class="near-black f3"><a href="/templates/base/" class="link primary-color dim">Developing Custom Applications</a></h1><div class="lh-copy links">The base and block constructs allow you to define the outer shell of your master templates (i.e., the chrome of the page).
-<a href="/templates/base/" class="f6 mt2 db link primary-color dim">Read More »</a></div></div></div>
-
-<div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-30"><div class="bg-white mb2 pa3 pa4-l gray"><h1 class="near-black f3"><a href="/getting-started/installing/" class="link primary-color dim">Processing Data</a></h1><div class="lh-copy links">Install Hugo on macOS, Windows, Linux, OpenBSD, FreeBSD, and on any machine where the Go compiler tool chain can run.
-<a href="/getting-started/installing/" class="f6 mt2 db link primary-color dim">Read More »</a></div></div></div>
-
-<div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-50"><div class="bg-white mb2 pa3 pa4-l gray"><h1 class="near-black f3"><a href="/getting-started/directory-structure/" class="link primary-color dim">Handling Errors</a></h1><div class="lh-copy links">Hugo’s CLI scaffolds a project directory structure and then takes that single directory and uses it as the input to create a complete website.
-<a href="/content-management/comments/" class="f6 mt2 db link primary-color dim">Read More »</a>
-
-</div>
-
-  </section>
-
-
-
-
-
-
-
-  {{ partial "home-page-sections/sponsors.html" (dict "cx" . "gtag" "home" ) }}
-
-  {{- partial "home-page-sections/features-single" . -}}
-
-  {{- partial "home-page-sections/showcase.html" . -}}
-
-  <section class="w-100 ph4 ph5-ns pv4 pv6-ns mid-gray bg-white bb bt b--light-gray">
-    {{- partial "home-page-sections/installation" . -}}
-  </section>
-
-  <section class="w-100 ph4 ph5-ns pv4 pv6-ns mid-gray bg-accent-color-dark">
-    {{- partial "home-page-sections/tweets" . -}}
-  </section>
-  
-  <section class="w-100 ph4 ph5-ns pt4 pb5 mid-gray bg-color-dark bb bt b--light-gray ">
-    {{- partial "home-page-sections/open-source-involvement" . -}}
-  </section>
-
--->
 
 {{ end }}
  

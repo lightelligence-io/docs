@@ -1,10 +1,7 @@
 {{ $currentPage := . }}
-<nav class="bg-primary-color-dark w-100" role="navigation">
-  <div id="hamburg-icon" class="js-toggle absolute right-0" data-target=".docsmenu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+<nav class="bg-primary-color-dark w-100 fixed z-5" role="navigation">
+{{ partial "hamburger-menu.html" }}
+{{ partial "search-mobile.html" }}
   <div class="header-detail relative flex-ns flex-wrap items-center justify-start">
       <a href="{{ .Site.BaseURL }}" class="link white pl4-l pl3 outline-0 db">
         <h1 class="header-logo pv3-l pv0 dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl4-ns">
@@ -12,7 +9,7 @@
         </h1>
       </a>
       <div class="header-links absolute right-0">
-          <ul class="pv3 list ma0 pa0 dn dib-l pl4 bg-primary-color right-0">
+          <ul class="pv3 list pa0 dn dib-l pl4 bg-primary-color right-0">
               {{ range .Site.Menus.global }}
               <li class="f5 dib mr4" role="menuitem">
                   {{/* TODO: Create an "Global" active class to show which site one is currently at */}}
@@ -32,23 +29,23 @@
       </div>
   </div>
 </nav>
-<div  class="docsmenu mobilemenu pb3 dn" style="
-    width: 80%;
-    float: right;
-    position: relative;
-    top: 0px;
-">
-  {{ $currentPage := . }}
-  {{ $menu := .Site.Menus.docs.ByWeight }}
-  <ul class="bg-primary-color-dark list ph0 ma0 scrolling-touch tc">
-    {{ range $menu }}{{ $post := printf "%s" .Post }}
-    <li  class="tl ma0 hover-bg-black w-20 {{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
-    <a href="{{.URL}}" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
-    {{ .Name }}
-    </a>
-    </li>
-    {{end}}
-  </ul>
+<div  class="docsmenu mobilemenu fixed relative fr fixed w-80 h-100 top-0 right-0 z-9999 dn">
+    {{ $currentPage := . }}
+    {{ $menu := .Site.Menus.docs.ByWeight }}
+    <ul class="bg-primary-color-dark list ph0 scrolling-touch tc pb0">
+        {{ range $menu }}{{ $post := printf "%s" .Post }}
+        <li  class="tl hover-bg-black w-20 {{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
+        <a href="{{.URL}}" class="ttu f6 link primary-color-light  hover-white db brand-font mb1 w-100 pv2 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
+        {{ .Name }}
+        </a>
+        </li>
+        {{end}}
+        <li class="flex dn-l justify-between">
+            {{ $menu := .Site.Menus.global }}
+            {{ range $menu }}
+            <button class="flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">{{ .Name }}</button>
+            {{end}}
+        </li>
+    </ul>
 </div>
-
 {{ partial "toc-mobile" . }}

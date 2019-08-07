@@ -9,3 +9,119 @@
 .search_summary:hover {
   -webkit-box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 }
+
+.search-container {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .button {
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 5px;
+  }
+
+  .button:hover {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    color: black;
+  }
+
+  .search-container {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 20px;
+    vertical-align: bottom;
+    float: right;
+    right: 40px;
+    z-index: 2;
+  }
+
+  .mglass {
+    display: inline-block;
+    pointer-events: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+  }
+
+  .searchbutton {
+    position: absolute;
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .search:focus + .searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: var(--primary-color-dark);
+    color: black;
+  }
+
+  .search {
+    position: absolute;
+    border-radius: 4px;
+    left: 49px;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 80%;
+    z-index: 10;
+    top: 4px;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+  }
+
+  .search:focus {
+    width: 280px; /* Bar width+1px */
+    padding: 0 16px 0 0;
+    background-color: #2d3147;
+  }
+
+  .expandright {
+    left: auto;
+    right: 49px; /* Button width-1px */
+  }
+
+  .expandright:focus {
+    padding: 0 0 0 16px;
+  }
+
+  .search {
+    ::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder,
+    :-ms-input-placeholder, :-moz-placeholder
+    {
+      width: 97px;
+      height: 17px;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-family: PTSans-Regular;
+      font-weight: normal;
+      letter-spacing: 0px;
+  }
+  }
+}
