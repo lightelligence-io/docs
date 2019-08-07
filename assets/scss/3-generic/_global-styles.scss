@@ -43,10 +43,7 @@ code {
 
 table.collapse,
 .note {
-  tbody tr td pre{
-    overflow: hidden;
-    max-width: 350px;
-  }
+    table-layout: fixed;
 
   p {
     code {
@@ -88,9 +85,6 @@ pre {
   border: none;
 }
 
-td pre code, .markdown {
-  overflow: scroll;
-}
 
 
 a {
