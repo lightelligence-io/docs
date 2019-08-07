@@ -69,3 +69,8 @@
     transition: top .5s ease-in-out;
   }
 }
+nav .detail-page {
+  @media (max-width: 960px) {
+    position: fixed;
+  }
+}
