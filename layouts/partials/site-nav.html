@@ -32,10 +32,10 @@
 <div  class="docsmenu mobilemenu fixed relative fr fixed w-80 h-100 top-0 right-0 z-9999 dn">
     {{ $currentPage := . }}
     {{ $menu := .Site.Menus.docs.ByWeight }}
-    <ul class="bg-white list ph0 scrolling-touch tc pb0 absolute h-100 mt0">
+    <ul class="bg-white list ph0 scrolling-touch tc pb0 absolute w-100 h-100 mt0">
         {{ range $menu }}{{ $post := printf "%s" .Post }}
         <li  class="tl fw8 bg-white  w-100 {{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
-        <a href="{{.URL}}" class="black ttu f6 link db brand-font mb1 w-100 pv3 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
+        <a href="{{.URL}}" class="black ttu f6 link db brand-font mb1 pv3 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
         {{ .Name }}
         </a>
         </li>

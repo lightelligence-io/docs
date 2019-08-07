@@ -5,7 +5,7 @@ body {
 }
 
 p {margin-bottom: 1.3em;
-font-size: 14px;}
+font-size: 16px;}
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
@@ -36,13 +36,18 @@ code {
   padding: 0.2em;
   margin: 0;
   font-size: 85%;
-  color: var(--primary-color-light);
+  //color: var(--primary-color-light);
   border-radius: 3px;
 }
 
-p {
-  code {
-    background: var(--light-gray);
+
+table.collapse,
+.note {
+  p {
+    code {
+      color: var(--primary-color-light);
+      background: var(--light-gray);
+    }
   }
 }
 
@@ -56,6 +61,7 @@ li {
 
  pre code, .language-php {
   background: var(--primary-color-dark);
+  color: var(--primary-color-light);
 }
 
 
