@@ -1,6 +1,8 @@
 #hamburg-icon {
-  width: 60px;
-  height: 65px;
+  right: 11px;
+  top: 7px;
+  width: 30px;
+  height: 30px;
   margin: 5px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -13,11 +15,12 @@
   cursor: pointer;
   z-index: 2;
   span {
+    z-index: 20;
     display: block;
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 100%;
-    background: #d3531a;
+    background: white;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -37,14 +40,14 @@
       transform-origin: left center;
     }
     &:nth-child(2) {
-      top: 18px;
+      top: 10px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center;
     }
     &:nth-child(3) {
-      top: 36px;
+      top: 20px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
@@ -52,6 +55,7 @@
     }
   }
   &.open span {
+    background: #d3531a;
     &:nth-child(1) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
@@ -61,6 +65,7 @@
       left: 8px;
     }
     &:nth-child(2) {
+
       width: 0%;
       opacity: 0;
     }
@@ -69,11 +74,14 @@
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
-      top: 39px;
+      top: 20px;
       left: 8px;
     }
   }
   &.open {
+    right: 0px;
+    left: 30px;
+    width: 32px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     float: left;
@@ -85,8 +93,20 @@
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+.toc-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
   #hamburg-icon {
+    display: block;
+  }
+
+  .order-2 {
+    display: none;
+  }
+
+  .toc-menu {
     display: block;
   }
 }

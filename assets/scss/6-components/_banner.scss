@@ -26,7 +26,7 @@
   h1 {
     display: block;
     border-bottom: .5px solid #ffffffeb;
-    width: 100%;
+    //width: 100%;
     transition: all .5s ease-in-out;
     @media (min-width: 960px) {
       border: 0;
@@ -46,12 +46,11 @@
     transition: top .5s ease-in-out;
   }
 
-  .header-bar {
-    h1 {
-      @media all and (max-width: 959px) {
-        background: var(--primary-color-dark);
-      }
-    }
+}
+
+.banner-inner {
+  @media all and (max-width: 959px) {
+    background: var(--primary-color-dark);
   }
 }
 

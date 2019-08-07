@@ -79,7 +79,15 @@ function populateResults(result){
     frag.querySelector(".search_snippet").textContent = decoded;
     let tags = value.item.tags;
     if (tags) {
-      frag.querySelector(".search_tags").textContent = tags;
+      var tr = document.createElement('tr');
+      tags.forEach(function (tag){
+        var td = document.createElement('td');
+        var node = document.createTextNode(tag);
+        td.setAttribute("class","f6 mb0 link mid-gray dim mr3 bg-color-dark ph2 pv1 tags search_tags");
+        td.appendChild(node);
+        tr.appendChild(td);
+      });
+     frag.querySelector(".search_tags").replaceWith(tr);
     } else {
       frag.querySelector(".search_iftags").remove();
     }

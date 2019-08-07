@@ -32,3 +32,7 @@ function toggleClass() {
 $('#hamburg-icon').click(function(){
   $(this).toggleClass('open');
 });
+
+$('.resp-menu').click(function(){
+  $(this).toggleClass('open');
+});

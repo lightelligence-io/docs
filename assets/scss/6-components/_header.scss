@@ -1,0 +1,32 @@
+.header-logo {
+  background: url(/images/svg/OSRAM-Lightelligence-Logo-White.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-links {
+  border-top: 1px solid var(--primary-color);
+  transition: all .5s ease-in-out;
+  li {
+    position: relative;
+    &:last-child {
+      &:before {
+        content: "";
+        width: 1px;
+        height: 25px;
+        background: #fff;
+        display: block;
+        position: absolute;
+        left: -15px;
+      }
+    }
+  }
+}
+
+.header-detail {
+  .header-logo {
+    @media all and (max-width: 959px) {
+      width: 200px;
+    }
+  }
+}
