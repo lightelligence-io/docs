@@ -32,28 +32,27 @@
   }
 
 
-#TableOfContents ul li {
-  color: black;
-  display: block;
-  margin-bottom: 1rem;
-  line-height: 1.375;
+@media (max-width: 959px) {
+  #TableOfContents ul li {
+    float: none;
+    position:static;
+  }
+
+  #TableOfContents ul li:focus {
+    display: block;
+  }
+
+  #TableOfContents ul li:first-child {
+    display: block;
+    background: transparent url("/images/svg/arrow_24x24.svg") no-repeat right 0;
+  }
+
+  nav#TableOfContents{
+    background: white;
+    padding: 3px 15px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 13px -44px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
 }
-
-#TableOfContents ul li a{
-  color: var(--primary-color-dark);
-  width: 100%;
-  padding: .25em .375em;
-  margin-left: -.375em;
-
-}
-#TableOfContents ul li a:hover {
-  opacity: 1;
-  font-weight: bold;
-}
-
-#TableOfContents ul li a:focus {
-  color: var(--primary-color);
-}
-
-
 
