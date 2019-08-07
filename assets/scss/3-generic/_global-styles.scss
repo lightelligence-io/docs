@@ -43,6 +43,11 @@ code {
 
 table.collapse,
 .note {
+  tbody tr td pre{
+    overflow: hidden;
+    max-width: 350px;
+  }
+
   p {
     code {
       color: var(--primary-color-light);
