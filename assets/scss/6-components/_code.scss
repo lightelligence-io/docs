@@ -104,7 +104,22 @@ code, .hljs {
     }
   }
   .pagination span {
-    line-height: .5;
+    line-height: .9;
+    &.left {
+      padding-right: 10px;
+    }
+    &.right {
+      padding-left: 10px;
+    }
+  }
+  .pagination {
+    svg {
+      width: 24px;
+      height: auto;
+      g > path {
+        fill: var(--light-gray);
+      }
+    }
   }
 }
 
