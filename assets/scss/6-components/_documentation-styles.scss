@@ -23,11 +23,9 @@
     display: block;
     margin: 0px;
     padding: .125em 1em;
-    /*margin-left: 1em;*/
     margin-top: 2em;
     margin-bottom: 2em;
     overflow-x: auto;
-    /*font-size: .9375em;*/
     background-color: var(--black-05);
   }
 
@@ -50,8 +48,6 @@
   }
 
 .order-1 {
-  //flex-grow: 1;
-  //padding: 16px;
   background-color: #fff;
   -moz-border-radius: 20px;
   border-radius: 5px;

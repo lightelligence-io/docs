@@ -33,13 +33,24 @@
 
 
 @media (max-width: 959px) {
-  #TableOfContents ul li {
-    float: none;
-    position:static;
+
+  #TableOfContents ul li{
+    display: none;
   }
 
   #TableOfContents ul li:focus {
-    display: block;
+    :nth-child(even) {
+        display: block;
+    }
+    :nth-child(1){
+      background: transparent url("/images/svg/arrow_24x24.svg") no-repeat right 0;
+    }
+  }
+
+  #TableOfContents ul li:hover {
+    :nth-child(n) {
+      display: block;
+    }
   }
 
   #TableOfContents ul li:first-child {
