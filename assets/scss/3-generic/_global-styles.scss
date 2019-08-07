@@ -40,6 +40,20 @@ code {
   border-radius: 3px;
 }
 
+p {
+  code {
+    background: var(--light-gray);
+  }
+}
+
+li {
+  p {
+    code {
+      background: transparent;
+    }
+  }
+}
+
  pre code, .language-php {
   background: var(--primary-color-dark);
 }
