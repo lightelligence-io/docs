@@ -28,3 +28,19 @@ function fallbackMessage(elem, action) {
   }
   return actionMsg;
 }
+
+
+
+const copyButtons = document.querySelectorAll('.copy')
+
+copyButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    button.classList.remove('copy')
+    button.classList.add('copied')
+  
+    setTimeout(()=> {
+    button.classList.remove('copied')
+    button.classList.add('copy')
+    }, 3000) 
+  })
+})
