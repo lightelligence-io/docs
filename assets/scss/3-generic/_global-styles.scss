@@ -36,9 +36,12 @@ code {
   padding: 0.2em;
   margin: 0;
   font-size: 85%;
-  background: var(--primary-color-dark);
- color: var(--primary-color-light);
+  color: var(--primary-color-light);
   border-radius: 3px;
+}
+
+.highlight pre code {
+  background: var(--primary-color-dark);
 }
 
 
