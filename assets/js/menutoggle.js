@@ -38,7 +38,7 @@ $('#hamburg-icon').click(function(){
   }
   else {
     $('main#bg-blur, .header-bg-image, #search-input').removeClass('bg-blur');
-    $('.header-logo').addClass('bg-none');
+    $('.header-logo').removeClass('bg-none');
   }
 });
 
