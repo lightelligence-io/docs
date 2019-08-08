@@ -4,10 +4,6 @@ description: Search the docs and find solutions.
 date: 2019-07-12
 categories: [search]
 keywords: [search]
-menu:
-  docs:
-    weight: 0
-weight: 0	#rem
 slug:
 aliases: []
 toc: true
