@@ -10,7 +10,7 @@ keywords: [overview,roadmap]
 menu:
   docs:
     parent: "getting-started"
-    weight: 0
+    weight: 1
 weight: 0001	#rem
 draft: false
 aliases: [/overview/introduction/]
