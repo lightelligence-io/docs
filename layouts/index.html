@@ -2,8 +2,10 @@
 {{ define "header" }}
     <div class="container">
         <div class="row">
+            <div class="header-bg-image pb4 pb7-l"></div>
             <div class="banner" role="banner">
-                <div class="banner-inner w-100 fixed relative-l">
+                <div class="banner-inner"></div>
+                <div class="w-100 fixed relative-l">
 
                     <form class="bg-white site-search-form site-search-form-lp w-40-l w-100" id="site-search-form" action="/search/" role="search">
                         <fieldset class="bn ma0 pa0">
@@ -11,14 +13,14 @@
                             <input type="search"  autocomplete="off" id="search-input" class="search-input needs-js bg-left bn f5 input-reset lh-solid mt0 ph4 pv3 w-100 white" placeholder="Search" name="q" value="">
                         </fieldset>
                     </form>
-                    <section class="header-bar center pb4 pb7-l ph4-l pt3 w-90 w-60-l">
+                    <section class="header-bar center ph4-l pt3 w-90 w-60-l">
                             <a href="{{ .Site.BaseURL }}" class="dim absolute link top-0 left-0 pl4 white db">
                                 <h1 class="header-logo pv3 f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
                                     <span class="o-0">{{ .Site.Title }}</span>
                                 </h1>
                             </a>
                         {{ partial "hamburger-menu.html" }}
-                        <div  class="docsmenu mobilemenu fixed relative fr fixed w-80 h-100 top-0 right-0 z-9999 dn">
+                        <div  class="docsmenu mobilemenu fixed relative bg-white fr fixed w-80 h-100 top-0 right-0 z-9999 dn">
                             {{ $currentPage := . }}
                             {{ $menu := .Site.Menus.docs.ByWeight }}
                             <ul class="bg-white list ph0 scrolling-touch tc pb0 absolute h-100 mt0">

@@ -31,6 +31,15 @@ function toggleClass() {
   }
 $('#hamburg-icon').click(function(){
   $(this).toggleClass('open');
+  var open = $(this).hasClass('open');
+  if(open) {
+    $('main#bg-blur, .header-bg-image, #search-input').addClass('bg-blur');
+    $('.header-logo').addClass('bg-none');
+  }
+  else {
+    $('main#bg-blur, .header-bg-image, #search-input').removeClass('bg-blur');
+    $('.header-logo').addClass('bg-none');
+  }
 });
 
 $('.resp-menu').click(function(){
