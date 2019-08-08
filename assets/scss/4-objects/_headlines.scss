@@ -1,6 +1,6 @@
 .subtitle {
     font-family: $font-family-regular;
-    font-size: 18px;    
+    font-size: 22px;    
 }
 
 .headline {
@@ -11,9 +11,19 @@
     }
 }
 
-
 h1, .lh-title {
     font-size: 40px;
     margin-top: 40px;
     padding: 0;
+}
+
+div#prose h2 {
+    font-size: 32px; 
+    margin-top: 80px;
+}
+
+
+h4, .blue{
+    padding-top: 16px;
+    padding-left: 24px;
 }

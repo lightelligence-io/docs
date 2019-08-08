@@ -13,7 +13,7 @@
         <ul class="{{ .Identifier }} desktopmenu animated fadeIn list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
           {{- range .Children }}
           <li class="f6 fw4">
-            <a href="{{.URL}}" class="db link hover-orange pl3 pr2 pv2 {{if $currentPage.IsMenuCurrent "docs" . }}primary-color {{ else }}black {{end}}">
+            <a href="{{.URL}}" class="db link hover-orange pl3 pr2 {{if $currentPage.IsMenuCurrent "docs" . }}primary-color {{ else }}black {{end}}">
               {{ .Name }}
             </a>
           </li>
