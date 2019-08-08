@@ -1,10 +1,14 @@
 .header-logo {
-  background: url(/images/svg/OSRAM-Lightelligence-Logo-White.svg);
+  background: url(/images/svg/lightelligenceDocs_logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  width: 250px;
+  height: 50px;
+  background-size: contain;
 }
 
 .header-links {
+  background-color:  var(--primary-color);
   border-top: 1px solid var(--primary-color);
   transition: all .5s ease-in-out;
   li {
@@ -24,9 +28,5 @@
 }
 
 .header-detail {
-  .header-logo {
-    @media all and (max-width: 959px) {
-      width: 200px;
-    }
-  }
+  overflow: hidden;
 }
