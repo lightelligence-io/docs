@@ -6,6 +6,10 @@
 .headline {
     font-family: $font-family-bold;
 
+    &--content {
+        font-size: 40px;
+    }
+
     &--aritcle {
         font-size: 24px;
     }
