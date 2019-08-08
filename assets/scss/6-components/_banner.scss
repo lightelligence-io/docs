@@ -9,10 +9,11 @@
   background-size: cover;
 
   .banner-inner {
-    z-index: 999999;
+    z-index: 999;
   }
   @media all and (max-width: 959px) {
     height: 200px;
+    position: relative;
   }
 
 

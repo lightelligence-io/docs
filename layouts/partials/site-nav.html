@@ -2,7 +2,7 @@
 <nav class="relative-l fixed bg-primary-color-dark w-100 z-5" role="navigation">
 {{ partial "hamburger-menu.html" }}
 {{ partial "search-mobile.html" }}
-  <div class="header-detail relative flex-ns flex-wrap items-center justify-start">
+  <div  id="bg-blur" class="header-detail relative flex-ns flex-wrap items-center justify-start">
       <a href="{{ .Site.BaseURL }}" class="link white pl4-l pl3 outline-0 db">
         <h1 class="header-logo pv3-l pv0 dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl4-ns">
           <span class="o-0">{{ .Site.Title }}</span>
@@ -29,23 +29,3 @@
       </div>
   </div>
 </nav>
-<div  class="docsmenu mobilemenu fixed relative fr fixed w-80 h-100 top-0 right-0 z-9999 dn">
-    {{ $currentPage := . }}
-    {{ $menu := .Site.Menus.docs.ByWeight }}
-    <ul class="bg-white list ph0 scrolling-touch tc pb0 absolute w-100 h-100 mt0">
-        {{ range $menu }}{{ $post := printf "%s" .Post }}
-        <li  class="tl fw8 bg-white  w-100 {{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
-        <a href="{{.URL}}" class="black ttu f6 link db brand-font mb1 pv3 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
-        {{ .Name }}
-        </a>
-        </li>
-        {{end}}
-        <li class="w-80 flex dn-l justify-between mb-0 mb-0 bottom-0 fixed">
-            {{ $menu := .Site.Menus.global }}
-            {{ range $menu }}
-            <button class="flex-auto dib dn-l f6 tc db mt4-ns pv3 link white bg-primary-color hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">{{ .Name }}</button>
-            {{end}}
-        </li>
-    </ul>
-</div>
-{{ partial "toc-mobile" . }}

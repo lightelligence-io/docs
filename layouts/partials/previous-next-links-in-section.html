@@ -1,16 +1,16 @@
 {{ if or .PrevInSection .NextInSection }}
-{{/* this div holds these a tags as a unit for flex-box display */}}
-	<div date-pref>
-		{{if .NextInSection}}
-			<a href="{{.NextInSection.Permalink }}" class="dib f6 pl1  br-100" title="{{ .NextInSection.Title }} ">
-				{{ partial "svg/ic_chevron_left_black_24px.svg" (dict "fill" "#ff6600" "size" "30px") }}
-			</a>
-		{{end}}
-
-		{{if .PrevInSection}}
-			<a href="{{ .PrevInSection.Permalink }}" class="dib f6 pr1  br-100" title="{{ .PrevInSection.Title }}">
-			{{ partial "svg/ic_chevron_right_black_24px.svg" (dict "fill" "#ff6600" "size" "30px") }}
-			</a>
-		{{end}}
-	</div>
+<div class="flex flex-wrap justify-between items-baseline pagination pagination-bottom">
+	{{if .NextInSection}}
+	<a href="{{ .NextInSection.Permalink }}" class="f5 link light-gray w-100 w-50-l tc tl-l">
+		<span class="v-mid dib left">{{ partial "svg/arrow-left.svg" (dict "size" "30px") }}</span>
+		{{ .NextInSection.Title }}
+	</a>
+	{{end}}
+	{{if .PrevInSection}}
+	<a href="{{.PrevInSection.Permalink }}" class="f5 link light-gray w-100 w-50-l tc tr-l mt3 mt0-l">
+		{{ .PrevInSection.Title}}
+		<span class="v-mid dib right">{{ partial "svg/arrow-right.svg" (dict "size" "25px") }}</span>
+	</a>
+	{{end}}
+</div>
 {{ end }}

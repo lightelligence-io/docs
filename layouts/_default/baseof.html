@@ -49,9 +49,10 @@
 
   </head>
   <body class="ma0 sans-serif bg-color-dark{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-  {{ block "nav" . }}{{ end }}
+    {{ block "nav" . }}{{ end }}
+    {{ partial "nav-mobile.html" . }}
     {{ block "header" . }}{{ end }}
-    <main role="main" class="content-with-sidebar min-vh-100 pb0">
+    <main id="bg-blur" role="main" class="content-with-sidebar min-vh-100 pb0">
       {{ block "main" . }}{{ end }}
 
 	  
@@ -59,7 +60,5 @@
     </main>
 
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
-    
-
   </body>
 </html>

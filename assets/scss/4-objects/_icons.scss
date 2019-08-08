@@ -79,13 +79,13 @@
     }
   }
   &.open {
-    right: 0px;
+    right: 80%;
     left: 10%;
     width: 32px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     float: left;
-    position: relative;
+    position: absolute;
   }
 }
 
@@ -103,4 +103,8 @@
   aside {
     transition: right .5s ease-in-out;
   }
+}
+
+.bg-blur {
+  filter: blur(8px);
 }

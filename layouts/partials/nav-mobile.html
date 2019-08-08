@@ -1,12 +1,19 @@
-<div  class="globalmenu mobilemenu pb3 dn">
-    {{ partial "nav-links-global-mobile.html" . }}
-</div>
-<div  class="docsmenu mobilemenu pb3 dn">
-    {{ partial "nav-links-docs-mobile.html" . }}
-</div>
-
-<div class="flex dn-l justify-between">
-  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
-
-  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Docs Menu</button>
+<div  class="docsmenu mobilemenu fixed relative fr fixed w-80 h-100 top-0 right-0 z-9999 dn">
+    {{ $currentPage := . }}
+    {{ $menu := .Site.Menus.docs.ByWeight }}
+    <ul class="bg-white list ph0 scrolling-touch tc pb0 absolute w-100 h-100 mt0">
+        {{ range $menu }}{{ $post := printf "%s" .Post }}
+        <li  class="tl fw8 bg-white  w-100 {{ if eq $post "break" }} mb2 bb b--mid-gray{{ end }}">
+        <a href="{{.URL}}" class="black ttu f6 link db brand-font mb1 pv3 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
+        {{ .Name }}
+        </a>
+        </li>
+        {{end}}
+        <li class="w-80 flex dn-l justify-between mb-0 mb-0 bottom-0 fixed">
+            {{ $menu := .Site.Menus.global }}
+            {{ range $menu }}
+            <a href="{{.URL}}" class="flex-auto dib dn-l f6 tc db mt4-ns pv3 link white bg-primary-color hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">{{ .Name }}</a>
+            {{end}}
+        </li>
+    </ul>
 </div>
