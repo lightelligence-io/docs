@@ -1,5 +1,5 @@
 baseURL = "http://osram-docs.wh1.staging-server.com/"
-paginate = 100
+paginate =  100
 defaultContentLanguage = "en"
 enableEmoji = true
 # Set the unicode character used for the "return" link in page footnotes.
