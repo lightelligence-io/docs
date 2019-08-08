@@ -5,12 +5,15 @@ body {
 }
 
 p {margin-bottom: 1.3em;
-font-size: 16px;}
+font-size: 16px;
+color: var(--gray);}
+
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-family: $font-family-bold;
   line-height: 1.2;
+  color: var(--gray);
 }
 
 h1 {
