@@ -90,6 +90,9 @@
   background: transparent;
   transition: background-color .5s ease-in-out;
   @media all and (max-width: 959px) {
+    .header-inner {
+      background: var(--primary-color-dark);
+    }
     background: var(--primary-color-dark);
     transition: background-color .5s ease-in-out;
   }

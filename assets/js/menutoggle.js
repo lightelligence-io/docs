@@ -35,10 +35,12 @@ $('#hamburg-icon').click(function(){
   if(open) {
     $('main#bg-blur, .header-bg-image, #search-input').addClass('bg-blur');
     $('.header-logo').addClass('bg-none');
+    $('body').addClass('no-scroll');
   }
   else {
     $('main#bg-blur, .header-bg-image, #search-input').removeClass('bg-blur');
     $('.header-logo').removeClass('bg-none');
+    $('body').removeClass('no-scroll');
   }
 });
 
