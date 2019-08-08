@@ -5,12 +5,18 @@
       border-radius: 100px;
       line-height: 2.6;
       transition: background-color .5s ease-in-out;
-      &:hover {
+      &:not(.nohover):hover {
         background: darken(#ff6600, 10);
         transition: background-color .5s ease-in-out;
       }
     }
   }
+
+  .btn:not(.nohover):hover {
+    background: darken(#ff6600, 10);
+    transition: background-color .5s ease-in-out;
+  }
+  
   //width: 179px;
   .ext-link {
     position: relative;

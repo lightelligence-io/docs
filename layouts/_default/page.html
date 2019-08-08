@@ -2,7 +2,7 @@
     <div class="flex-auto">
         {{ if .Params.categories }}
         {{ range .Params.categories }}
-        <span class="mb2"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="f6 mb0-l mb2 link dim mr1 bg-light-blue blue ph3 pv1 tags">
+        <span class="mb2"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="f6 mb0-l mb2 link dim mr1 bg-light-blue ph3 pv1 tags">
         {{ humanize . }}
         </a></span>
         {{ end }}

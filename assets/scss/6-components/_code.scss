@@ -53,13 +53,14 @@ code.hljs {
 .copy:after {
     content: "Copy";
     font-family: $font-family-regular;
+    cursor: pointer;
 }
 
 .copied:after {
     content: "Copy";
     color: #02BF1B;
     font-family: $font-family-regular;
-
+    cursor: pointer;
 }
 
 .copied {
@@ -164,4 +165,5 @@ code.hljs {
 
 .search_tags {
   border-radius: 12.5px;
+  color: var(--blue);
 }
