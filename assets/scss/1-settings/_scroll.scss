@@ -1,3 +1,10 @@
 .scoll-x {
     overflow-x: scroll
 }
+
+body {
+  overflow: auto;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
