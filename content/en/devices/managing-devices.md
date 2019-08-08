@@ -9,7 +9,7 @@ keywords: [device,category,tag,query,filter]
 menu:
   docs:
     parent: "devices"
-    weight: 70
+    weight: 60
 weight: 70
 sections_weight: 70
 draft: false

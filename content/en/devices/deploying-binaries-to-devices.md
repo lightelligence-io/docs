@@ -11,8 +11,7 @@ tags: [alias,connectedBy,types,firmware,bootloader,configuration files,slots]
 menu:
   docs:
     parent: "devices"
-    weight: 60
-weight: 60
+    weight: 70
 sections_weight: 60
 draft: false
 aliases: [/devices/,/overview/quickstart/]
