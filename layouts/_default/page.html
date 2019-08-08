@@ -1,24 +1,27 @@
-<header class="flex-none w-100">
-  {{ if .Params.categories }}
-  {{ range .Params.categories }}
-  <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="f6 mb0 link mid-gray dim mr3 bg-light-blue blue ph2 pv1 tags">
-  {{ humanize . }}
-  </a>
-  {{ end }}
-  {{end}}
-  {{ if .Params.keywords }}
+<header class="header-tags flex-none w-100">
+    <div class="flex-auto">
+        {{ if .Params.categories }}
+        {{ range .Params.categories }}
+        <span class="mb2"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="f6 mb0-l mb2 link mid-gray dim mr1 bg-light-blue blue ph3 pv1 tags">
+        {{ humanize . }}
+        </a></span>
+        {{ end }}
+        {{end}}
+        {{ if .Params.keywords }}
 
-  {{end}}
+        {{end}}
 
 
-  {{ if .Params.tags }}
-  {{ range .Params.tags }}
-  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="f6 mb0 link mid-gray dim mr3 bg-light-blue blue ph2 pv1 tags">
-  {{ humanize . }}
-  </a>
-  {{ end }}
-  {{end}}
-  <h1 class="lh-title mb3 mt2 mt4-l pt4 primary-color-dark f3">
+        {{ if .Params.tags }}
+        {{ range .Params.tags }}
+        <span class="mb2"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="f6 mb0-0 mb2 link mid-gray dim mr1 bg-light-blue blue ph3 pv1 tags">
+        {{ humanize . }}
+            </a></span>
+        {{ end }}
+        {{end}}
+    </div>
+
+  <h1 class="lh-title mb3 mt2 mt4-l pt4 mid-gray f3">
     {{- if eq .Section "functions" -}}
       {{ .LinkTitle }}
     {{- else -}}
