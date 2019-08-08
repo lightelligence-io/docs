@@ -83,7 +83,7 @@ function populateResults(result){
       tags.forEach(function (tag){
         var td = document.createElement('td');
         var node = document.createTextNode(tag);
-        td.setAttribute("class","f6 mb0 link mid-gray dim mr1 bg-color-dark ph2 pv1 tags mb2 search_tags");
+        td.setAttribute("class","f6 mb0 link mid-gray dim mr3 bg-color-dark ph2 pv1 tags mb2 search_tags");
         td.appendChild(node);
         tr.appendChild(td);
       });
@@ -97,7 +97,7 @@ function populateResults(result){
       categories.forEach(function (category){
         var td = document.createElement('td');
         var node = document.createTextNode(category);
-        td.setAttribute("class","f6 mb0 link blue dim mr1 bg-light-blue ph2 pv1 tags mb2 search_tags");
+        td.setAttribute("class","search_categories f6 mb0 link mid-gray dim mr3 bg-light-blue blue ph3 pv1 category");
         td.appendChild(node);
         tr.appendChild(td);
       });
