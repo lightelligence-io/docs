@@ -93,9 +93,17 @@ function populateResults(result){
     }
     let categories = value.item.categories;
     if (categories) {
-      frag.querySelector(".search_categories").textContent = categories;
+      var tr = document.createElement('tr');
+      categories.forEach(function (category){
+        var td = document.createElement('td');
+        var node = document.createTextNode(category);
+        td.setAttribute("class","f6 mb0 link mid-gray dim mr3 bg-color-dark ph2 pv1 tags mb2 search_tags");
+        td.appendChild(node);
+        tr.appendChild(td);
+      });
+      frag.querySelector(".search_categories").replaceWith(tr);
     } else {
-      frag.querySelector(".search_ifcategories").remove();
+        frag.querySelector(".search_ifcategories").remove();
     }
     snippetHighlights.forEach( function (snipvalue, snipkey) {
       let markjs = new Mark(frag);
