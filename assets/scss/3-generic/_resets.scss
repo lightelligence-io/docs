@@ -1,0 +1,16 @@
+a {
+    outline: none;
+
+    &:focus{
+        outline: none
+    }
+
+    &:active{
+        outline: none
+    }
+}
+
+
+.link:focus {
+    outline: none;
+}
