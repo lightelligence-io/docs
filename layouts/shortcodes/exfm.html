@@ -1,4 +1,3 @@
-<!-- Similar to exfile.html but *only* pulls the front matter from the example/content/*md -->
 {{ $file := .Get 0}}
 {{ $filepath := replace $file "static/" ""}}
 {{ $syntax := index (split $file ".") 1 }}
