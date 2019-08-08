@@ -1,12 +1,12 @@
 .box:hover {
   box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .box {
   border-radius: 4px;
   box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .boxes a, .cat-boxes a {
@@ -35,7 +35,7 @@
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 }
 
@@ -67,6 +67,7 @@
 
 .boxshadow {
   box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
+  transition: all .3s ease-in-out;
 }
 
 .mw-1000 {

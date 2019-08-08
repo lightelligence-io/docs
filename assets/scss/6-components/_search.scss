@@ -49,9 +49,9 @@
     width: 20px;
     vertical-align: bottom;
     float: right;
-    right: 48px;
+    right: 41px;
     z-index: 2;
-    top: 5px;
+    top: 2px;
   }
 
   .mglass {
@@ -75,10 +75,10 @@
   }
 +
   .search:focus + .searchbutton {
-    transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
     background: transparent url(/images/svg/search_orange_24x24.svg) no-repeat;
     color: black;
   }
@@ -104,7 +104,7 @@
     width: 305px;
     padding: 0 16px 0 0;
     background-color: #2d3147;
-   + .searchbutton {
+    + .searchbutton {
      background: transparent url(/images/svg/search_orange_24x24.svg) no-repeat;
     }
   }
