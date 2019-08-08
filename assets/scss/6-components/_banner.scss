@@ -1,4 +1,4 @@
-.banner{
+.header-bg-image {
   background-image: url("/images/svg/OSRAM_LT_Illustrations.svg");
   /* Full height */
   height: 100%;
@@ -26,7 +26,7 @@
   */
   h1 {
     display: block;
-    // border-bottom: .5px solid #ffffffeb;
+    border-bottom: .5px solid #ffffffeb;
     //width: 100%;
     transition: all .5s ease-in-out;
     @media (min-width: 960px) {
@@ -75,8 +75,22 @@
   }
 }
 
-.header-bar {
+.header-bg-image {
   @media all and (min-width: 960px){
     padding-bottom: 25rem;
+  }
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  height: 56px;
+  background: transparent;
+  transition: background-color .5s ease-in-out;
+  @media all and (max-width: 959px) {
+    background: var(--primary-color-dark);
+    transition: background-color .5s ease-in-out;
   }
 }

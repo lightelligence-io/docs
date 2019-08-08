@@ -7,7 +7,7 @@
 {{ if not .Sites.First.RegularPages }}
   {{ partial "pagelayout-homepage.html" (dict "context" . "section_to_display" $section_to_display ) }}
 {{ else }}
-<article class="w-100 ph4-ns pb0 pb4-ns pt1 pt4-ns">
+<article class="w-100 ph4-ns pb0 pb4-ns pt0 pt4-ns">
   <div class="flex-l">
 
     <div class="order-2 w-100 w-20-l ph5-m ph0-l mb4-l sticky">

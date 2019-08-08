@@ -25,9 +25,14 @@ h1 {
   font-size: 2.441em;
 }
 
-h2 {font-size: 32px;}
+h2 {font-size: 20px;}
 
 h3 {font-size: 1.563em;
+}
+
+a:focus,
+a:active{
+  outline: none;
 }
 
 h4 {font-size: 1.25em;}

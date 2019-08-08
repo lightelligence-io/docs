@@ -107,4 +107,7 @@
 
 .bg-blur {
   filter: blur(8px);
+  .banner-inner {
+    filter: blur(0);
+  }
 }

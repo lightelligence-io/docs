@@ -5,7 +5,11 @@
   width: 250px;
   height: 50px;
   background-size: contain;
+  &.bg-none {
+    background: none;
+  }
 }
+
 
 .header-links {
   background-color:  var(--primary-color);
@@ -29,4 +33,22 @@
 
 .header-detail {
   overflow: hidden;
+}
+
+#bg-blur {
+  article {
+    @media all and (min-width: 480px) and (max-width: 959px) {
+      padding-top: 3rem;
+    }
+  }
+}
+
+.header-bar {
+  @media all and (max-width: 959px) {
+    > a {
+      background: var(--primary-color-dark);
+      height: 56px;
+      transition: background-color .5s ease-in-out;
+    }
+  }
 }
