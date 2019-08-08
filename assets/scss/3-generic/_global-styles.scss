@@ -61,8 +61,8 @@ table.collapse,
 
   p {
     code {
-      color: var(--primary-color-light);
-      background: var(--light-gray);
+      color: var(--gray);
+      background: #e9ecef;
     }
   }
 }
@@ -148,4 +148,8 @@ a, .js-toggle {
 
 li a {
   padding: 12px 0;
+}
+
+a, .tags {
+  padding: 0;
 }
