@@ -39,7 +39,7 @@ $('#hamburg-icon').click(function(){
     $('main#bg-blur, .header-bg-image, #search-input, .container, .header-detail, nav.relative-l').addClass('bg-blur');
     $('body').addClass('no-scroll');
     $('.docsmenu').addClass('scroll-y');
-    $('#bg-blur a').css('pointer-events', 'none');
+    $('#bg-blur a, .header-bar a').css('pointer-events', 'none');
     $('.scroll-nav').off();
 });
 
@@ -50,7 +50,7 @@ window.addEventListener('mouseup',function(event){
       docsmenu.classList.add(['dn']);
       $('main#bg-blur, .header-bg-image, #search-input, .container, .header-detail, nav.relative-l').removeClass('bg-blur');
       $('body').removeClass('no-scroll');
-      $('#bg-blur a').css('pointer-events', 'auto');
+      $('#bg-blur a, .header-bar a').css('pointer-events', 'auto');
       $('.scroll-nav').on();
     }
   }
