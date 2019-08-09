@@ -61,6 +61,12 @@
     }
     margin-top: 0px;
   }
+  @media all and (max-width: 479px) {
+    &.top-large {
+      margin-top: 50px;
+      padding-top: 32px;
+    }
+  }
 }
 
 .order-0 nav {
