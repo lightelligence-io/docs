@@ -8,15 +8,14 @@ ul.related  {
 }
 
 ul.related li:before {
-  content: '';
+  content: "";
+  background: url(/images/svg/ic_chevron_right_orange_24px.svg);
   position: absolute;
-  border-right: 2px solid var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  width: 5px;
-  height: 5px;
-  top: calc(50% - 4px);
-  left: -20px;
-  transform: translateY(-50%) rotate(-45deg);
+  width: 20px;
+  display: block;
+  height: 20px;
+  background-repeat: no-repeat;
+  left: -25px;
 }
 
 .language-java, .language-curl {

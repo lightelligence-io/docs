@@ -32,10 +32,12 @@
   .arrow-right {
     background: url("/images/svg/ic_chevron_right_orange_24px.svg");
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     background-repeat: no-repeat;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    transform: scale(1.2);
   }
 }
 
