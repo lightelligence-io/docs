@@ -121,6 +121,11 @@ table {
   width: 100%
 }
 
+@media (max-width: 480px) {
+  ol{
+    margin-left: 16px;
+  }
+}
 
 
 @media (min-width: 400px) {

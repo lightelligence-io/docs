@@ -274,7 +274,7 @@ You have
 * a Raspberry Pi with an SD card
 * an SD card reader
 
-   {{% _myshortcode color="blue" %}}
+   {{% _myshortcode %}}
    This quick start uses `macOS` in the examples. For instructions about how to install Hugo on other operating systems, see [install](/getting-started/installing).
 
    It is recommended to have [Git installed](https://git-scm.com/downloads) to run this tutorial.
