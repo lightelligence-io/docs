@@ -44,12 +44,12 @@
   identifier = "applications"
   url = "/applications/"
   
-#[[docs]]
-#  name = "Processing Data"
-#  weight = 50
-#  identifier = "data"
-#  url = "/data/"
-#  post = "break"
+[[docs]]
+  name = "Processing Data"
+  weight = 50
+  identifier = "data"
+  url = "/data/"
+  post = "break"
 
 
 
