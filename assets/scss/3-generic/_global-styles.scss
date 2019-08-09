@@ -67,6 +67,13 @@ table.collapse,
   }
 }
 
+p {
+  code {
+    color: var(--gray);
+    background: #e9ecef;
+  }
+}
+
 ol {
   padding: 10px;
 }
