@@ -55,6 +55,12 @@
   @media all and (max-width: 1200px) {
     border-radius: 0;
   }
+  @media all and (max-width: 959px) {
+    &.top-large {
+      margin-top: 50px;
+    }
+    margin-top: 0px;
+  }
 }
 
 .order-0 nav {

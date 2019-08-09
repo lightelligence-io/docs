@@ -52,7 +52,6 @@ window.addEventListener('mouseup',function(event){
 const tableOfContents = $('nav#TableOfContents');
 
 $('.scroll-nav').on('click', () => {
-  console.log('test');
   tableOfContents.toggleClass('open');
 });
 
@@ -61,3 +60,10 @@ $('nav#TableOfContents a').on('click', () => {
     tableOfContents.removeClass('open');
   }, 300);
 });
+
+window.onload = function () {
+  var tabelOfCont = $('#TableOfContents');
+  console.log(tabelOfCont.length);
+  tabelOfCont.length == 0 ?  $('.main-content').removeClass('top-large') : $('.main-content').addClass('top-large');
+
+}
