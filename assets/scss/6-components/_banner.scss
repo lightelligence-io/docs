@@ -40,22 +40,27 @@
       border-radius: 4px;
       box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
     }
-    .search-input {
-      background: transparent url('/images/icon-search.png') no-repeat 0 19px /16px 16px;
-      background-position: right;
-      position: relative;
-      right: 16px;
-      color: var(--primary-color-dark);
-      outline: none;
-      @media (min-width: 960px) {
-        box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
-        border-radius: 4px;
-      }
-    }
+
     transition: top .5s ease-in-out, width .5s ease-in-out .2s;
   }
 
 }
+
+.search-input {
+  background: transparent url('/images/icon-search.png') no-repeat 0 19px /16px 16px;
+  position: relative;
+  right: 16px;
+  color: var(--primary-color-dark);
+  outline: none;
+  background-position: 95%;
+  left: 0;
+
+  @media (min-width: 960px) {
+    box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
+    border-radius: 4px;
+  }
+}
+
 
 .banner-inner {
   @media all and (max-width: 959px) {

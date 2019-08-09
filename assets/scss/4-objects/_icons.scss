@@ -38,7 +38,7 @@
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center;
-      transition: all .5s ease-in-out .5s;
+      transition: all .5s ease-in-out .3s;
     }
     &:nth-child(2) {
       top: 10px;
@@ -46,7 +46,7 @@
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center;
-      transition: all .5s ease-in-out .5s;
+      transition: all .5s ease-in-out .3s;
     }
     &:nth-child(3) {
       top: 20px;
@@ -54,7 +54,7 @@
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center;
-      transition: all .5s ease-in-out .5s;
+      transition: all .5s ease-in-out .3s;
     }
   }
   &.open span {
@@ -66,7 +66,7 @@
       transform: rotate(45deg);
       top: -3px;
       left: 8px;
-      transition: all .5s ease-in-out .5s;
+      transition: all .5s ease-in-out .3s;
     }
     &:nth-child(2) {
 
@@ -79,7 +79,7 @@
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
-      transition: all .5s ease-in-out .5s;
+      transition: all .5s ease-in-out .3s;
       top: 20px;
       left: 8px;
     }
