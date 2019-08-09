@@ -35,20 +35,6 @@
   overflow: hidden;
 }
 
-#bg-blur {
-  article {
-    @media all and (min-width: 480px) and (max-width: 959px) {
-      padding-top: 3rem;
-    }
-  }
-  position: relative;
-  @media all and (max-width: 959px) {
-    &.top-pos {
-      top: 50px;
-    }
-  }
-}
-
 .header-bar {
   @media all and (max-width: 959px) {
     > a {

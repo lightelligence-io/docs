@@ -33,21 +33,20 @@ function toggleClass() {
 }
 
 $('#hamburg-icon').click(function(){
-  $(this).toggleClass('open');
-
-  var open = $(this).hasClass('open');
-  if(open) {
     $('main#bg-blur, .header-bg-image, #search-input').addClass('bg-blur');
-    $('main#bg-blur, .header-bg-image, #search-input').addClass('transform');
-    $('.header-logo').addClass('bg-none');
     $('body').addClass('no-scroll');
     $('.docsmenu').addClass('scroll-y');
-  }
-  else {
-    $('main#bg-blur, .header-bg-image, #search-input').removeClass('bg-blur');
-    $('main#bg-blur, .header-bg-image, #search-input').removeClass('transform');
-    $('.header-logo').removeClass('bg-none');
-    $('body').removeClass('no-scroll');
+});
+
+window.addEventListener('mouseup',function(event){
+  var docsmenu = document.getElementById('docsmenu');
+  if(!docsmenu.classList.contains('dn')){
+    console.log(event.target.parentNode);
+    if(event.target.id !== 'docsmenu' && !event.target.parentNode.classList.contains('mm')){
+      docsmenu.classList.add(['dn']);
+      $('main#bg-blur, .header-bg-image, #search-input').removeClass('bg-blur');
+      $('body').removeClass('no-scroll');
+    }
   }
 });
 

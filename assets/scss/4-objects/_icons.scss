@@ -57,43 +57,6 @@
       transition: all .5s ease-in-out .3s;
     }
   }
-  &.open span {
-    background: #d3531a;
-    &:nth-child(1) {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      top: -3px;
-      left: 8px;
-      transition: all .5s ease-in-out .3s;
-    }
-    &:nth-child(2) {
-
-      width: 0%;
-      opacity: 0;
-      transition: all .5s ease-in-out .5s;
-    }
-    &:nth-child(3) {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      transition: all .5s ease-in-out .3s;
-      top: 20px;
-      left: 8px;
-    }
-  }
-  &.open {
-    right: 100%;
-    left: 10px;
-    top: 12px;
-    width: 32px;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    float: left;
-    position: absolute;
-  }
 }
 
 #hamburg-icon {
@@ -114,7 +77,4 @@
 
 .bg-blur {
   filter: blur(8px);
-  .banner-inner {
-    filter: blur(0);
-  }
 }

@@ -1,16 +1,16 @@
 {{ $currentPage := . }}
-<div  class="docsmenu pb5 pt3 fixed relative bg-white fr fixed w-80 h-100 top-0 right-0 bg-white z-99999 dn">
+<div id="docsmenu" class="docsmenu pb5 pt3 fixed relative bg-white fr fixed w-80 h-100 top-0 right-0 bg-white z-99999 dn">
     <nav role="navigation">
-        <ul class="list w-100 pl0">
+        <ul class="list w-100 pl0 mm">
             {{ range .Site.Menus.docs.ByWeight }}
             {{ $post := printf "%s" .Post }}
-            <li class="pl4 f5 w-90-ns  hover-orange primary-color-dark  fw8{{ if eq $post "break" }} mb1 bb b--moon-gray{{ end }}">
+            <li class="pl4 f5 w-90-ns  hover-orange mm primary-color-dark  fw8{{ if eq $post "break" }} mb1 bb b--moon-gray{{ end }}">
             <a href="{{ if .HasChildren }}javascript:void(0){{ else }}{{ .URL }}{{ end }}" class="js-toggle dib w-100 link mid-gray hover-orange pl2 pr2 pv2 {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} primary-color{{end}}" data-target=".{{ .Identifier }}">{{ .Name }}</a>
 
             {{- if .HasChildren }}
-            <ul class="{{ .Identifier }} desktopmenu animated fadeIn list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
+            <ul class="{{ .Identifier }} desktopmenu animated mm fadeIn list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
                 {{- range .Children }}
-                <li class="pl2 f6 fw4">
+                <li class="pl2 f6 fw4 mm">
                     <a href="{{.URL}}" class="db link hover-orange pl3 pr2 {{if $currentPage.IsMenuCurrent "docs" . }}primary-color {{ else }}black {{end}}">
                     {{ .Name }}
                     </a>
@@ -20,7 +20,7 @@
             {{- end}}
             </li>
         {{- end}}
-        <li class="w-80 flex dn-l justify-between mb-0 mb-0 bottom-0 fixed">
+        <li class="w-80 flex dn-l justify-between mb-0 mb-0 bottom-0 mm fixed">
             {{ $menu := .Site.Menus.global }}
             {{ range $menu }}
             <a href="{{.URL}}" class="flex-auto dib dn-l f6 tc db mt4-ns pv3 link white bg-primary-color hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">{{ .Name }}</a>
