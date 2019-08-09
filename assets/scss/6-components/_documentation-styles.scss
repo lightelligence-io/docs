@@ -62,4 +62,12 @@
   position: fixed;
   float: right;
   left: 9%;
+  > ul {
+    overflow-y: scroll;
+    height: 75vh;
+    padding-bottom: 30px;
+    &::-webkit-scrollbar { width: 0 !important}
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    }
 }
