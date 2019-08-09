@@ -160,6 +160,9 @@ code.hljs {
     border-radius: 12.5px;
     height: 25px;
     width: 86px;
+    &:hover {
+      background: lighten( rgba(70, 180, 205, 0.2),10);
+    }
   }
 }
 

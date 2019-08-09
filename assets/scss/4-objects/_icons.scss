@@ -1,7 +1,7 @@
 #hamburg-icon {
   right: 17px;
-  top: 8px;
-  width: 30px;
+  top: 10px;
+  width: 26px;
   height: 30px;
   margin: 5px auto;
   -webkit-transform: rotate(0deg);
@@ -18,7 +18,7 @@
     z-index: 20;
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: var(--text-color-secondary);
     border-radius: 9px;
@@ -41,7 +41,7 @@
       transition: all .5s ease-in-out .3s;
     }
     &:nth-child(2) {
-      top: 10px;
+      top: 8px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
@@ -49,7 +49,7 @@
       transition: all .5s ease-in-out .3s;
     }
     &:nth-child(3) {
-      top: 20px;
+      top: 16px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
@@ -76,5 +76,5 @@
 }
 
 .bg-blur {
-  filter: blur(8px);
+  filter: blur(8px) brightness(30%);
 }

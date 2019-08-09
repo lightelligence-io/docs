@@ -69,9 +69,10 @@
     width: 140%;
     margin: 0;
     padding: 0;
-    top: 10px;
+    top: 7px;
     background: transparent url(/images/svg/search_24x24.svg) no-repeat;
-    right: 12px;
+    right: 10px;
+    background-size: 20px 30px;
   }
 +
   .search:focus + .searchbutton {
@@ -106,6 +107,7 @@
     background-color: #2d3147;
     + .searchbutton {
      background: transparent url(/images/svg/search_orange_24x24.svg) no-repeat;
+     background-size: 20px 30px;
     }
   }
 
