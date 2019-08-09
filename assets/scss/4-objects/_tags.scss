@@ -70,3 +70,15 @@ mark {
   padding: 6px 8px;
 }
 
+.search_tags--blue {
+  &:hover {
+    background: lighten( rgba(70, 180, 205, 0.2),10);
+  }
+}
+
+.search_tags.bg-color-dark {
+  &:hover {
+    background: lighten(#e9ecef,2);
+  }
+}
+
