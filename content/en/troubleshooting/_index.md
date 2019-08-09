@@ -14,6 +14,7 @@ draft: false
 hidesectioncontents: false
 slug:
 aliases: [/troubleshooting/]
+image_path: /images/svg/docsIcon_app.svg
 toc: false
 notesforauthors:
 ---

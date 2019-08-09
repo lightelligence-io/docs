@@ -3,7 +3,8 @@
         <div class="box boxshadow bg-white mb2 mb2 pa2-l flex items-center justify-between">
             <div class="flex-auto w-20 w-20-ns pt1 mt0-l mt2">
 <!--     <img src="/images/docsIcon_rocket.svg" alt="Hugo Logo" class="h3 o-80 v-mid center w-100">-->
-                <div class="bg-icon h4 v-mid center w-100"></div>
+                <div class="bg-icon h4 v-mid center w-100" style="background-image: url('{{ .context.Params.Image_Path }}')">
+                </div>
             </div>
             <div class="flex-auto tl-ns w-100 w-80-ns">
               <h3 class="f4 mb2 fw8 bmt1 mt0-l mt2">
@@ -23,7 +24,8 @@
                   {{ end }}
                </div>
             </div>
-            <div class="arrow-right db"></div>
+            <div class="arrow-right db">
+            </div>
         </div>
 
     </a>

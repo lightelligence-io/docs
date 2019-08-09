@@ -41,7 +41,6 @@ $('#hamburg-icon').click(function(){
 window.addEventListener('mouseup',function(event){
   var docsmenu = document.getElementById('docsmenu');
   if(!docsmenu.classList.contains('dn')){
-    console.log(event.target.parentNode);
     if(event.target.id !== 'docsmenu' && !event.target.parentNode.classList.contains('mm')){
       docsmenu.classList.add(['dn']);
       $('main#bg-blur, .header-bg-image, #search-input').removeClass('bg-blur');
@@ -50,14 +49,15 @@ window.addEventListener('mouseup',function(event){
   }
 });
 
-$('.scroll-nav p').on('click', () => {
-  var ul = $('.scroll-nav ul');
-  ul.addClass('open');
+const tableOfContents = $('nav#TableOfContents');
+
+$('.scroll-nav').on('click', () => {
+  console.log('test');
+  tableOfContents.toggleClass('open');
 });
 
-$('.scroll-nav ul li a').on('click', () => {
-  var ul = $('.scroll-nav ul');
+$('nav#TableOfContents a').on('click', () => {
   setTimeout(function() {
-    ul.removeClass('open');
-  }, 500);
+    tableOfContents.removeClass('open');
+  }, 300);
 });

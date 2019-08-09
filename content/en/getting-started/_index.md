@@ -15,7 +15,7 @@ weight: 0001	#rem
 draft: false
 aliases: [/overview/introduction/]
 toc: true
-image_path: /images/docsIcon_app.svg
+image_path: /images/svg/docsIcon_rocket_white.svg
 headless:  true
 ---
 

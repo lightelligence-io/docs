@@ -53,71 +53,40 @@
 #TableOfContents ul li a:focus {
   color: var(--primary-color);
 }
-/*
-@media (max-width: 959px) {
 
-  #TableOfContents ul li{
-    display: none;
-  }
-
-  #TableOfContents ul li:focus {
-    :nth-child(even) {
-        display: block;
-    }
-    :nth-child(1){
-      background: transparent url("/images/svg/arrow_24x24.svg") no-repeat right 0;
-    }
-  }
-
-  #TableOfContents ul li:hover {
-    :nth-child(n) {
-      display: block;
-    }
-  }
-
-  #TableOfContents ul li:first-child {
-    display: block;
-    background: transparent url("/images/svg/arrow_24x24.svg") no-repeat right 0;
-  }
-
-  nav#TableOfContents {
-    z-index: 100;
-    top: 48px;
-    left: 0px;
-    background: white;
-    padding: 3px 15px;
-    position: fixed;
-    width: 100%;
-    box-shadow: -5px 1px 15px rgba(0,0,0,.25), inset 0 0px 0px rgba(0,0,0,.22);
-  }
-}
-
-*/
 
 @media all and (max-width: 959px) {
-  .scroll-nav {
-    z-index: 100;
-    top: 48px;
-    left: 0px;
-    background: white;
-    padding: 3px 15px;
+  .scroll-nav-wrapper {
     position: fixed;
+    width: 100vw;
+    top: 50px;
+    z-index: 4;
+    left: 0;
+  }
+  nav#TableOfContents {
+    z-index: 100;
+    left: 0;
+    background: #fff;
+    padding: 3px 15px;
     width: 100%;
-    box-shadow: 5px 1px 6px rgba(0,0,0,.25), inset 0 0 0 rgba(0,0,0,.22);
-    p{
-      background: white url("/images/svg/arrow_24x24.svg") no-repeat right 0;
-      text-transform: initial;
+    top: 97px;
+    transform: translateY(-100%);
+    transition: .5s;
+    box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
+    &.open {
+      transform: translateY(0);
     }
-    ul {
-      display: none;
-      opacity: 0;
-      transition: opacity .2s ease-in-out;
-      &.open {
-        display: block;
-        opacity: 1;
-        transition: opacity .2s ease-in-out;
-      }
-    }
+
+  }
+  .scroll-nav {
+    margin: 0 auto;
+    background: white url("/images/svg/arrow_24x24.svg") no-repeat right 0;
+    text-transform: none;
+    padding: 1rem;
+    background-position: 95%;
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
   }
   .docsmenu {
     transform: translateX(0);

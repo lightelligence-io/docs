@@ -14,6 +14,7 @@ menu:
 weight: 0003	#rem
 draft: false
 aliases: [/overview/introduction/]
+image_path: /images/svg/docsIcon_settings.svg
 toc: false
 ---
 
