@@ -165,5 +165,10 @@ code.hljs {
 
 .search_tags {
   border-radius: 12.5px;
-  color: var(--blue);
+
+  &--blue {
+    color: var(--blue);
+    border-radius: 12.5px;
+
+  }
 }

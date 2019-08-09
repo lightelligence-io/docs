@@ -7,14 +7,17 @@
       transition: background-color .5s ease-in-out;
       &:not(.nohover):hover {
         background: darken(#ff6600, 10);
-        transition: background-color .5s ease-in-out;
+        transition: background-color .3s ease-in-out;
       }
     }
+  }
+  .btn a {
+    line-height: 16px;
   }
 
   .btn:not(.nohover):hover {
     background: darken(#ff6600, 10);
-    transition: background-color .5s ease-in-out;
+    transition: background-color .3s ease-in-out;
   }
 
   //width: 179px;

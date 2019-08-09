@@ -97,7 +97,7 @@ function populateResults(result){
       categories.forEach(function (category){
         var td = document.createElement('td');
         var node = document.createTextNode(category);
-        td.setAttribute("class","f6 mb0 link dim mr1 bg-light-blue ph2 pv1 tags mb2 search_tags");
+        td.setAttribute("class","f6 mb0 link dim mr1 bg-light-blue ph2 pv1 tags mb2 search_tags--blue");
         td.appendChild(node);
         tr.appendChild(td);
       });
