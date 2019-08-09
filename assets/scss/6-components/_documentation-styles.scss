@@ -47,8 +47,7 @@
       border-bottom: none;
   }
 
-.order-1 {
-  max-width: 784px;
+.main-content {
   background-color: #fff;
   -moz-border-radius: 20px;
   border-radius: 5px;
@@ -56,4 +55,11 @@
   @media all and (max-width: 1200px) {
     border-radius: 0;
   }
+}
+
+.order-0 nav {
+  width: 15vw;
+  position: fixed;
+  float: right;
+  left: 9%;
 }

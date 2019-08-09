@@ -17,7 +17,7 @@
   transition: all .5s ease-in-out;
   li {
     position: relative;
-    &:last-child {
+    &:not(:first-child) {
       &:before {
         content: "";
         width: 1px;
@@ -25,7 +25,7 @@
         background: #fff;
         display: block;
         position: absolute;
-        left: -15px;
+        left: -20px;
       }
     }
   }
@@ -39,6 +39,12 @@
   article {
     @media all and (min-width: 480px) and (max-width: 959px) {
       padding-top: 3rem;
+    }
+  }
+  position: relative;
+  @media all and (max-width: 959px) {
+    &.top-pos {
+      top: 50px;
     }
   }
 }
