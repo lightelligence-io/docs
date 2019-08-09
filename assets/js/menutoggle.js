@@ -33,7 +33,7 @@ function toggleClass() {
 }
 
 $('#hamburg-icon').click(function(){
-    $('main#bg-blur, .header-bg-image, #search-input, .container').addClass('bg-blur');
+    $('main#bg-blur, .header-bg-image, #search-input, .container, .header-detail').addClass('bg-blur');
     $('body').addClass('no-scroll');
     $('.docsmenu').addClass('scroll-y');
 });
@@ -43,7 +43,7 @@ window.addEventListener('mouseup',function(event){
   if(!docsmenu.classList.contains('dn')){
     if(event.target.id !== 'docsmenu' && !event.target.parentNode.classList.contains('mm')){
       docsmenu.classList.add(['dn']);
-      $('main#bg-blur, .header-bg-image, #search-input, .container').removeClass('bg-blur');
+      $('main#bg-blur, .header-bg-image, #search-input, .container, .header-detail').removeClass('bg-blur');
       $('body').removeClass('no-scroll');
     }
   }
