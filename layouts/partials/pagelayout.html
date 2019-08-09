@@ -8,11 +8,11 @@
 
     <div class="w-100 w-80-l ph0 ph4-l mw-1000">
       <article class="w-100 nested-copy-line-height nested-links nested-img">
-        <p class="mid-gray pl2 f2">
+        <h1 class="mid-gray pl2 f2">
           {{ with $.context.Data.Singular }}{{ . | humanize }}: {{ end }}
             <strong>{{ .context.Title }}</strong>
-        </p>
         </h1>
+
         <div class="{{ .Site.Params.copyClass }} mid-gray f5 f4-l">
           {{ .context.Content }}
         </div>
@@ -22,7 +22,7 @@
         {{ $interior_classes := .context.Site.Params.flex_box_interior_classes }}
         <section class="flex-ns flex-wrap justify-between w-100">
           {{ range $section_to_display }}
-          {{ partial "boxes-categories" (dict "context" . "classes" $interior_classes "fullcontent" true) }}
+          {{ partial "boxes-categories.html" (dict "context" . "classes" $interior_classes "fullcontent" true) }}
           {{ end }}
         </section>
       </div>
