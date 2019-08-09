@@ -28,3 +28,39 @@ h4, .blue{
     padding-left: 24px;
 }
 
+
+@media (max-width: 480px) {
+    h1, .lh-title {
+      font-size: 24px;
+      margin-top: 24px;
+      padding: 0;
+    }
+  
+    h3 {
+      font-size: 16px;
+      margin-top: 24px;
+    }
+  
+    h4 {
+      font-size: 16px;
+    }
+  
+    div#prose h2 {
+      font-size: 20px;
+  
+      margin-top: 64px;
+    }
+  
+    .subtitle {
+      font-family: $font-family-regular;
+      font-size: 18px;    
+    }
+    
+    p {
+      font-size: 14px;
+    }
+
+    .admonition-content {
+        font-size: 14px; 
+    }
+  }

@@ -14,3 +14,37 @@ a {
 .link:focus {
     outline: none;
 }
+
+/* WebKit browsers */
+input:focus::-webkit-input-placeholder { color:transparent; }
+
+/* Mozilla Firefox 4 to 18 */
+input:focus:-moz-placeholder { color:transparent; }
+
+    /* Mozilla Firefox 19+ */
+input:focus::-moz-placeholder { color:transparent; }
+
+    /* Internet Explorer 10+ */
+input:focus:-ms-input-placeholder { color:transparent; }
+
+ol li {
+    font-weight:bold;
+}
+li > * {
+    font-weight:normal;
+}
+
+// ul {
+//     list-style: none; 
+//   }
+  
+//   ul:not(.list) li::before {
+//     content: "\2022"; 
+//     color: var(--primary-color); 
+//     font-weight: bold;
+//     display: inline-block; 
+//     width: 1em; 
+//     margin-left: -1em;
+//   }
+
+  
