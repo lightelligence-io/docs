@@ -50,3 +50,15 @@ $('#hamburg-icon').click(function(){
     $('body').removeClass('no-scroll');
   }
 });
+
+$('.scroll-nav p').on('click', () => {
+  var ul = $('.scroll-nav ul');
+  ul.addClass('open');
+});
+
+$('.scroll-nav ul li a').on('click', () => {
+  var ul = $('.scroll-nav ul');
+  setTimeout(function() {
+    ul.removeClass('open');
+  }, 500);
+});

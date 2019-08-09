@@ -1,18 +1,20 @@
 <!-- TOCs need to be declared explicitly in the front matter of content/*.md -->
 <aside class="fixed-lTK mw5-l right-0 f6 bpv4 pv0-ns pl4-l nested-list-reset nested-links nested-copy-line-height">
-	{{ if .Params.toc }}
-		<p class="db-l db-m b ttu f7 tracked light-gray">
+    <div class="scroll-nav">
+        {{ if .Params.toc }}
+        <p class="db-l db-m b ttu f7 tracked light-gray">
             {{- if eq .Section "functions" -}}
             {{ .LinkTitle }}
             {{- else -}}
             {{ .Title }}
             {{- end -}}
         </p>
-  	{{ .TableOfContents }}
-	{{ end }}
+        {{ .TableOfContents }}
+        {{ end }}
 
-	{{- if .Params.godocref -}}
-	<a target="_blank" class="tooltip right godoc-link" data-tooltip="See the related Godocs for {{.Title }}" href="{{.Params.godocref}}" >
-	</a>
-	{{- end -}}
+        {{- if .Params.godocref -}}
+        <a target="_blank" class="tooltip right godoc-link" data-tooltip="See the related Godocs for {{.Title }}" href="{{.Params.godocref}}" >
+        </a>
+        {{- end -}}
+    </div>
 </aside>

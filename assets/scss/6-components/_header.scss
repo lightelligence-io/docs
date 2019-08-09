@@ -52,7 +52,8 @@
     }
   }
 }
-
-.mobilemenu {
-  width: calc(100% - 55px);
+@media all and (max-width: 959px) {
+  .docsmenu {
+    width: calc(100% - 55px);
+  }
 }

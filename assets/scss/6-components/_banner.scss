@@ -47,6 +47,10 @@
       right: 16px;
       color: var(--primary-color-dark);
       outline: none;
+      @media (min-width: 960px) {
+        box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
+        border-radius: 4px;
+      }
     }
     transition: top .5s ease-in-out, width .5s ease-in-out .2s;
   }
@@ -72,6 +76,8 @@
     left: 0;
     right: 0;
     transition: width .5s ease-in-out;
+    box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
+    border-radius: 4px;
   }
 }
 
