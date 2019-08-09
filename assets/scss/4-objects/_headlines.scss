@@ -34,6 +34,11 @@ h4, .blue{
 }
 
 
+.li-title > a {
+  font-weight: bold;
+}
+
+
 @media (max-width: 480px) {
     h1, .lh-title {
       font-size: 24px;
