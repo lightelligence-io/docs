@@ -32,16 +32,3 @@ function toggleClass() {
 
     }
 }
-
-const input = document.querySelector('input[id="search-input"]')
-
-
-input.addEventListener('input', ()=> {
-    console.log(input.value.length)
-
-    if(input.value.length > 0) {
-        input.style.backgroundImage = 'none'
-    } else {
-        input.style.backgroundImage = 'url(http://localhost:1313/images/icon-search.png)'
-    }
-})
