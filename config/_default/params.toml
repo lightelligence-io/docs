@@ -10,8 +10,6 @@ removefromexternalsearch = false
 ghrepo = "https://github.com/"
 ## GH Repo for filing a new issue
 github_repo = "https://github.com/"
-### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
-ghdocsrepo = "https://github.com/gohugoio"
 ## Gitter URL
 gitter = "https://gitter.im/"
 ## Discuss Forum URL

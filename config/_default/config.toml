@@ -93,3 +93,4 @@ anchor = "smart"
 
 [taxonomies]
 category = "categories"
+tag = "tags"
