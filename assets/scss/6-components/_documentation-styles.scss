@@ -57,15 +57,12 @@
   }
   @media all and (max-width: 959px) {
     &.top-large {
-      margin-top: 50px;
+      margin-top: 90px;
     }
     margin-top: 0px;
   }
   @media all and (max-width: 479px) {
     padding-top: 32px;
-    &.top-large {
-      margin-top: 50px;
-    }
   }
 }
 

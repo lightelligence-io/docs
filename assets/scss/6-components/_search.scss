@@ -143,3 +143,19 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+
+// content: '';
+// position: absolute;
+// right: 0;
+// top: 50%;
+// transform: translate(50%, -50%);
+// width: 2px;
+// background-color: white;
+// height: 60%;
+// border-radius: 2px;
+// }
+
+.navi-border {
+  border-image: linear-gradient(#f60 30%, white 30% 70%, #f60 70%) 1;
+}
