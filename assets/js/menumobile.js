@@ -58,13 +58,17 @@ window.addEventListener('mouseup',function(event){
 
 const tableOfContents = $('nav#TableOfContents');
 
+tableOfContents.addClass('close')
+
 $('.scroll-nav').on('click', () => {
-  tableOfContents.toggleClass('open');
+  tableOfContents.removeClass('close')
+  tableOfContents.addClass('open');
 });
 
 $('nav#TableOfContents a').on('click', () => {
   setTimeout(function() {
     tableOfContents.removeClass('open');
+    tableOfContents.addClass('close')
   }, 300);
 });
 

@@ -92,6 +92,7 @@
     transform: translateX(0);
     transition: transform .5s ease-in-out;
     display: block;
+    
     &.dn {
       display: block;
       transform: translateX(1000px);
@@ -100,6 +101,11 @@
   }
 }
 
+.mobilenavi {
+  overflow: scroll;
+  height: 100%;
+  padding-bottom: 100px;
+}
 
 
 .docsmenu {
