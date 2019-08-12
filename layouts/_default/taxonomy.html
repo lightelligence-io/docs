@@ -1,3 +1,4 @@
+{{ define "nav" }}{{ partial "site-nav.html" . }}{{ end }}
 {{ define "main" }}
   {{ $section_to_display := .Pages }}
   {{ partial "pagelayout.html" (dict "context" . "section_to_display" $section_to_display ) }}
