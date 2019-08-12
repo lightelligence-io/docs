@@ -34,17 +34,45 @@ li > * {
     font-weight:normal;
 }
 
-// ul {
-//     list-style: none; 
-//   }
-  
-//   ul:not(.list) li::before {
-//     content: "\2022"; 
-//     color: var(--primary-color); 
-//     font-weight: bold;
-//     display: inline-block; 
-//     width: 1em; 
-//     margin-left: -1em;
-//   }
+div#prose > ul {
+    list-style: none; 
+    position: relative;
 
-  
+    li:before {
+        color: var(--primary-color); 
+        content: "\2022";
+        display: inline-block;
+        font-size: 1em; 
+        left: 0;
+        position: absolute;
+    }
+
+    & li > ul {
+        list-style: none;
+          position: relative;
+        
+        li:before {
+            color: var(--primary-color); 
+            content: "\2022"; 
+            display: inline-block;
+            font-size: 1em; 
+            left: 0; 
+            position: absolute;
+        }
+    }
+}
+
+div#prose > ol > li > ul {
+list-style: none;
+position: relative;
+    
+li:before {
+    color: var(--primary-color); 
+    content: "\2022"; 
+    display: inline-block;
+    font-size: 1em; 
+    left: 0; 
+    position: absolute;
+}
+}
+
