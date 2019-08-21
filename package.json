@@ -38,5 +38,7 @@
     "webpack-cli": "^3.3.6",
     "webpack-command": "^0.4.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fuse.js": "^3.4.5"
+  }
 }

@@ -23,3 +23,12 @@
     max-width: 58rem;
   }
 }
+
+
+.fuzzy-list {
+  display: none;
+}
+
+select.fuzzy-list:not(:-internal-list-box) {
+  overflow: visible !important;
+}

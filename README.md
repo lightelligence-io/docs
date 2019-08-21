@@ -8,9 +8,7 @@ This document documents how to install Hugo and how we customized the `gohugoioT
 
 ## Build Frontend
 
-1. `cd themes/gohugoioTheme_custom`
-2. Optional, if not already exists or for rebuild purposes: Build lunr-search files `npm run lunr`
-3. Run watch task `npm run watch`
+1. Run watch task `npm run watch`
 
 ## Local Server
 
