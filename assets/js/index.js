@@ -18,9 +18,9 @@ const searchInput = document.querySelector('input[id=search-input]')
 const fuzzyList = document.querySelector('.fuzzy-list')
 
 const fuseOptions = {
-    shouldSort: true,
-    includeMatches: true,
-    tokenize: true,
+  shouldSort: true,
+  includeMatches: true,
+  tokenize: true,
     matchAllTokens: true,
     threshold: 0.0,
     location: 0,
@@ -34,14 +34,17 @@ const fuseOptions = {
       {name:"contents",weight:0.4}
     ]
   };
-
-       
+  
   searchInput.addEventListener('input', () => {
     while (fuzzyList.hasChildNodes()) {
         fuzzyList.removeChild(fuzzyList.lastChild);
       }
+
+      getData(searchInput.value)
       
-    getData(searchInput.value)
+      if (searchInput.value.length !== 0){
+        fuzzyList.style.display = 'block'
+      }
 
     if (searchInput.value.length === 0){
         while (fuzzyList.hasChildNodes()) {
@@ -49,11 +52,6 @@ const fuseOptions = {
       }
     }
 })
-
-$(document).ready(function(){
-  console.log(fuzzyComplete())
-  $("#search-input").fuzzyComplete(data);
-});
 
 
 function getData(value) {
@@ -63,23 +61,24 @@ function getData(value) {
     then((data)=> {
         const fuse = new Fuse(data, fuseOptions);
         const result = fuse.search(value);
-        console.log(result)
 
         result.map((res) => {
             const listitem = document.createElement('option')
+            listitem.value = res.item.title
             listitem.innerText = res.item.title
-            fuzzyList.appendChild(listitem)
-        })
-        })
+            listitem.classList.add('fuzzy-item')
 
-        
+            fuzzyList
+              .appendChild(listitem)
+              .addEventListener('click', (event)=> {
+
+              searchInput.value = event.target.value
+              searchInput.focus()
+
+            })
+          })
+        })
       })   
-      
-      
+
     }    
     
-    
-    
-    $(document).ready(function(){
-      $("#search-input").fuzzyComplete(data);
-    });
