@@ -1,246 +1,91 @@
-// import Fuse from 'fuse.js'
+const form = document.querySelector('#site-search-form')
 
-// var airports = [
-//     {"airportCode":"MEL","cityName":"Melbourne, Australia"},
-//     {"airportCode":"LAX","cityName":"Los Angeles, USA"},
-//     {"airportCode":"LHR","cityName":"Heathrow, London"},
-//     {"airportCode":"HKG","cityName":"Hong Kong"},
-//     {"airportCode":"NRT","cityName":"Narita, Tokyo, Japan"},
-//     {"airportCode":"FRA","cityName":"Frankfurt, Germany"}
-//   ];
+const width = window.innerWidth
 
-//  var fuseOptions = { keys: ["airportCode", "cityName"] }
-//  var options = { display: "cityName", key: "airportCode", fuseOptions: fuseOptions };
+if(width <= 959) {
+    window.addEventListener('scroll', () => {
+    console.log(form.getBoundingClientRect())
+            const height = form.getBoundingClientRect().top
+    
+            if(height === 56) {
+                form.style.width = '100%'
+            } else {
+                form.style.width = '90%'
+            }
+        }
+    )
+}
 
 
-// $(document).ready(function(){
-//     $("#search-input").fuzzyComplete(airports, options);
-//   })
+
+import Fuse from 'fuse.js';
+
+const searchInput = document.querySelector('input[id=search-input]')
+const fuzzyList = document.querySelector('.fuzzy-list')
+
+const fuseOptions = {
+  shouldSort: true,
+  includeMatches: true,
+  tokenize: true,
+    matchAllTokens: true,
+    threshold: 0.0,
+    location: 0,
+    distance: 100,
+    maxPatternLength: 64,
+    minMatchCharLength: 3,
+    keys: [
+      {name:"title",weight:0.8},
+      {name:"tags",weight:0.5},
+      {name:"categories",weight:0.5},
+      {name:"contents",weight:0.4}
+    ]
+  };
+  
+  searchInput.addEventListener('input', () => {
+    while (fuzzyList.hasChildNodes()) {
+        fuzzyList.removeChild(fuzzyList.lastChild);
+      }
+
+      getData(searchInput.value)
+      
+      if (searchInput.value.length !== 0){
+        fuzzyList.style.display = 'block'
+      }
+
+    if (searchInput.value.length === 0){
+      fuzzyList.style.display = 'none'
+    }
+})
 
 
-// ;(function($) {
+function getData(value) {
+    fetch("./search/index.json").
+    then((response) => {
+        response.json().
+    then((data)=> {
+        const fuse = new Fuse(data, fuseOptions);
+        const result = fuse.search(value);
+        console.log(result)
 
-//     if(typeof(jQuery) == 'undefined') {
-//       console.warn('fuzzyComplete plugin requires jQuery');
-//       return;
-//     }
-  
-//     if(typeof(Fuse) == 'undefined') {
-//       console.warn('fuzzyComplete plugin requires Fuse.js');
-//       return;
-//     }
-  
-//     $.fn.fuzzyComplete = function(jsonData, options) {
-  
-//       return this.each(function() {
-  
-//         // Default options: search all keys, display and output the first one
-//         if(typeof options === 'undefined') {
-//           options = {
-//             display: Object.keys(jsonData[0])[0],
-//             key: Object.keys(jsonData[0])[0],
-//             resultsLimit: 4,
-//             allowFreeInput: false,
-//             fuseOptions:
-//               {
-//                 shouldSort: true,
-//                 includeMatches: true,
-//                 tokenize: true,
-//                 matchAllTokens: true,
-//                 threshold: 0.0,
-//                 location: 0,
-//                 distance: 100,
-//                 maxPatternLength: 64,
-//                 minMatchCharLength: 3,
-//                 keys: [
-//                     {name:"title",weight:0.8},
-//                     {name:"tags",weight:0.5},
-//                     {name:"categories",weight:0.5},
-//                     {name:"contents",weight:0.4}
-//                  ]
-//               }
-//           };
-//         }
-  
-//         var f = new Fuse(jsonData, options.fuseOptions);
-//         var searchBox = $(this);
-//         var resultsBox = $('<div>').addClass('fuzzyResults');
-//         searchBox.after(resultsBox);
-//         var selectBox = $('<select>').hide();
-  
-//         if (options.allowFreeInput !== true) {
-//           selectBox.attr('name', searchBox.attr('name'));
-//           searchBox.removeAttr('name');
-//         }
-//         searchBox.after(selectBox);
-  
-//         var pos = searchBox.position();
-//         pos.left += parseInt(searchBox.css('marginLeft'), 10);
-//         pos.top += parseInt(searchBox.css('marginTop'), 10);
-//         resultsBox.css({
-//           'left': pos.left,
-//           'top': pos.top + searchBox.outerHeight(),
-//           'width': searchBox.outerWidth()
-//         });
-  
-//         function selectCurrent() {
-//           selectBox.val(resultsBox.children('.selected').first().data('id'));
-//           searchBox.val(resultsBox.children('.selected').first().data('displayValue'));
-  
-//           selectBox.data('extraData', resultsBox.children('.selected').first().data('extraData'));
-//           searchBox.data('extraData', resultsBox.children('.selected').first().data('extraData'));
-//         }
-  
-//         searchBox.keydown(function(e) {
-//           switch(e.which) {
-//             case 13: // Enter
-//               e.preventDefault();
-//               resultsBox.hide();
-//               selectCurrent();
-//               return;
-//             case 9: // Tab
-//               resultsBox.hide();
-//               selectCurrent();
-//               return;
-//           }
-//         });
-  
-//         searchBox.keyup(function(e) {
-//           switch(e.which) {
-//             case 38:  // up arrow
-//               var selitem = resultsBox.find('.selected').first();
-  
-//               if(selitem.length) {
-//                 selitem.removeClass('selected');
-//                 if(selitem.prev().length)
-//                   selitem.prev().addClass('selected');
-//                 else
-//                   resultsBox.children().last().addClass('selected');
-//               } else {
-//                 resultsBox.children().last().addClass('selected');
-//               }
-//               selectCurrent();
-//               return;
-//             case 40: // down arrow
-//               var selitem = resultsBox.find('.selected').first();
-  
-//               if(selitem.length) {
-//                 selitem.removeClass('selected');
-//                 if(selitem.next().length)
-//                   selitem.next().addClass('selected');
-//                 else
-//                   resultsBox.children().first().addClass('selected');
-//               } else {
-//                 resultsBox.children().first().addClass('selected');
-//               }
-//               selectCurrent();
-//               return;
-//             case 13: // Enter
-//               return;
-//           }
-  
-//           var results = f.search($(this).val());
-  
-//           resultsBox.empty();
-  
-//           if(results.length === 0) {
-//             selectBox.val(null);
-//           }
-  
-//           results.forEach(function(result, i) {
-//             if(i >= options.resultsLimit)
-//               return;
-  
-//             if(i === 0)
-//               selectBox.val(result[options.key]);
-  
-//             var resultsRow = $('<div>').addClass('__autoitem')
-//                                .on('mousedown', function(e) {
-//                                  e.preventDefault(); // This prevents the element from being hidden by .blur before it's clicked
-//                                })
-//                                .click(function() {
-//                                  resultsBox.find('.selected').removeClass('selected');
-//                                  $(this).addClass('selected');
-//                                  selectCurrent();
-//                                  resultsBox.hide();
-//                                });
-  
-//             if (typeof options.key === 'function') {
-//               resultsRow.data('id',options.key(result,i));
-//             } else {
-//               resultsRow.data('id',result[options.key]);
-//             }
-//             if (typeof options.display === 'function') {
-//               resultsRow.html( options.display(result, i) );
-//             } else {
-//               resultsRow.text(result[options.display]);
-//             }
-//             if (typeof options.displayValue === 'function') {
-//               resultsRow.data('displayValue', options.displayValue(result, i));
-//             } else if (typeof options.displayValue === 'string') {
-//               resultsRow.data('displayValue', result[options.displayValue]);
-//             } else {
-//               resultsRow.data('displayValue', resultsRow.text());
-//             }
-//             if (typeof options.extraData === 'function') {
-//               resultsRow.data('extraData', options.extraData(result, i));
-//             } else if (typeof options.extraData === 'string') {
-//               resultsRow.data('extraData', result[options.extraData]);
-//             }
-  
-//             resultsBox.append(resultsRow);
-//           });
-  
-//           if(resultsBox.children().length) {
-//             resultsBox.show();
-//             resultsBox.children().first().addClass('selected');
-//           } else {
-//             resultsBox.hide();
-//           }
-//         });
-  
-//         searchBox.blur(function() {
-//           resultsBox.hide();
-//         });
-  
-//         searchBox.focus(function() {
-//           if(resultsBox.children().length) {
-//             resultsBox.show();
-//           }
-//         });
-  
-//         selectBox.append($('<option>', {
-//           value: '',
-//           text: '(None Selected)'
-//         }));
-  
-//         jsonData.forEach(function(entry, i) {
-//           var value;
-//           var text;
-//           if (typeof options.key === 'function') {
-//             value = options.key(entry,i);
-//           } else {
-//             value = entry[options.key];
-//           }
-//           if (typeof options.display === 'function') {
-//             text = options.display(entry, i);
-//           } else {
-//             text = entry[options.display];
-//           }
-//           selectBox.append($('<option>', {
-//             value: value,
-//             text: text
-//           }));
-  
-//         });
-  
-//         if(searchBox.val()) {
-//           searchBox.keyup();
-//           searchBox.blur();
-//         }
-  
-//       });
-  
-//     };
-  
-//   }(jQuery));
+        result.map((res) => {
+
+            const listitem = document.createElement('option')
+            listitem.value = res.item.title
+            listitem.innerText = res.item.title
+            listitem.classList.add('fuzzy-item')
+
+            fuzzyList
+              .appendChild(listitem)
+              .addEventListener('click', (event)=> {
+
+              searchInput.value = event.target.value
+              searchInput.focus()
+              fuzzyList.style.display = 'none'
+              
+            })
+          })
+        })
+      })   
+
+    }    
+    

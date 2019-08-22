@@ -16,6 +16,10 @@
   }
 }
 
+.header-desktop-nav {
+  position: sticky;
+}
+
 
 .header-links {
   background-color:  var(--primary-color);
@@ -42,6 +46,7 @@
 }
 
 .header-bar {
+  
   @media all and (max-width: 959px) {
     > a {
       background: var(--primary-color-dark);
@@ -53,5 +58,11 @@
 @media all and (max-width: 959px) {
   .docsmenu {
     width: calc(100% - 55px);
+  }
+
+  .header-bar {
+    background: var(--primary-color-dark);
+    height: 56px;
+      
   }
 }

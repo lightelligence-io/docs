@@ -112,3 +112,4 @@ function populateResults(result){
     document.getElementById("search-results").appendChild(frag);
   });
 }
+

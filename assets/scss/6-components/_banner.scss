@@ -70,11 +70,17 @@
 
 .site-search-form {
   margin: 0 auto;
-  position: relative;
   top: 56px;
-  left: 0;
-  right: 0;
   transition: width .5s ease-in-out;
+
+  @media all and (max-width: 959px) {
+    position: sticky;
+    width: 90%;
+    margin-top: -148px;
+    margin-bottom: 148px;
+
+  }
+
   @media (min-width: 960px) {
     top: 180px;
     position: absolute;

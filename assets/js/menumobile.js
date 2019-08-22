@@ -36,7 +36,7 @@ function toggleClass() {
 $('#hamburg-icon').click(function(){
     var docsmenu = document.querySelector('.docsmenu');
     docsmenu.classList.remove('dn');
-    $('main#bg-blur, .header-bg-image, #search-input, .container, .header-detail, nav.relative-l').addClass('bg-blur');
+    $('main#bg-blur, .header-bg-image, #search-input, .site-search-form, .container, .header-detail, nav.relative-l').addClass('bg-blur');
     $('body').addClass('no-scroll');
     $('.docsmenu').addClass('scroll-y');
     $('#bg-blur a, .header-bar a').css('pointer-events', 'none');
@@ -48,7 +48,7 @@ window.addEventListener('mouseup',function(event){
   if(!docsmenu.classList.contains('dn')){
     if(event.target.id !== 'docsmenu' && !event.target.parentNode.classList.contains('mm')){
       docsmenu.classList.add(['dn']);
-      $('main#bg-blur, .header-bg-image, #search-input, .container, .header-detail, nav.relative-l').removeClass('bg-blur');
+      $('main#bg-blur, .header-bg-image, #search-input,  .site-search-form, .container, .header-detail, nav.relative-l').removeClass('bg-blur');
       $('body').removeClass('no-scroll');
       $('#bg-blur a, .header-bar a').css('pointer-events', 'auto');
       $('.scroll-nav').on();
