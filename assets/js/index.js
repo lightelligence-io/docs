@@ -1,6 +1,5 @@
 require("typeface-muli")
-import '../scss/main.scss';
-import './anchorforid.js'
+import '../scss/main.scss'
 import './clipboardjs.js'
 import './codeblocks.js'
 import './hljs.js'
@@ -12,5 +11,7 @@ import './smoothscroll.js'
 import './tabs.js'
 import './nojs.js'
 import './fuzzycomplete.js'
+import './headlineanchors'
+
 
 

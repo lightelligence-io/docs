@@ -1,4 +1,10 @@
+
+
+import Fuse from 'fuse.js';
+
 const form = document.querySelector('#site-search-form')
+const searchInput = document.querySelector('input[id=search-input]')
+const fuzzyList = document.querySelector('.fuzzy-list')
 
 const width = window.innerWidth
 
@@ -14,14 +20,7 @@ if(width <= 959) {
             }
         }
     )
-}
-
-
-
-import Fuse from 'fuse.js';
-
-const searchInput = document.querySelector('input[id=search-input]')
-const fuzzyList = document.querySelector('.fuzzy-list')
+} 
 
 const fuseOptions = {
   shouldSort: true,
@@ -56,7 +55,6 @@ const fuseOptions = {
       fuzzyList.style.display = 'none'
     }
 })
-
 
 function getData(value) {
     fetch("./search/index.json").
