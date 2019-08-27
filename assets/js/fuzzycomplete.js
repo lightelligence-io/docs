@@ -108,8 +108,12 @@ function getData(value) {
                       
               listLink.classList.add('fuzzy-item--link')
 
+              console.log(res.permalink)
+
+              const anchorlink = res.permalink.slice(21)
+
               listLink.setAttribute('name', res.title)
-              listLink.href= res.permalink
+              listLink.href= `http://osram-docs.wh1.staging-server.com${anchorlink}`
               itemTitle.setAttribute('name', res.title)
               itemText.setAttribute('name', res.title)
               
@@ -117,7 +121,6 @@ function getData(value) {
               listLink.appendChild(itemText)
 
               listLink.addEventListener('click', (event)=> {
-                console.log(event.target.name)
                 searchInput.value = event.target.name
                 searchInput.focus()
                 fuzzyList.style.display = 'none'
