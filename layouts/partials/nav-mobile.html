@@ -4,7 +4,7 @@
         <ul class="list w-100 pl0 mm">
             {{ range .Site.Menus.docs.ByWeight }}
             {{ $post := printf "%s" .Post }}
-            <li class="ph4 f5 w-90-ns hover-orange mm primary-color-dark  fw8{{ if eq $post "break" }} mb1 bb b&#45;&#45;moon-gray{{ end }}">
+            <li class="ph3 pb2 f5 w-90-ns hover-orange mm primary-color-dark  fw8{{ if eq $post "break" }} mb1 bb b&#45;&#45;moon-gray{{ end }}">
             <a href="{{ if .HasChildren }}javascript:void(0){{ else }}{{ .URL }}{{ end }}" class="js-m-toggle dib w-100 link mid-gray b hover-orange pl2 pr2 pv2 {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} primary-color{{end}}" data-target=".{{ .Identifier }}">{{ .Name }}</a>
 
             {{- if .HasChildren }}
