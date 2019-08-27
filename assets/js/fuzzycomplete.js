@@ -8,9 +8,8 @@ const fuzzyList = document.querySelector('.fuzzy-list')
 
 const width = window.innerWidth
 
-if(width <= 959) {
+if(width <= 959 && searchInput) {
     window.addEventListener('scroll', () => {
-    console.log(form.getBoundingClientRect())
             const height = form.getBoundingClientRect().top
     
             if(height === 56) {
@@ -63,26 +62,76 @@ function getData(value) {
     then((data)=> {
         const fuse = new Fuse(data, fuseOptions);
         const result = fuse.search(value);
-        console.log(result)
 
-        result.map((res) => {
+        
+        function groupBy(arr, key) {
+        var newArr = [],
+            types = {},
+            newItem, i, j, cur;
 
-            const listitem = document.createElement('option')
-            listitem.value = res.item.title
-            listitem.innerText = res.item.title
+        for (i = 0, j = arr.length; i < j; i++) {
+            cur = arr[i].item;
+            if (!(cur[key] in types)) {
+                types[cur[key]] = { type: cur[key], data: [] };
+                newArr.push(types[cur[key]]);
+            }
+            types[cur[key]].data.push(cur);
+        }
+        return newArr;
+      }
+
+      const sortedResults = groupBy(result, 'categories')
+    
+        console.log(sortedResults)
+           
+        sortedResults.map((res) => {
+            const listitem = document.createElement('div')
+            const itemCategory = document.createElement('div')
+
+            console.log(res)
+
+            itemCategory.classList.add('fuzzy-item--category')
+            itemCategory.innerText = res.type[0]
+              
+            listitem.value = res.type[0]
             listitem.classList.add('fuzzy-item')
 
             fuzzyList
-              .appendChild(listitem)
-              .addEventListener('click', (event)=> {
+            .appendChild(itemCategory)
 
-              searchInput.value = event.target.value
-              searchInput.focus()
-              fuzzyList.style.display = 'none'
-              
+            fuzzyList.appendChild(listitem)
+              .addEventListener('click', (event)=> {
+                searchInput.value = event.target.value
+                searchInput.focus()
+                fuzzyList.style.display = 'none'
             })
+
+            res.data.map((res => {
+              const listItems = document.querySelectorAll('.fuzzy-item')
+              const listLink = document.createElement('a')
+  
+              const itemTitle = document.createElement('h4')
+              const itemText =  document.createElement('p')
+              
+                itemTitle.innerText = res.title
+                itemTitle.classList.add('fuzzy-item--title')
+              
+                const textPrevue =  res.contents.substring(0, 60)
+              
+                itemText.innerText = textPrevue + '...'
+                itemText.classList.add('fuzzy-item--text')
+              
+                listItems.forEach(item => {
+                   item.appendChild(itemTitle)
+                   item.appendChild(itemText)
+                })
+
+            }))
+
+
           })
-        })
+
+         })
       })   
 
     }    

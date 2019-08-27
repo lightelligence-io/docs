@@ -65,6 +65,7 @@ function populateResults(result){
     }
     snippet += "…";
 
+
     // Lifted from https://stackoverflow.com/posts/3700369/revisions
     var elem = document.createElement('textarea');
     elem.innerHTML = snippet;
