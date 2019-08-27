@@ -1,6 +1,5 @@
-
-
 import Fuse from 'fuse.js';
+import Mark from 'mark.js'
 
 const form = document.querySelector('#site-search-form')
 const searchInput = document.querySelector('input[id=search-input]')
@@ -82,15 +81,11 @@ function getData(value) {
 
       const sortedResults = groupBy(result, 'categories')
     
-        console.log(sortedResults)
-           
         sortedResults.map((res) => {
             const listitem = document.createElement('div')
             const itemCategory = document.createElement('div')
 
-            console.log(res)
-
-            itemCategory.classList.add('fuzzy-item--category')
+            itemCategory.classList.add('fuzzy-list--category')
             itemCategory.innerText = res.type[0]
               
             listitem.value = res.type[0]
@@ -100,18 +95,33 @@ function getData(value) {
             .appendChild(itemCategory)
 
             fuzzyList.appendChild(listitem)
-              .addEventListener('click', (event)=> {
-                searchInput.value = event.target.value
-                searchInput.focus()
-                fuzzyList.style.display = 'none'
-            })
-
+            
             res.data.map((res => {
               const listItems = document.querySelectorAll('.fuzzy-item')
               const listLink = document.createElement('a')
-  
+              
               const itemTitle = document.createElement('h4')
               const itemText =  document.createElement('p')
+              
+              const markjs = new Mark(listitem)
+              markjs.mark(value)
+                      
+              listLink.classList.add('fuzzy-item--link')
+
+              listLink.setAttribute('name', res.title)
+              listLink.href= res.permalink
+              itemTitle.setAttribute('name', res.title)
+              itemText.setAttribute('name', res.title)
+              
+              listLink.appendChild(itemTitle)
+              listLink.appendChild(itemText)
+
+              listLink.addEventListener('click', (event)=> {
+                console.log(event.target.name)
+                searchInput.value = event.target.name
+                searchInput.focus()
+                fuzzyList.style.display = 'none'
+            })
               
                 itemTitle.innerText = res.title
                 itemTitle.classList.add('fuzzy-item--title')
@@ -122,14 +132,13 @@ function getData(value) {
                 itemText.classList.add('fuzzy-item--text')
               
                 listItems.forEach(item => {
-                   item.appendChild(itemTitle)
-                   item.appendChild(itemText)
+                  item.appendChild(listLink)
                 })
 
+               
             }))
-
-
           })
+
 
          })
       })   

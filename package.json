@@ -39,6 +39,7 @@
     "webpack-command": "^0.4.2"
   },
   "dependencies": {
-    "fuse.js": "^3.4.5"
+    "fuse.js": "^3.4.5",
+    "mark.js": "^8.11.1"
   }
 }

@@ -73,6 +73,7 @@ function populateResults(result){
 
     // Pull template from hugo template definition
     let frag = document.getElementById('search-result-template').content.cloneNode(true);
+    console.log(frag)
     // Replace values
     frag.querySelector(".search_summary").setAttribute("id", "summary-" + key);
     frag.querySelector(".search_link").setAttribute("href", value.item.permalink);
@@ -108,6 +109,7 @@ function populateResults(result){
     }
     snippetHighlights.forEach( function (snipvalue, snipkey) {
       let markjs = new Mark(frag);
+      console.log(snipvalue)
       markjs.mark(snipvalue);
     });
     document.getElementById("search-results").appendChild(frag);
