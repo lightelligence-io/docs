@@ -112,6 +112,7 @@ function getData(value) {
 
               listLink.setAttribute('name', res.title)
               listLink.href= `${anchorlink}`
+              listLink.href= res.permalink
               itemTitle.setAttribute('name', res.title)
               itemText.setAttribute('name', res.title)
               
