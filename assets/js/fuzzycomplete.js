@@ -108,12 +108,10 @@ function getData(value) {
                       
               listLink.classList.add('fuzzy-item--link')
 
-              console.log(res.permalink)
-
               const anchorlink = res.permalink.slice(21)
 
               listLink.setAttribute('name', res.title)
-              listLink.href= `http://osram-docs.wh1.staging-server.com${anchorlink}`
+              listLink.href= `${anchorlink}`
               itemTitle.setAttribute('name', res.title)
               itemText.setAttribute('name', res.title)
               

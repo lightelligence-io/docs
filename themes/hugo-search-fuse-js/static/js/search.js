@@ -73,8 +73,8 @@ function populateResults(result){
 
     // Pull template from hugo template definition
     let frag = document.getElementById('search-result-template').content.cloneNode(true);
-    console.log(frag)
     // Replace values
+    console.log(value.item.permalink)
     frag.querySelector(".search_summary").setAttribute("id", "summary-" + key);
     frag.querySelector(".search_link").setAttribute("href", value.item.permalink);
     frag.querySelector(".search_title").textContent = value.item.title;
