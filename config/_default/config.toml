@@ -1,4 +1,4 @@
-baseURL = "http://osram-docs.wh1.staging-server.com/
+baseURL = "https://lightelligence.io/"
 paginate = 100
 defaultContentLanguage = "en"
 enableEmoji = true
@@ -7,7 +7,7 @@ footnotereturnlinkcontents = "↩"
 languageCode = "en-us"
 metaDataFormat = "yaml"
 title = "Lightelligence® Doc"
-theme = ["hugo-search-fuse-js", "gohugoioTheme_custom"]
+theme = ["hugo-search-fuse-js"]
 
 pluralizeListTitles = false
 
