@@ -36,8 +36,22 @@
     }
   }
 
+  .order-1 {
+      animation: start 2s;
+  }
+
   .order-2 {
     aside {
       transition: right .5s ease-in-out;
     }
+  }
+
+  @keyframes start {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+
   }
