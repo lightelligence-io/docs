@@ -1,0 +1,43 @@
+
+.main-content {
+  background-color: #fff;
+  -moz-border-radius: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  @media all and (max-width: 1200px) {
+    border-radius: 0;
+  }
+  @media all and (max-width: 959px) {
+    &.top-large {
+      margin-top: 90px;
+    }
+    margin-top: 0px;
+  }
+  @media all and (max-width: 479px) {
+    padding-top: 32px;
+  }
+}
+
+
+.order-0 {
+  
+    nav {
+        position: fixed;
+    overflow: scroll;
+    
+    > ul {
+      height: 75vh;
+      padding-bottom: 30px;
+
+       > li {
+        max-width: 200px;
+      }
+      }
+    }
+  }
+
+  .order-2 {
+    aside {
+      transition: right .5s ease-in-out;
+    }
+  }

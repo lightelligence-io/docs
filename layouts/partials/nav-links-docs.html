@@ -1,7 +1,7 @@
 {{ $currentPage := . }}
 <nav role="navigation">
   <ul class="list nl2 pl0">
-    <li class="db dib-ns pl2 mb4 w-100">
+    <li class="db dib-ns pr2 mb4 w-100">
       {{- partial "site-search.html" . -}}
     </li>
     {{ range .Site.Menus.docs.ByWeight }}
