@@ -118,12 +118,7 @@ function getData(value) {
               
               listLink.appendChild(itemTitle)
               listLink.appendChild(itemText)
-
-              listLink.addEventListener('click', (event)=> {
-                searchInput.value = event.target.name
-                searchInput.focus()
-                fuzzyList.style.display = 'none'
-            })
+          
               
                 itemTitle.innerText = res.title
                 itemTitle.classList.add('fuzzy-item--title')
