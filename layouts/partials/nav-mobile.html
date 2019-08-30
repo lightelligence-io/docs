@@ -21,10 +21,10 @@
             </li>
         {{- end}}
         </ul>
-        <div class="w-100 flex flex-wrap dn-l bottom-0 fixed">
+        <div class="w-100 flex flex-wrap dn-l bottom-0 fixed mobile-nav-bottom">
             {{ $menu := .Site.Menus.global }}
             {{ range $menu }}
-            <a href="{{.URL}}" class="navi-border flex-auto dib dn-l f6 tc db pa3 link white bg-primary-color hover-bg-primary-color br w-auto" data-target=".globalmenu">{{ .Name }}</a>
+            <a href="{{.URL}}" class="flex-auto dn-l f6 tc pa3 link white bg-primary-color hover-bg-primary-color" data-target=".globalmenu">{{ .Name }}</a>
             {{end}}
         </div>
     </nav>

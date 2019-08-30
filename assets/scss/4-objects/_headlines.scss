@@ -30,7 +30,6 @@ div#prose h2 {
 h4, .blue{
     margin: 0 ;
     padding-top: 16px;
-    padding-left: 24px;
 }
 
 .li-title {
@@ -67,6 +66,7 @@ h4, .blue{
     .subtitle {
       font-family: $font-family-regular;
       font-size: 18px;    
+      color: #58585a;
     }
     
     p {

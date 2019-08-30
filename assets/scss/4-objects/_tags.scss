@@ -68,9 +68,12 @@ mark {
 .tags{
   font-size: 12px;
   padding: 6px 8px;
+  
 }
 
 .search_tags--blue {
+  height: 25px;
+  border-radius: 12.5px;
   &:hover {
     background: lighten( rgba(70, 180, 205, 0.2),10);
   }
