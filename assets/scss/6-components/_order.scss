@@ -131,3 +131,17 @@
     }
   }
 }
+
+@media all and (min-width: 1440px) {
+  .order-0{
+    width: 273px;
+    display: block;
+    margin-right: 50px;
+    
+    nav {
+      position: sticky;
+      left: 32px;
+      width: 273px;
+    }
+  }
+}
