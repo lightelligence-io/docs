@@ -1,26 +1,26 @@
 {{ $currentPage := . }}
 <nav role="navigation">
-  <ul class="list nl2 pl0">
-    <li class="db dib-ns pr2 mb4 w-100">
-      {{- partial "site-search.html" . -}}
-    </li>
-    {{ range .Site.Menus.docs.ByWeight }}
-      {{ $post := printf "%s" .Post }}
-      <li class="li-title f5 w-90-ns  hover-orange primary-color-dark  fw8{{ if eq $post "break" }} mb1 bb b--moon-gray{{ end }}">
-        <a href="{{ if .HasChildren }}javascript:void(0){{ else }}{{ .URL }}{{ end }}" class="js-toggle dib w-100 link mid-gray hover-orange pl2 pr2 pv2 {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} primary-color{{end}}" data-target=".{{ .Identifier }}">{{ .Name }}</a>
+  <div>
+    {{- partial "site-search.html" . -}}
+    <ul class="list nl2 pl0">
+      {{ range .Site.Menus.docs.ByWeight }}
+        {{ $post := printf "%s" .Post }}
+        <li class="li-title f5 w-90-ns  hover-orange primary-color-dark  fw8{{ if eq $post "break" }} mb1 bb b--moon-gray{{ end }}">
+          <a href="{{ if .HasChildren }}javascript:void(0){{ else }}{{ .URL }}{{ end }}" class="js-toggle dib w-100 link mid-gray hover-orange pl2 pr2 pv2 {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} primary-color{{end}}" data-target=".{{ .Identifier }}">{{ .Name }}</a>
 
-        {{- if .HasChildren }}
-        <ul class="{{ .Identifier }} desktopmenu animated fadeIn list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
-          {{- range .Children }}
-          <li class="f5 fw4">
-            <a href="{{.URL}}" class="db link hover-orange pl3 pr2 {{if $currentPage.IsMenuCurrent "docs" . }}primary-color {{ else }}black {{end}}">
-              {{ .Name }}
-            </a>
-          </li>
+          {{- if .HasChildren }}
+          <ul class="{{ .Identifier }} desktopmenu animated fadeIn list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
+            {{- range .Children }}
+            <li class="f5 fw4">
+              <a href="{{.URL}}" class="db link hover-orange pl3 pr2 {{if $currentPage.IsMenuCurrent "docs" . }}primary-color {{ else }}black {{end}}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{- end}}
+          </ul>
           {{- end}}
-        </ul>
-        {{- end}}
-      </li>
-    {{- end}}
-  </ul>
+        </li>
+      {{- end}}
+    </ul>
+  </div>
 </nav>
