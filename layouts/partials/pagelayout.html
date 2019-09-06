@@ -1,33 +1,28 @@
 {{ $section_to_display := .section_to_display  }}
-<div class="w-100 ph4 pb5 pb6-ns pt1 mt4 pt3-ns">
-  <div class="flex">
-    <div class="dn db-l w-20">
-      {{ partial "nav-links-docs.html" .context }}
-    </div>
-
-    <div class="w-100 w-80-l ph0 ph4-l mw-1000">
-      <article class="w-100 nested-copy-line-height nested-links nested-img">
-        <h1 class="mid-gray pl2 f2">
-          {{ with $.context.Data.Singular }}{{ . | humanize }}: {{ end }}
-            <strong>{{ .context.Title }}</strong>
-        </h1>
-
-        <div class="{{ .Site.Params.copyClass }} mid-gray f5 f4-l">
-          {{ .context.Content }}
-        </div>
-      </article>
-
-      <div class="flex flex-wrap">
-        {{ $interior_classes := .context.Site.Params.flex_box_interior_classes }}
-        <section class="flex-ns flex-wrap justify-between w-100">
-          {{ range $section_to_display }}
-          {{ partial "boxes-categories.html" (dict "context" . "classes" $interior_classes "fullcontent" true) }}
-          {{ end }}
-        </section>
-      </div>
-
-    </div>
-
+<article class="order-wrapper">
+  <div class="order-0 mr3 mr3-l dn db-l">
+    {{ partial "nav-links-docs.html" .context }}
   </div>
+  <div class="order-2 w-100 w-10-l ph5-m pr2-l mb4-l ml1-l"></div>
+  <div class="order-1 mt5 mt0-ns z-1 w-60-l ph0 ph3-ns mt0-ns">
+    <article class="w-100 nested-copy-line-height nested-links nested-img">
+      <h1 class="mid-gray pl2 f2">
+        {{ with $.context.Data.Singular }}{{ . | humanize }}: {{ end }}
+        <strong>{{ .context.Title }}</strong>
+      </h1>
 
-</div>
+      <div class="{{ .Site.Params.copyClass }} mid-gray f5 f4-l">
+        {{ .context.Content }}
+      </div>
+    </article>
+
+    <div class="flex flex-wrap">
+      {{ $interior_classes := .context.Site.Params.flex_box_interior_classes }}
+      <section class="flex-ns flex-wrap justify-between w-100">
+        {{ range $section_to_display }}
+        {{ partial "boxes-categories.html" (dict "context" . "classes" $interior_classes "fullcontent" true) }}
+        {{ end }}
+      </section>
+    </div>
+  </div>
+</article>
