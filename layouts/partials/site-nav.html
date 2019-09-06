@@ -8,7 +8,24 @@
           <span class="o-0">{{ .Site.Title }}</span>
         </h1>
       </a>
-      <div class="header-links absolute right-0">
+      <div class="tag absolute right-0 top-0 mr4-l">
+          <ul>
+              <li class="dib dim ext-link">
+                                <span class="pl1">
+                                    {{ partial "svg/link-ext.svg" (dict "size" "10") }}
+                                </span>
+                  <a class="f6 db-l dn link tc v-mid white ph4 pv2 br1" href="/getting-started/quick-start/">
+                      API Docs
+                  </a>
+              </li>
+              <li class="dib btn">
+                  <a class="f6 db-l dn link tc v-mid white ph4 br1" href="https://lightelligence.io">
+                      Visit Lightelligence
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <!--<div class="header-links absolute right-0">
           <ul class="pv3 list pa0 dn dib-l pl4 bg-primary-color right-0">
               {{ range .Site.Menus.global }}
               <li class="f5 black dib top-link" role="menuitem">
@@ -22,6 +39,6 @@
               </li>
               {{ end }}
           </ul>
-      </div>
+      </div>-->
   </div>
 </nav>
