@@ -1,3 +1,12 @@
+const hamburgerIcon = $('#hamburg-icon');
+var mobileNavVisible = () => {
+    if (hamburgerIcon.is(':visible')) {
+        return 'mobileNavActive';
+    } else {
+        return 'mobileNav off';
+    }
+};
+
 // Grab any element that has the 'js-m-toggle' class and add an event listner for the toggleClass function
 var toggleBtns = document.getElementsByClassName('js-m-toggle')
 for (var i = 0; i < toggleBtns.length; i++) {
@@ -57,17 +66,21 @@ window.addEventListener('mouseup',function(event){
 });
 
 const tableOfContents = $('nav#TableOfContents');
-const scrollNavWrapper = $('p.scroll-nav')
+const scrollNavWrapper = $('.scroll-nav-wrapper');
 
-tableOfContents.addClass('close')
+// init
+tableOfContents.addClass('close');
 
 $('.scroll-nav').on('click', () => {
-  tableOfContents.removeClass('close')
-  tableOfContents.addClass('open');
-
   if (tableOfContents.hasClass("open")) {
-    console.log(scrollNavWrapper)
-    scrollNavWrapper.css('box-shadow', 'none')
+    console.log(scrollNavWrapper);
+     tableOfContents.removeClass('open');
+      tableOfContents.addClass('close');
+      scrollNavWrapper.removeClass('opened');
+  } else {
+      tableOfContents.removeClass('close');
+      tableOfContents.addClass('open');
+      scrollNavWrapper.addClass('opened');
   }
 });
 
@@ -75,7 +88,7 @@ $('nav#TableOfContents a').on('click', () => {
   setTimeout(function() {
     tableOfContents.removeClass('open');
     tableOfContents.addClass('close')
-    scrollNavWrapper.css('box-shadow', '0 0 5px 0 rgba(13,18,44,.25)')
+    // scrollNavWrapper.css('box-shadow', '0 0 5px 0 rgba(13,18,44,.25)')
   }, 300);
 });
 

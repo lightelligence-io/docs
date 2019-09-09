@@ -62,6 +62,9 @@
     top: 50px;
     z-index: 4;
     left: 0;
+    &.opened .scroll-nav {
+      box-shadow: none;
+    }
   }
   nav#TableOfContents {
     z-index: 100;
