@@ -88,7 +88,6 @@ $('nav#TableOfContents a').on('click', () => {
   setTimeout(function() {
     tableOfContents.removeClass('open');
     tableOfContents.addClass('close')
-    // scrollNavWrapper.css('box-shadow', '0 0 5px 0 rgba(13,18,44,.25)')
   }, 300);
 });
 
@@ -98,4 +97,4 @@ window.onload = function () {
   console.log(tabelOfCont.length);
   tabelOfCont.length == 0 ?  $('.main-content').removeClass('top-large') : $('.main-content').addClass('top-large');
 
-}
+};

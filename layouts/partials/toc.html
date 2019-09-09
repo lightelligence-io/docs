@@ -4,9 +4,9 @@
         {{ if .Params.toc }}
         <p class="db-l db-m b ttu f7 tracked light-gray scroll-nav">
             {{- if eq .Section "functions" -}}
-            {{ .LinkTitle }}
+            <span class="desktop">{{ .LinkTitle }}</span><span class="mobile">{{ .LinkTitle }}</span>
             {{- else -}}
-            {{ .Title }}
+            <span class="desktop">{{ .Title }}</span><span class="mobile">{{ .Title }}</span>
             {{- end -}}
         </p>
         {{ .TableOfContents }}

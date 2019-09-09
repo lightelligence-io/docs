@@ -55,6 +55,19 @@
 }
 
 
+.scroll-nav-wrapper {
+  .scroll-nav {
+    span {
+      &.mobile {
+        display: none;
+      }
+      &.desktop {
+        display: block;
+      }
+    }
+  }
+}
+
 @media all and (max-width: 959px) {
   .scroll-nav-wrapper {
     position: fixed;
@@ -62,6 +75,24 @@
     top: 50px;
     z-index: 4;
     left: 0;
+    .scroll-nav {
+      margin: 0 auto;
+      background: white url("/images/svg/arrow_24x24.svg") no-repeat right 0;
+      text-transform: none;
+      padding: 1rem;
+      background-position: 95%;
+      position: relative;
+      z-index: 9999;
+      box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
+      span {
+        &.mobile {
+          display: block;
+        }
+        &.desktop {
+          display: none;
+        }
+    }
+    }
     &.opened .scroll-nav {
       box-shadow: none;
     }
@@ -80,16 +111,6 @@
       transform: translateY(0);
     }
 
-  }
-  .scroll-nav {
-    margin: 0 auto;
-    background: white url("/images/svg/arrow_24x24.svg") no-repeat right 0;
-    text-transform: none;
-    padding: 1rem;
-    background-position: 95%;
-    position: relative;
-    z-index: 9999;
-    box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
   }
   .docsmenu {
     transform: translateX(0);
