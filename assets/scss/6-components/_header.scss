@@ -83,23 +83,23 @@
       fill: var(--primary-color);
     }
   }
-
-  // prev
-
-  /*a {
-    position: relative;
-    &:not(:first-child) {
-      &:before {
-        content: "";
-        width: 1px;
-        height: 25px;
-        background: #fff;
+  @media all and (max-width: 390px) {
+    .tag {
+      li {
         display: block;
-        position: absolute;
-        left: 0px;
-        top: 50%;
-        transform: translateY(-50%)
+
+        &.ext-link {
+          span {
+            display: inline-block;
+            position: relative;
+            transform: none;
+            top: auto;
+            left: auto;
+            margin-right: 2px;
+            top: 2px;
+          }
+        }
       }
     }
-  }*/
+  }
 }
