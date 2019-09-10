@@ -75,7 +75,18 @@
 
 .mobile-nav-bottom {
 
-  a {
+  .ext-link {
+    a {
+      color: var(--primary-color);
+    }
+    svg path {
+      fill: var(--primary-color);
+    }
+  }
+
+  // prev
+
+  /*a {
     position: relative;
     &:not(:first-child) {
       &:before {
@@ -90,5 +101,5 @@
         transform: translateY(-50%)
       }
     }
-  }
+  }*/
 }
