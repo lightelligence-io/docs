@@ -16,6 +16,7 @@ draft: false
 aliases: [/overview/introduction/]
 image_path: /images/svg/docsIcon_settings.svg
 toc: false
+display_on_home: true
 ---
 
 To connect your actual IoT system landscape to the OLT platform, replicate the processes you implemented in the [Getting Started](/getting-started/) section of your OLT user journey. 

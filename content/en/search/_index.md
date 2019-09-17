@@ -9,6 +9,7 @@ aliases: []
 toc: true
 outputs: ["html", "json"]
 layout: search
+display_on_home: false
 ---
 
 

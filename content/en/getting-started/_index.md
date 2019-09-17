@@ -17,6 +17,7 @@ aliases: [/overview/introduction/]
 toc: true
 image_path: /images/svg/docsIcon_rocket_white.svg
 headless:  true
+display_on_home: true
 ---
 
 ## Todo

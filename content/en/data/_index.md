@@ -16,6 +16,7 @@ draft: false
 aliases: [/overview/introduction/]
 image_path: /images/svg/docsIcon_data.svg
 toc: false
+display_on_home: true
 ---
 
 
