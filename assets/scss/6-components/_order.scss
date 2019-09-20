@@ -84,7 +84,13 @@
   }
 }
 
-@media all and (min-width: 959px) {
+@media all and (min-width: 1920px) {
+  .order-wrapper {
+    justify-content: flex-start;
+  }
+}
+
+@media all and (min-width: 959px) and (max-width: 1920px) {
   .order-wrapper {
     padding: 24px;
     display: flex;
@@ -134,7 +140,6 @@
     margin-right: 50px;
 
     nav {
-      position: sticky;
       left: 32px;
       width: 273px;
     }
