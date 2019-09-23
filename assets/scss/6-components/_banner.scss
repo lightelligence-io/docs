@@ -16,7 +16,6 @@
     position: relative;
   }
 
-
   /*
   form {
     border-radius: 4px;
@@ -26,28 +25,27 @@
   */
   h1 {
     display: block;
-    border-bottom: .5px solid #ffffffeb;
+    border-bottom: 0.5px solid #ffffffeb;
     //width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     @media (min-width: 960px) {
       border: 0;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
   .site-search-form {
     @media all and (min-width: 960px) {
       border-radius: 4px;
-      box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
+      box-shadow: 0 0 5px 0 rgba(13, 18, 44, 0.25);
     }
 
-    transition: top .5s ease-in-out, width .5s ease-in-out .2s;
+    transition: top 0.5s ease-in-out, width 0.5s ease-in-out 0.2s;
   }
-
 }
 
 .search-input {
-  background: transparent url('/images/icon-search.png') no-repeat 0 19px /16px 16px;
+  background: transparent url("/images/icon-search.png") no-repeat 0 19px /16px 16px;
   position: relative;
   right: 16px;
   color: var(--primary-color-dark);
@@ -61,7 +59,6 @@
   }
 }
 
-
 .banner-inner {
   @media all and (max-width: 959px) {
     background: var(--primary-color-dark);
@@ -71,14 +68,13 @@
 .site-search-form {
   margin: 0 auto;
   top: 56px;
-  transition: width .5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 
   @media all and (max-width: 959px) {
     position: sticky;
     width: 90%;
     margin-top: -148px;
     margin-bottom: 148px;
-
   }
 
   @media (min-width: 960px) {
@@ -86,14 +82,14 @@
     position: absolute;
     left: 0;
     right: 0;
-    transition: width .5s ease-in-out;
-    box-shadow: 0 0 5px 0 rgba(13,18,44,.25);
+    transition: width 0.5s ease-in-out;
+    box-shadow: 0 0 5px 0 rgba(13, 18, 44, 0.25);
     border-radius: 4px;
   }
 }
 
 .header-bg-image {
-  @media all and (min-width: 960px){
+  @media all and (min-width: 960px) {
     padding-bottom: 25rem;
   }
 }
@@ -103,14 +99,14 @@
   width: 100%;
   top: 0;
   z-index: 9999;
-  height: 56px;
+  height: 60px;
   background: transparent;
-  transition: background-color .5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   @media all and (max-width: 959px) {
     .header-inner {
       background: var(--primary-color-dark);
     }
     background: var(--primary-color-dark);
-    transition: background-color .5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
   }
 }

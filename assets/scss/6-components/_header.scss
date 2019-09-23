@@ -51,6 +51,9 @@
 }
 
 .header-bar {
+  .link {
+    top: 4px;
+  }
   @media all and (max-width: 959px) {
     > a {
       background: var(--primary-color-dark);
