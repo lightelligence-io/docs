@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #f60;
+        stroke: #a7a8aa;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <title>Osram_Glyphs_v1</title>
+  <path class="a" d="M16,14h3a3,3,0,0,0,0-6H17A6,6,0,0,0,5,8a3,3,0,0,0,0,6H8"/>
+  <g>
+    <polyline class="a" points="8 18 12 22 16 18"/>
+    <line class="a" x1="12" y1="12" x2="12" y2="22"/>
+  </g>
+</svg>

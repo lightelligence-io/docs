@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section class="w-100 ph4 ph5-ns pv4">
+    {{- partial "home-page-sections/features-icons" . -}}
+</section>
+
+<div class="ph0 ph4-l center">
+
+
+  {{ $paginator := .Paginate (.Pages | lang.Merge (where .Sites.First.RegularPages "Section" .Section)) }}
+  {{ $section_to_display :=  .Sections | default $paginator.Pages }}
+  {{ partial "pagelayout_landingpage.html" (dict "context" . "section_to_display" $section_to_display ) }}
+
+
+</div>
+
+{{ end }}
+
+

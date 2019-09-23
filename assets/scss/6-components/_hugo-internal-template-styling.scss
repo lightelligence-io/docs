@@ -1,0 +1,165 @@
+/* pagination.html: https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/template_embedded.go#L117 */
+.pagination {
+  margin: 3rem 0 .5rem 0;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: .375rem;
+  font-size: .875rem;
+  margin-bottom: 2.5em;
+}
+.pagination li a {
+  padding: .5rem .625rem;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.pagination li.disabled {
+  display: none;
+}
+.pagination li.active a:link,
+.pagination li.active a:active,
+.pagination li.active a:visited {
+  background-color: #ddd;
+}
+
+/* Hides non-meaningful TOC items*/
+#TableOfContents ul li ul li ul li{
+    display: none;
+  }
+
+#TableOfContents ul li {
+  color: black;
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 1.375;
+}
+
+#TableOfContents ul li a{
+  color: var(--gray);
+  width: 100%;
+  padding: .25em .375em;
+  margin-left: -.375em;
+
+}
+#TableOfContents ul li a:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+#TableOfContents ul li a:focus {
+  color: var(--primary-color);
+}
+
+
+.scroll-nav-wrapper {
+  .scroll-nav {
+    span {
+      &.mobile {
+        display: none;
+      }
+      &.desktop {
+        display: block;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 959px) {
+  .scroll-nav-wrapper {
+    position: fixed;
+    width: 100vw;
+    top: 50px;
+    z-index: 4;
+    left: 0;
+    .scroll-nav {
+      margin: 0 auto;
+      background: white url("/images/svg/arrow_24x24.svg") no-repeat right 0;
+      text-transform: none;
+      padding: 1rem 3rem 1rem 1rem;
+      background-position: 95%;
+      position: relative;
+      z-index: 9999;
+      box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
+      span {
+        &.mobile {
+          display: block;
+        }
+        &.desktop {
+          display: none;
+        }
+    }
+    }
+    &.opened .scroll-nav {
+      box-shadow: none;
+    }
+  }
+  nav#TableOfContents {
+    z-index: 100;
+    left: 0;
+    background: #fff;
+    padding: 3px 15px;
+    width: 100%;
+    top: 97px;
+    transform: translateY(-100%);
+    transition: .5s;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
+    &.open {
+      transform: translateY(0);
+    }
+
+  }
+  .docsmenu {
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+    display: block;
+    
+    &.dn {
+      display: block;
+      transform: translateX(1000px);
+      transition: transform .5s ease-in-out;
+    }
+  }
+}
+
+.mobilenavi {
+  overflow: scroll;
+  height: 100%;
+  padding-bottom: 100px;
+
+
+}
+
+.mobilemenu {
+  & li {
+    font-size: 16px;
+  }
+  
+  & > li > a {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  & li:first-child{
+    padding-top: 16px;
+ }
+
+ & li:last-child{
+  padding-bottom: -8px;
+}
+ 
+}
+
+
+.docsmenu {
+  z-index: 999999;
+}
+
+.transform {
+  transform: translate3d(-40px, 0, 0);
+  transition: transform .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+

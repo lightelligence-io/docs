@@ -1,0 +1,84 @@
+.fill-current { fill: currentColor; }
+
+
+.anchor {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 3px;
+
+    & > svg {
+        position: relative;
+        top: -4px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+div#prose {
+
+    & > h2 {
+        position: relative;
+
+        &::before {
+            display: block;
+            content: " ";
+            margin-top: -70px;
+            height: 70px;
+            visibility: hidden;
+            pointer-events: none
+        }
+    }
+
+    & > h3 {
+        position: relative;
+
+        &::before {
+            display: block;
+            content: " ";
+            margin-top: -56px;
+            height: 56px;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+
+    & > h4 {
+        position: relative;
+
+        &::before {
+            display: block;
+            content: " ";
+            margin-top: -70px;
+            height: 70px;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+
+    & > h5 {
+        position: relative;
+
+        &::before {
+            display: block;
+            content: " ";
+            margin-top: -56px;
+            height: 56px;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+
+    & > h6 {
+        position: relative;
+
+        &::before {
+            display: block;
+            content: " ";
+            margin-top: -56px;
+            height: 56px;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+}

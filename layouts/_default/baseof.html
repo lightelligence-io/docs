@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+  <head>
+    <meta charset="utf-8">
+    {{/* https://www.zachleat.com/web/preload/ */}}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+     {{ hugo.Generator }}
+
+      {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+		{{/* Until EU GDPR banner question is clarified, clarify whether to switch off robots: */}}
+        <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+      {{ else }}
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      {{ end }}
+
+    {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+    {{ end -}}
+    
+    {{ $stylesheet := resources.Get "output/css/app.css" | minify | fingerprint }}
+    {{ with $stylesheet }}
+      <link rel="stylesheet" href="{{ .Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"> 
+      {{ $.Scratch.Set "stylesheet" . }}    
+    {{end}}
+
+
+
+
+     {{ block "scripts" . }}
+      {{- partial "site-scripts.html" . -}}
+    {{ end }}
+
+      {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+        {{ partial "gtag" . }}
+      {{ end }}
+
+
+          
+
+  </head>
+  <body class="ma0 sans-serif bg-color-dark{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+    {{ block "nav" . }}{{ end }}
+    {{ partial "nav-mobile.html" . }}
+    {{ block "header" . }}{{ end }}
+    <main id="bg-blur" role="main" class="content-with-sidebar min-vh-100 pb0">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
+  </body>
+</html>

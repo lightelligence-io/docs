@@ -1,0 +1,4 @@
+<div class="code relative" {{ with .Get "file" }}id="{{ . | urlize}}"{{ end }}>
+Some test text
+
+</div>

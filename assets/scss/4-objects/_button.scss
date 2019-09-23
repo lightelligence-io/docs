@@ -1,0 +1,25 @@
+.button {
+    
+    &--copy {
+        transition: all 2s ease-in-out;
+        color: rgb(255, 102, 0);
+        background: white;
+        font-family: PTSans-Regular;
+        font-size: 14px;
+        font-weight: normal;
+        outline: none;
+    }
+
+}
+ 
+
+.svg, svg {
+    width: 12px;
+    height: 12px;
+
+    g > path {
+            fill: rgb(255, 102, 0);
+    }
+
+
+}

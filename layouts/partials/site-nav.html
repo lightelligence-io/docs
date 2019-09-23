@@ -1,0 +1,44 @@
+{{ $currentPage := . }}
+<nav class="relative-l top-0 bg-primary-color-dark w-100 z-5 header-desktop-nav" role="navigation">
+{{ partial "hamburger-menu.html" }}
+{{ partial "search-mobile.html" }}
+  <div  id="bg-blur" class="header-detail relative flex-ns flex-wrap items-center justify-start">
+      <a href="{{ .Site.BaseURL }}" class="link white pl4-l pl3 outline-0 dib">
+        <h1 class="header-logo pv3-l pv0 f3 lh-solid ml0-ns mr0 mr4-l mv0 pl4-ns">
+          <span class="o-0">{{ .Site.Title }}</span>
+        </h1>
+      </a>
+      <div class="tag absolute right-0 top-1 mr4-l">
+          <ul>
+              <li class="dib dim ext-link">
+                                <span class="pl1">
+                                    {{ partial "svg/link-ext.svg" (dict "size" "10") }}
+                                </span>
+                  <a class="f6 db-l dn link tc v-mid white ph4 pv2 br1" href="/getting-started/quick-start/">
+                      API Docs
+                  </a>
+              </li>
+              <li class="dib btn">
+                  <a class="f6 db-l dn link tc v-mid white ph4 br1" href="https://lightelligence.io">
+                      Visit Lightelligence
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <!--<div class="header-links absolute right-0">
+          <ul class="pv3 list pa0 dn dib-l pl4 bg-primary-color right-0">
+              {{ range .Site.Menus.global }}
+              <li class="f5 black dib top-link" role="menuitem">
+                  {{/* TODO: Create an "Global" active class to show which site one is currently at */}}
+                  <a href="{{ .URL }}" class="dim white link{{ if $currentPage.IsMenuCurrent "global" . }} gray {{else}} light-silver{{ end }}">
+                  {{ .Name }}
+                  {{/* using ".Post" from the menu system to determine if we should show an icon for external links */}}
+                  {{ $post_status := printf "%s" .Post }}
+                  
+                  </a>
+              </li>
+              {{ end }}
+          </ul>
+      </div>-->
+  </div>
+</nav>

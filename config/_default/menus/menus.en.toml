@@ -1,0 +1,137 @@
+
+
+
+#[[docs]]
+#  name = "About Lightelligence"
+#  weight = 5
+#  identifier = "about"
+#  url = "/about/"
+#  post = "break"
+  
+
+  
+#   post = "break": generates a horizontal line between the items
+
+[[docs]]
+  name = "Getting Started"
+  weight = 10
+  identifier = "getting-started"
+  url = "/getting-started/"
+  post = "break"
+ 
+
+[[docs]]
+  name = "Mapping the OLT Landscape"
+  weight = 20
+  identifier = "users"
+  url = "/users/"
+  
+[[docs]]
+  name = "Managing the OLT Lifecycle"
+  weight = 30
+  identifier = "devices"
+  url = "/devices/"
+  
+[[docs]]
+  name = "Managing the OLT Lifecycle"
+  weight = 30
+  identifier = "devices"
+  url = "/devices/"
+
+[[docs]]
+  name = "Developing Custom Applications"
+  weight = 40
+  identifier = "applications"
+  url = "/applications/"
+  
+[[docs]]
+  name = "Processing Data"
+  weight = 50
+  identifier = "data"
+  url = "/data/"
+  post = "break"
+
+
+
+# LOW LEVEL ITEMS
+
+
+#[[docs]]
+#  name = "Troubleshooting"
+#  weight = 70
+#  identifier = "troubleshooting"
+#  url = "/troubleshooting/"
+
+
+
+
+
+#[[docs]]
+#  name = "Tags"
+#  weight = 120
+#  identifier = "tags"
+#  url = "/tags/"
+
+
+# [[docs]]
+#   name = "Categories"
+#   weight = 140
+#   identifier = "categories"
+#   url = "/categories/"
+
+######## QUICKLINKS
+
+  [[quicklinks]]
+    name = "Fundamentals"
+    weight = 1
+    identifier = "fundamentals"
+    url = "/tags/fundamentals/"
+
+
+
+
+######## GLOBAL ITEMS TO BE SHARED WITH THE HUGO SITES
+
+
+
+  [[global]]
+    name = "Start OLT Journey"
+	identifier = "start"
+    url = "/getting-started/setting-up-getting-started/"
+    weight = 1
+
+# post = "external" gets an external icon
+
+  [[global]]
+    name = "Access OLT Portal"
+	identifier = "portal"
+    url = "https://lightelligence.io"
+    weight = 2
+	post = "external"
+
+  [[global]]
+    name = "Download Scripts"
+	identifier = "scripts"
+    url = "https://github.com/lightelligence-io/scripts/"
+    weight = 3
+	post = "external"
+
+  [[global]]
+    name = "Consult API Documentation"
+	identifier = "api"
+    url = "https://api.lightelligence.io/v1/api-collection/"
+    weight = 4
+	post = "external"
+
+  [[global]]
+    name = "Get Support"
+	identifier = "support"
+    url = "https://api.lightelligence.io/v1/api-collection/"
+    weight = 5
+	post = "external"
+
+
+
+
+
+	

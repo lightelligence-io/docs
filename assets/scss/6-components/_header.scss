@@ -1,0 +1,104 @@
+.header-logo {
+  background: url(/images/svg/lightelligenceDocs_logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px;
+  height: 52px;
+  background-size: contain;
+  transition: background-position 0.3s;
+  &.bg-none {
+    background: none;
+  }
+  @media all and (max-width: 479px) {
+    background-size: 75%;
+    background-position: left;
+    transition: background-position 0.3s;
+  }
+}
+
+.header-desktop-nav {
+  position: sticky;
+  ul {
+    margin: 0;
+  }
+}
+
+.header-links {
+  background-color: var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+  transition: all 0.5s ease-in-out;
+  li {
+    position: relative;
+    &:not(:first-child) {
+      &:before {
+        content: "";
+        width: 1px;
+        height: 25px;
+        background: #fff;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.header-detail {
+  overflow: hidden;
+  height: 60px;
+}
+
+.header-bar {
+  .link {
+    top: 4px;
+  }
+  @media all and (max-width: 959px) {
+    > a {
+      background: var(--primary-color-dark);
+      height: 56px;
+      transition: background-color 0.5s ease-in-out;
+    }
+  }
+}
+@media all and (max-width: 959px) {
+  .docsmenu {
+    width: calc(100% - 55px);
+  }
+
+  .header-bar {
+    background: var(--primary-color-dark);
+    height: 56px;
+  }
+}
+
+.mobile-nav-bottom {
+  .ext-link {
+    a {
+      color: var(--primary-color);
+    }
+    svg path {
+      fill: var(--primary-color);
+    }
+  }
+  @media all and (max-width: 390px) {
+    .tag {
+      li {
+        display: block;
+
+        &.ext-link {
+          span {
+            display: inline-block;
+            position: relative;
+            transform: none;
+            top: auto;
+            left: auto;
+            margin-right: 2px;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

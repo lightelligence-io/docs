@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <defs>
+    <style>
+      .a {
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+    <title>Glyphs / Arrows / Chevron / Down / 24x24</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Glyphs-/-Arrows-/-Chevron-/-Down-/-24x24" stroke="none" stroke-width="1" fill="#f60" fill-rule="evenodd">
+        <path d="M12,16.7500083 C11.8009335,16.7509399 11.6098839,16.6716363 11.47,16.53 L3.46999996,8.52999999 L4.52999997,7.46999998 L12,14.94 L19.47,7.46999998 L20.53,8.52999999 L12.53,16.53 C12.3901161,16.6716363 12.1990665,16.7509399 12,16.7500083 Z" id="Path" fill="#f60"></path>
+    </g>
+</svg>

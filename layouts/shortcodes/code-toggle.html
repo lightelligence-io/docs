@@ -1,0 +1,31 @@
+{{ $langs := (slice "yaml" "toml" "json") }}
+<div class="code relative" {{ with .Get "file" }}id="{{ . | urlize}}"{{ end }}>
+	<div class="code-nav flex flex-nowrap items-stretch">
+		{{- with .Get "file" -}}
+			<div class="san-serif f6 dib lh-solid pl2 pv2 mr2">{{ . }}.</div>
+		{{- end -}}
+		{{ range $langs }}
+			<button data-toggle-tab="{{ . }}" class="tab-button {{ cond (eq . "yaml") "active" ""}} ba san-serif f6 dib lh-solid ph2 pv2">{{ . }}</button>&nbsp;
+		{{ end }}
+	</div>
+	<div class="tab-content">
+		{{ range $langs }}
+			<div data-pane="{{ . }}" class="code-copy-content nt3 tab-pane {{ cond (eq . "yaml") "active" ""}}">
+				{{ highlight ($.Inner | transform.Remarshal . | safeHTML) . ""}}
+			</div>
+			{{ if ne ($.Get "copy") "false" }}
+				<button class="needs-js copy copy-toggle f6 absolute top-0 right-0 lh-solid bn white ph3 pv2 button--copy" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+					<svg class="svg mr1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<title>Glyphs / Action / Copy / 24x24</title>
+							<desc>Created with Sketch.</desc>
+							<g id="Glyphs-/-Action-/-Copy-/-24x24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<path d="M21.53,5.46999997 L17.53,1.46999996 C17.3894827,1.32930747 17.1988454,1.24999996 17,1.24999996 L7.99999998,1.24999996 C7.58803792,1.25538577 7.25538579,1.58803789 7.24999996,1.99999996 L7.24999996,5.24999996 L2.99999996,5.24999996 C2.5880379,5.25538578 2.25538577,5.58803791 2.24999996,5.99999998 L2.24999996,22 C2.25538577,22.4119621 2.5880379,22.7446142 2.99999996,22.75 L16,22.75 C16.4119621,22.7446142 16.7446142,22.4119621 16.75,22 L16.75,18.75 L21,18.75 C21.4119621,18.7446142 21.7446142,18.4119621 21.75,18 L21.75,5.99999998 C21.75,5.80115462 21.6706925,5.61051733 21.53,5.46999997 Z M20.19,6.24999998 L16.75,6.24999998 L16.75,2.80999996 L20.19,6.24999998 Z M15.25,21.25 L3.74999997,21.25 L3.74999997,6.74999998 L7.24999997,6.74999998 L7.24999997,18 C7.25538579,18.4119621 7.58803792,18.7446142 7.99999998,18.75 L15.25,18.75 L15.25,21.25 Z M8.74999999,17.25 L8.74999999,2.74999996 L15.25,2.74999996 L15.25,6.99999998 C15.2553858,7.41196204 15.588038,7.74461417 16,7.74999996 L20.25,7.74999996 L20.25,17.25 L8.74999999,17.25 Z" id="Color" fill="#A7A8AA"></path>
+							</g>
+					</svg>
+				</button>
+					{{/* Functionality located within filesaver.js The copy here is located in the css with .copy class so it can be replaced with JS on success */}}
+			{{end}}
+		{{ end }}
+	</div>
+
+</div>

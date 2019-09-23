@@ -1,0 +1,112 @@
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/PT_Sans-Web-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url('/fonts/PT_Sans-Web-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'overpass';
+  src: url('/fonts/overpass_custom_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font-family-regular: 'PT Sans';
+$font-family-italic: 'italic';
+$font-family-bold: 'PT Sans Bold';
+
+/* From http://cssfontstack.com */
+code, .code, pre code, .highlight pre  {
+  font-family: 'overpass','Courier New',monospace;
+}
+
+
+
+.sans-serif,
+body {
+  font-family: 'PT Sans',
+  avenir,
+  'helvetica neue', helvetica,
+  ubuntu,
+  roboto, noto,
+  'segoe ui', arial,
+  sans-serif;
+}
+
+
+.serif {
+  font-family: 'PT Sans',"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+}
+
+/* Monospaced Typefaces (for code) */
+
+
+.courier {
+  font-family: 'Courier Next',
+               courier,
+               monospace;
+}
+
+
+/* Sans-Serif Typefaces */
+
+.helvetica {
+  font-family: 'helvetica neue', helvetica,
+               sans-serif;
+}
+
+.avenir {
+  font-family: 'avenir next', avenir,
+               sans-serif;
+}
+
+
+/* Serif Typefaces */
+
+.athelas {
+  font-family: athelas,
+               georgia,
+               serif;
+}
+
+.georgia {
+  font-family: georgia,
+               serif;
+}
+
+.times {
+  font-family: times,
+               serif;
+}
+
+.bodoni {
+  font-family: "Bodoni MT",
+                serif;
+}
+
+.calisto {
+  font-family: "Calisto MT",
+                serif;
+}
+
+.garamond {
+  font-family: garamond,
+               serif;
+}
+
+.baskerville {
+  font-family: baskerville,
+               serif;
+}

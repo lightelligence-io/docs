@@ -1,0 +1,66 @@
+{{ $currentPage := . }}
+<div id="docsmenu" class="docsmenu pb5 pt3 fixed relative bg-white fr fixed w-80 h-100 top-0 right-0 bg-white z-99999 dn fixed">
+    <nav role="navigation" class="mobilenavi">
+        <ul class="list w-100 pl0 mm">
+            {{ range .Site.Menus.docs.ByWeight }}
+            {{ $post := printf "%s" .Post }}
+            <li class="ph3 pb2 f5 w-90-ns hover-orange mm primary-color-dark  fw8{{ if eq $post "break" }} mb1 bb b&#45;&#45;moon-gray{{ end }}">
+            <a href="{{ if .HasChildren }}javascript:void(0){{ else }}{{ .URL }}{{ end }}" class="js-m-toggle dib w-100 link mid-gray b hover-orange pl2 pr2 pv2 {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} primary-color{{end}}" data-target=".{{ .Identifier }}">{{ .Name }}</a>
+
+            {{- if .HasChildren }}
+            <ul class="{{ .Identifier }} mobilemenu animated mm fadeIn list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
+                {{- range .Children }}
+                <li class="pl2 f6 fw4 mm">
+                    <a href="{{.URL}}" class="db link hover-orange pl3 pr2 {{if $currentPage.IsMenuCurrent "docs" . }}primary-color {{ else }}black {{end}}">
+                    {{ .Name }}
+                    </a>
+                </li>
+                {{- end}}
+            </ul>
+            {{- end}}
+            </li>
+        {{- end}}
+        </ul>
+        <div class="w-100 dn-l bottom-0 fixed mobile-nav-bottom tr">
+
+
+            <div class="tag">
+                <ul class="mh3 ph0">
+                <li class="dib ext-link">
+                    <a class="f6 db link tc v-mid ph4 pv2 br1" href="/getting-started/quick-start/">
+                        <span class="pl1">{{ partial "svg/link-ext.svg" (dict "size" "10") }}</span>
+                        API Docs
+                    </a>
+                </li>
+                <li class="dib btn"><a  href="https://lightelligence.io" class="f6 db link tc v-mid white ph4 br1">Visit Lightelligence</a></li>
+                </ul>
+            </div>
+
+
+            <!--<div class="tag absolute right-0 top-0 mr4-l">
+                <ul>
+                    <li class="dib dim ext-link">
+                                <span class="pl1">
+                                    {{ partial "svg/link-ext.svg" (dict "size" "10") }}
+                                </span>
+                        <a class="f6 db-l dn link tc v-mid white ph4 pv2 br1" href="/getting-started/quick-start/">
+                            API Docs
+                        </a>
+                    </li>
+                    <li class="dib btn">
+                        <a class="f6 db-l dn link tc v-mid white ph4 br1" href="https://lightelligence.io">
+                            Visit Lightelligence
+                        </a>
+                    </li>
+                </ul>
+            </div>-->
+
+
+<!--
+            {{ $menu := .Site.Menus.global }}
+            {{ range $menu }}
+            <a href="{{.URL}}" class="flex-auto dn-l f6 tc pa3 link white bg-primary-color hover-bg-primary-color" data-target=".globalmenu">{{ .Name }}</a>
+            {{end}}-->
+        </div>
+    </nav>
+</div>

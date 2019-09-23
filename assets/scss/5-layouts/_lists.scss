@@ -1,0 +1,24 @@
+ul.related  li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+ul.related  {
+  list-style: none;
+}
+
+ul.related li:before {
+  content: "";
+  background: url(/images/svg/ic_chevron_right_orange_24px.svg);
+  position: absolute;
+  width: 20px;
+  display: block;
+  height: 20px;
+  background-repeat: no-repeat;
+  left: -25px;
+}
+
+.language-java, .language-curl {
+  padding: 15px;
+}
+

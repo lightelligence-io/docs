@@ -1,0 +1,37 @@
+{{ if .context.Params.display_on_home }}
+<div class="boxes w-100-s w-100-m w-50-l ph2-l pv1-l nested-copy-line-height">
+    <a class="linkwrap" href="{{ .context.RelPermalink }}">
+        <div class="box boxshadow bg-white mb2 mb2 pa2-l flex items-center justify-between">
+            <div class="flex-auto w-20 w-20-ns pt1 mt0-l mt2">
+                <!--     <img src="/images/docsIcon_rocket.svg" alt="Hugo Logo" class="h3 o-80 v-mid center w-100">-->
+                <div class="bg-icon h4 v-mid center w-100" style="background-image: url('{{ .context.Params.Image_Path }}')">
+                </div>
+            </div>
+            <div class="flex-auto tl-ns w-100 w-80-ns">
+                <h3 class="f4 mb2 fw8 bmt1 mt0-l mt2">
+
+
+                    {{- if eq .context.Section "functions" -}}
+                    LinkTitle
+                    {{ .context.LinkTitle }}
+                    {{- else -}}
+                    {{ .context.Title }}
+                    {{- end -}}
+
+                </h3>
+                <div class="db v-mid w-90 measure-wide mb3 mb0-l f5-ns f6">
+
+                    {{ if .context.Params.description  }}
+                    {{ .context.Params.description | markdownify }}
+                    {{ else }}
+                    {{ .context.Summary  }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="arrow-right db">
+            </div>
+        </div>
+
+    </a>
+</div>
+{{ end }}

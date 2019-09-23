@@ -1,0 +1,27 @@
+<div class="flex flex-wrap justify-between items-baseline pagination pagination-bottom">
+    {{if .Prev }}
+    <a href="{{ .Prev.Permalink }}" class="f5 link light-gray w-100 w-50-l tc tl-l">
+        <span class="v-mid dib left">{{ partial "svg/arrow-left.svg" (dict "size" "30px") }}</span> {{ .Prev.Title }}
+    </a>
+    {{end}}
+
+    {{if .Next }}
+    <a href="{{.Next.Permalink }}" class="f5 link light-gray w-100 w-50-l tc tr-l mt3 mt0-l">
+        {{ .Next.Title }} <span class="v-mid dib right">{{ partial "svg/arrow-right.svg" (dict "size" "25px") }}</span>
+    </a>
+    {{end}}
+</div>
+
+
+<script>
+  document.body.onkeyup = function(e){
+    if (!(e.ctrlKey || e.shiftKey || e.altKey || e.metaKey)) {
+    {{- if .Prev }}
+      if (e.keyCode == '37') { window.location = '{{ .Prev.Permalink }}'; }
+    {{- end }}
+    {{- if .Next }}
+      if (e.keyCode == '39') { window.location = '{{ .Next.Permalink }}'; }
+    {{- end }}
+    }
+  };
+</script>

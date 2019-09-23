@@ -1,0 +1,89 @@
+{{ define "nav" }}<div></div>{{ end }}
+{{ define "header" }}
+    <div class="container">
+        <div class="row">
+            <div class="header-bg-image pb4 pb7-l"></div>
+            <div class="banner" role="banner">
+                <div class="banner-inner"></div>
+                <div class="header-inner w-100 fixed relative-l">
+                    <section class="header-bar center ph4-l pt3 w-90 w-60-l">
+                            <a href="{{ .Site.BaseURL }}" class="absolute link top-0 left-0 pl4-l pl3 white db">
+                                <h1 class="header-logo pv3 f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+                                    <span class="o-0">{{ .Site.Title }}</span>
+                                </h1>
+                            </a>
+                        {{ partial "hamburger-menu.html" }}
+<!--                        <div  class="docsmenu mobilemenu fixed relative bg-white fr fixed w-80 h-100 top-0 right-0 z-9999 dn">
+                            {{ $currentPage := . }}
+                            {{ $menu := .Site.Menus.docs.ByWeight }}
+                            <ul class="bg-white list ph0 scrolling-touch tc pb0 absolute h-100 mt0">
+                                {{ range $menu }}{{ $post := printf "%s" .Post }}
+                                <li  class="tl fw8 bg-white  w-100 {{ if eq $post "break" }} mb2 bb b&#45;&#45;mid-gray{{ end }}">
+                                <a href="{{.URL}}" class="black ttu f6 link db brand-font mb1 w-100 pv3 ph4{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
+                                {{ .Name }}
+                                </a>
+                                </li>
+                                {{end}}
+                                <li class="w-80 flex dn-l justify-between mb-0 mb-0 bottom-0 fixed">
+                                    {{ $menu := .Site.Menus.global }}
+                                    {{ range $menu }}
+                                    <button class="flex-auto dib dn-l f6 tc db mt4-ns pv3 link white bg-primary-color hover-bg-primary-color ba b&#45;&#45;white-40 w-auto" data-target=".globalmenu">{{ .Name }}</button>
+                                    {{end}}
+                                </li>
+                            </ul>
+                        </div>-->
+                        <div class="tag absolute right-0 top-0 mr4-l mt3-l">
+                            <ul>
+                                <li class="dib dim ext-link">
+                                <span class="pl1">
+                                    {{ partial "svg/link-ext.svg" (dict "size" "10") }}
+                                </span>
+                                    <a class="f6 db-l dn link tc v-mid white ph4 pv2 br1" href="/getting-started/quick-start/" style="padding-right: 36px">
+                                        API Docs
+                                    </a>
+                                </li>
+                                <li class="dib btn">
+                                    <a class="f6 db-l dn link tc v-mid white ph4 br1" href="https://lightelligence.io">
+                                        Visit Lightelligence
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lh-copy f4 w-90-ns center fw2 silver tc tc-ns">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <form class="bg-white site-search-form site-search-form-lp w-40-l w-100" id="site-search-form" action="/search/" role="search">
+        <div class="bn ma0 pa0">
+            <label class="clip" for="search-input">Search</label>
+            <input type="search"  autocomplete="off" id="search-input" class="search-input needs-js bg-left bn f5 input-reset lh-solid mt0 ph4 pv3 w-100" placeholder="Search" name="q" value="">
+                <div class="fuzzy-list"></div>
+        </div>
+    </form>
+{{ end }}
+
+
+
+{{ define "main" }}
+
+<section class="w-100 ph4 ph5-ns pv4-ns pv3-m">
+    {{- partial "home-page-sections/features-icons" . -}}
+</section>
+
+<div class="ph2 ph4-l center">
+
+
+  {{ $paginator := .Paginate (.Pages | lang.Merge (where .Sites.First.RegularPages "Section" .Section)) }}
+  {{ $section_to_display :=  .Sections | default $paginator.Pages }}
+  {{ partial "pagelayout_landingpage.html" (dict "context" . "section_to_display" $section_to_display ) }}
+
+
+</div>
+
+{{ end }}
+ 
+
