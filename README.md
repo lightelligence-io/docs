@@ -6,9 +6,9 @@ The developer documentation website (short: docs) is created via the static site
 
 <br/>
 
-# Local Development
+## Local Development
 
-## Installation of Dependencies
+### Installation of Dependencies
 
 1. download & install Node.js & NPM] from [npmjs.com](https://www.npmjs.com/get-npm)
 1. clone this docs repo using Git
@@ -18,7 +18,7 @@ The developer documentation website (short: docs) is created via the static site
 1. verify your installation by with `npm -v` and `hugo version`
 
 
-## Run the Docs Locally
+### Run the Docs Locally
 
 1. build the styles including auto-updating with `npm run watch`
 1. build the docs and run a local, auto-updating Hugo server with `hugo server`
@@ -32,7 +32,7 @@ The developer documentation website (short: docs) is created via the static site
 
 <br/>
 
-# Publishing to Production
+## Publishing to Production
 
 1. adjust the `baseURL` of the target domain in the file `config/_default/config.toml`
 1. build the docs with `hugo`
@@ -41,11 +41,12 @@ The developer documentation website (short: docs) is created via the static site
 
 <br/>
 
-# Learn More
+## Learn More
 
 - to contribute please create a pull request to the `beta` branch and add [skreutzberger](https://github.com/skreutzberger) as reviewer
 - for more customization read [customization.md](https://github.com/lightelligence-io/docs/blob/master/customization.md)
 
+<br/>
 
-# License
+## License
 The Lightelligence Developer Documentation is licensed under the [MIT License](https://github.com/lightelligence-io/docs/blob/master/LICENSE)
