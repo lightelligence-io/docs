@@ -250,7 +250,7 @@ anchor = "smart"
     contentDir = "content/en"
     languageName = "English"
     weight = 1
-  [languages.zh]
-    contentDir = "content/zh"
-    languageName = "中文"
-    weight = 2
+#  [languages.zh]
+#    contentDir = "content/zh"
+#    languageName = "中文"
+#    weight = 2
