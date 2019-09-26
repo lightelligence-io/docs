@@ -49,12 +49,14 @@ code,
 code.hljs {
   color: var(--primary-color-light);
 }
+.copy {
+  cursor: pointer;
+}
 
 /*We are adding the copy button content here so we can change it with javascript. See the "Clipboard scripts"*/
 .copy:after {
   content: "Copy";
   font-family: $font-family-regular;
-  cursor: pointer;
 }
 
 .copied:after {
