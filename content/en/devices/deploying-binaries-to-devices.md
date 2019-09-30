@@ -13,7 +13,7 @@ menu:
     parent: "devices"
     weight: 70
 sections_weight: 60
-draft: false
+draft: true
 aliases: [/devices/,/overview/quickstart/]
 toc: true
 ---
