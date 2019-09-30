@@ -1,4 +1,6 @@
 baseURL = "https://developers.lightelligence.io/"
+publishDir = "docs" # required for Github Pages from master branch to work, default was "public"
+
 paginate = 100
 defaultContentLanguage = "en"
 enableEmoji = true
