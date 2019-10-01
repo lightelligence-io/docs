@@ -8,7 +8,7 @@ lastmod: 2017-02-01
 menu:
   docs:
     parent: "troubleshooting"
-    weight: 6
+    weight: 1
 weight: 6	
 draft: false
 hidesectioncontents: false
@@ -20,10 +20,5 @@ notesforauthors:
 display_on_home: true
 ---
 
-{{% note %}}
+The Troubleshooting section includes known issues, recent workarounds, and FAQs.
 
-The Troubleshooting section includes known issues, recent workarounds, and FAQs pulled from the [Lightelligence Forum][forum].
-
-[forum]: https://lightelligence.io/
-
-{{% /note %}}

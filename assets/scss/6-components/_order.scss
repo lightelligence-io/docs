@@ -30,7 +30,11 @@
     position: fixed;
     width: 180px;
     top: 108px;
+<<<<<<< HEAD
     height: calc(70vh - 19px);
+=======
+    height: calc(100vh - 19px);
+>>>>>>> beta
     overflow-y: auto;
 
     > ul {
@@ -47,11 +51,22 @@
   width: 100%;
   height: 100%;
 
+<<<<<<< HEAD
+=======
+  max-width: 960px;
+>>>>>>> beta
   animation: start 0.3s;
 }
 
 .order-2 {
   width: 226px;
+<<<<<<< HEAD
+=======
+
+  aside {
+    transition: right 0.5s ease-in-out;
+  }
+>>>>>>> beta
 }
 
 @keyframes start {
@@ -83,11 +98,14 @@
   .order-wrapper {
     justify-content: flex-start;
   }
+<<<<<<< HEAD
 
   .order-1 {
     width: 100%;
     margin-left: 40px;
   }
+=======
+>>>>>>> beta
 }
 
 @media all and (min-width: 959px) and (max-width: 1920px) {
@@ -109,6 +127,7 @@
 
   .order-1 {
     width: 60%;
+<<<<<<< HEAD
     margin-left: 40px;
   }
 }
@@ -116,6 +135,8 @@
 @media all and (min-width: 1750px) {
   .order-1 {
     width: 65%;
+=======
+>>>>>>> beta
   }
 }
 

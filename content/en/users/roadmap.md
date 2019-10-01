@@ -10,7 +10,7 @@ menu:
     weight: 05
 weight: 05
 sections_weight: 05
-draft: false
+draft: true
 toc: true
 ---
 

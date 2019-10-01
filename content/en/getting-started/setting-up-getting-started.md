@@ -114,9 +114,9 @@ As a tenant, you can obtain the information required to connect your Raspberry P
 
 1. Log on to your Raspberry PI and start a Web browser.
 
-2. Under [github.com/lightelligence-io/scripts](https://github.com/lightelligence-io/scripts), download the [`raspbiansetup.sh`](github.com/lightelligence-io/scripts/raspbiansetup.sh) Bash script.
+2. Download the setup script to your Raspberry PI from [/scripts/olt_raspi_setup.sh](/scripts/olt_raspi_setup.sh)
 
-	To establish communication with the OLT platform, the Bash script does the following:
+	The script automates the setup required to establish communication with Lightelligence:
 	
 	* Install the MQTT broker Mosquitto
 	* Install Python to process sensor and network data
@@ -124,16 +124,16 @@ As a tenant, you can obtain the information required to connect your Raspberry P
 
 3. To execute the Bash script, do the following:
 
-	1. Make it executable: `chmod +x raspiansetup.sh`.
-	2. Execute it: `./raspiansetup.sh`.
+	1. Make it executable: `chmod +x raspiansetup.sh`
+	2. Execute it: `./olt_raspi_setup.sh`
 
 	You are prompted to enter some information.
 
-4. As the platform URL enter `lightelligence.io`.
+4. As the platform URL enter `lightelligence.io`
 
 5. To obtain the API token for authentication, do the following:
 
-	1. Log on to the [OLT portal](https://portal.lightelligence.io).
+	1. Log in at the [OLT Portal](https://portal.lightelligence.io).
 	2. Click the tenant you have created.
 	
 		{{< figure src="/images/getting-started-select-tenant.png" caption="Selecting a Tenant" alt="Selecting a Tenant" >}}	
@@ -148,8 +148,8 @@ As a tenant, you can obtain the information required to connect your Raspberry P
 	
 7. Specify the network interface. 
 
-	* If you have connected the Raspberry Pi via WiFi, enter `WLAN0`.
-	* If you have connected it via ethernet, enter `eth0`.
+	* If you have connected the Raspberry Pi via WiFi, enter `WLAN0`
+	* If you have connected it via ethernet, enter `eth0`
 
 **Result**
 

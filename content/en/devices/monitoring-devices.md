@@ -12,7 +12,7 @@ menu:
     weight: 40
 weight: 40
 sections_weight: 40
-draft: false
+draft: true
 aliases: [/devices/,/overview/quickstart/]
 toc: true
 ---
