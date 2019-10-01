@@ -1,6 +1,4 @@
-baseURL = "https://developers.lightelligence.io/"
-publishDir = "docs" # required for Github Pages from master branch to work, default was "public"
-
+baseURL = "http://osram-docs.wh1.staging-server.com/"
 paginate = 100
 defaultContentLanguage = "en"
 enableEmoji = true

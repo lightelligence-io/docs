@@ -2,13 +2,13 @@
   flex-grow: 1;
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0px 0px 5px 0px rgba(13,18,44,.25);
-  transition: all .5s ease-in-out;
+  box-shadow: 0px 0px 5px 0px rgba(13, 18, 44, 0.25);
+  transition: all 0.5s ease-in-out;
 }
 
 .search_summary:hover {
   box-shadow: 0px 8px 16px 0px rgba(13, 18, 44, 0.25);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .search-container {
@@ -74,8 +74,7 @@
     right: 10px;
     background-size: 20px 30px;
   }
-+
-  .search:focus + .searchbutton {
+  + .search:focus + .searchbutton {
     transition-duration: 1s;
     -moz-transition-duration: 1s;
     -webkit-transition-duration: 1s;
@@ -106,8 +105,8 @@
     padding: 0 16px 0 0;
     background-color: #2d3147;
     + .searchbutton {
-     background: transparent url(/images/svg/search_orange_24x24.svg) no-repeat;
-     background-size: 20px 30px;
+      background: transparent url(/images/svg/search_orange_24x24.svg) no-repeat;
+      background-size: 20px 30px;
     }
   }
 
@@ -121,9 +120,11 @@
   }
 
   .search {
-    ::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder,
-    :-ms-input-placeholder, :-moz-placeholder
-    {
+    ::placeholder,
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder,
+    :-moz-placeholder {
       width: 97px;
       height: 17px;
       color: white;
@@ -131,7 +132,7 @@
       font-family: PTSans-Regular;
       font-weight: normal;
       letter-spacing: 0px;
-  }
+    }
   }
 }
 
@@ -148,18 +149,17 @@
   border-image: linear-gradient(#f60 30%, white 30% 70%, #f60 70%) 1;
 }
 
-
 .fuzzy-list {
   position: absolute;
   display: none;
   border: 1px solid #ccc;
-  background: #FFF;
+  background: #fff;
   height: 350px;
   width: 100%;
   overflow: scroll;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  box-shadow: 0 5px 15px 0 rgba(13,18,44,.25);
+  box-shadow: 0 5px 15px 0 rgba(13, 18, 44, 0.25);
 
   &--category {
     padding-top: 26px;
@@ -169,14 +169,13 @@
     color: rgb(167, 168, 170);
   }
 
-
   &::-webkit-scrollbar {
     display: none;
-}
+  }
 }
 
 .fuzzy-item {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   height: auto;
   width: 100%;
@@ -184,22 +183,19 @@
   border-bottom: 1px solid rgb(187, 187, 187);
   color: rgb(52, 58, 64);
 
-  &  mark {
+  & mark {
     background-color: transparent;
     color: var(--blue);
   }
-   
 
   &--link {
     padding: 16px;
 
     &:hover {
       background-color: var(--primary-color-light);
-      color: #FFF;
-  
+      color: #fff;
     }
   }
-  
 
   &--title {
     padding: 0;
