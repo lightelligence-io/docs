@@ -1,4 +1,4 @@
-# Lightelligence Developer Documentation
+ # Lightelligence Developer Documentation
 
 This README explains how to install and set-up the documentation website which is available under https://developer.lightelligence.io
 
