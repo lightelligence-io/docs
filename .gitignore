@@ -6,4 +6,7 @@ node_modules
 *.log
 /public/
 /resources/
-/assets/output/
+assets/output/
+assets/output/css/app.css
+assets/output/js/app.js
+docs
