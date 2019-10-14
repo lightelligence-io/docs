@@ -181,6 +181,7 @@ code.hljs {
   }
 }
 
-ol li code {
-  padding: 8px;
+ol + ul li code {
+  padding: 1px 5px;
+  background: #e9ecef;
 }
