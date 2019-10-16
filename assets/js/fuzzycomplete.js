@@ -55,6 +55,15 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  searchInput.addEventListener("focusout", () => {
+    searchInput.value = searchInput.value;
+    fuzzyList.style.display = "none";
+
+    if(searchInput.value) {
+      
+    }
+  });
 });
 
 function getData(value) {
