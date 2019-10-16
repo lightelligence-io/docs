@@ -32,7 +32,7 @@
     position: fixed;
     width: 200px;
     top: 108px;
-    height: calc(70vh - 19px);
+    height: calc(100vh - 120px);
     overflow-y: auto;
 
     > ul {
@@ -43,7 +43,6 @@
 
 .order-1 {
   height: 100%;
-  width: 100%;
   flex: 1;
   animation: start 0.3s;
 }
