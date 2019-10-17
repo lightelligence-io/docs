@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
     searchInput.value
       ? (searchInput.style.backgroundImage = "none")
       : (searchInput.style.backgroundImage =
-          "url(/images/svg/search_orange_24x24.svg)");
+          "url(/images/svg/search_24x24.svg)");
   });
 });
 
