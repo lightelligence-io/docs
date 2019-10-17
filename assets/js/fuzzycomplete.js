@@ -46,13 +46,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
       getData(searchInput.value);
 
-      if (searchInput.value.length !== 0) {
-        fuzzyList.style.display = "block";
-      }
-
-      if (searchInput.value.length === 0) {
-        fuzzyList.style.display = "none";
-      }
+      searchInput.value
+        ? (searchInput.style.backgroundImage = "none")
+        : (searchInput.style.backgroundImage =
+            "url(/images/svg/search_24x24.svg)");
     });
   }
 
