@@ -60,9 +60,10 @@ window.addEventListener("DOMContentLoaded", () => {
     searchInput.value = searchInput.value;
     fuzzyList.style.display = "none";
 
-    if (searchInput.value) {
-      searchInput.style.backgroundImage = "none";
-    }
+    searchInput.value
+      ? (searchInput.style.backgroundImage = "none")
+      : (searchInput.style.backgroundImage =
+          "url(/images/svg/search_orange_24x24.svg)");
   });
 });
 
