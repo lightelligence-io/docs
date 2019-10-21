@@ -1,15 +1,17 @@
 body {
-
   line-height: 1.45;
-
 }
 
-p {margin-bottom: 1.3em;
-font-size: 16px;
-color: var(--gray);}
+p {
+  margin-bottom: 1.3em;
+  font-size: 16px;
+  color: var(--gray);
+}
 
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 1.414em 0 0.5em;
   font-family: $font-family-bold;
   line-height: 1.2;
@@ -26,20 +28,28 @@ h1 {
   padding: 0;
 }
 
-h2 {font-size: 20px;}
+h2 {
+  font-size: 20px;
+}
 
-h3 {font-size: 24px;
+h3 {
+  font-size: 24px;
   margin-top: 40px;
 }
 
 a:focus,
-a:active{
+a:active {
   outline: none;
 }
 
-h4 {font-size: 1.25em;}
+h4 {
+  font-size: 1.25em;
+}
 
-small, .font_small {font-size: 0.8em;}
+small,
+.font_small {
+  font-size: 0.8em;
+}
 
 li {
   display: list-item;
@@ -54,10 +64,9 @@ code {
   border-radius: 3px;
 }
 
-
 table.collapse,
 .note {
-    table-layout: fixed;
+  table-layout: fixed;
 
   p {
     code {
@@ -78,29 +87,27 @@ ol {
   padding: 10px;
 }
 
-
 li {
   p {
     code {
-      background: transparent;
+      background: #e9ecef;
     }
   }
 }
 
- pre code, .language-php {
+pre code,
+.language-php {
   background: var(--primary-color-dark);
   color: var(--primary-color-light);
 }
 
-
 pre code {
   display: block;
   padding: 1.5em 1.5em;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 2;
   overflow-x: auto;
 }
-
 
 pre {
   background-color: #fff;
@@ -125,20 +132,19 @@ input {
 }
 
 table {
-  width: 100%
+  width: 100%;
 }
 
 @media (max-width: 480px) {
-  ol{
+  ol {
     margin-left: 16px;
   }
 }
 
-
 @media (min-width: 400px) {
-    ol {
-      padding: 0 0 0 20px;
-    }
+  ol {
+    padding: 0 0 0 20px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -153,8 +159,8 @@ table {
   }
 }
 
-
-a, .js-toggle {
+a,
+.js-toggle {
   padding: 12px 0;
 }
 
@@ -162,11 +168,11 @@ li a {
   padding: 12px 0;
 }
 
-a, .tags.blue{
+a,
+.tags.blue {
   padding: 0;
 }
 
 strong {
   font-weight: bold;
 }
-

@@ -8,7 +8,7 @@
             <a href="{{ if .HasChildren }}javascript:void(0){{ else }}{{ .URL }}{{ end }}" class="js-m-toggle dib w-100 link mid-gray b hover-orange pl2 pr2 pv2 {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} primary-color{{end}}" data-target=".{{ .Identifier }}">{{ .Name }}</a>
 
             {{- if .HasChildren }}
-            <ul class="{{ .Identifier }} mobilemenu animated mm fadeIn list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
+            <ul class="{{ .Identifier }} mobilemenu animated mm list pl0 {{if $currentPage.HasMenuCurrent "docs" . }} db{{ else }} dn{{ end }}">
                 {{- range .Children }}
                 <li class="pl2 f6 fw4 mm">
                     <a href="{{.URL}}" class="db link hover-orange pl3 pr2 {{if $currentPage.IsMenuCurrent "docs" . }}primary-color {{ else }}black {{end}}">
