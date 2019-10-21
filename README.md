@@ -1,8 +1,8 @@
  # Lightelligence Developer Documentation
 
-This README explains how to install and set-up the documentation website which is available under https://developer.lightelligence.io
+This README explains how to install and set-up the documentation website which is available under https://developers.lightelligence.io
 
-The developer documentation website (short: docs) is created via the static site generator [Hugo] (https://gohugo.io/), the frontend search engine [Fuse.js](https://fusejs.io/) and a custom theme. Hosting is done via a Github page.
+The developer documentation website (short: docs) is created via the static site generator [Hugo](https://gohugo.io/), the frontend search engine [Fuse.js](https://fusejs.io/) and a custom theme. Hosting is done via a Github page.
 
 <br/>
 
